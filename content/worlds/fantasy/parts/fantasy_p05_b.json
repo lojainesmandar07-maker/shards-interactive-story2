@@ -1,0 +1,347 @@
+{
+  "metadata": {
+    "world_id": "fantasy",
+    "arc_id": "fantasy_p05",
+    "part_id": "fantasy_p05_b",
+    "title": "الجزء الخامس (ب): خاتمة الفجر المكسور",
+    "language": "ar",
+    "version": "1.0.0",
+    "start_part_id": "FAN_P05_B_START",
+    "recommended_level": 12,
+    "description": "الخاتمة الكبرى لقوس الفانتازيا قبل الانتقال إلى عالم Retro، وفيها حسم مصير النواة والتحالفات القارية." 
+  },
+  "parts": [
+    {
+      "id": "FAN_P05_B_START",
+      "title": "يوم ما قبل الحكم",
+      "text": "لم تعد القارة تتحدث عن التهريب أو الممرات فقط؛ الجميع يتحدث عن قرارك عند حافة النواة. في المدن، تُرفع رايات الأمل والخوف معًا. في الجبهات، تُجمع القوات دون إعلان حرب. في القصور، تُفتح ملفات قديمة كانت محرّمة. تصل إليك رسالة موحّدة من نادين وآرين: 'الصدع سيبلغ ذروة الاصطفاف الليلة. هذه آخر نافذة لصياغة المستقبل بدل النجاة منه فقط.'",
+      "choices": [
+        {
+          "id": "FAN_P05_B_START_C01",
+          "text": "دعوة قمة أخيرة في مرصد السكون",
+          "next_part_id": "FAN_P05_B_LAST_SUMMIT",
+          "effects": {
+            "xp": 40,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "leader": 2,
+            "diplomatic": 1
+          }
+        },
+        {
+          "id": "FAN_P05_B_START_C02",
+          "text": "تجهيز خطة عسكرية مباشرة لحماية النواة",
+          "next_part_id": "FAN_P05_B_WAR_PREP",
+          "effects": {
+            "xp": 41,
+            "reputation": 1,
+            "world_stability": 0
+          },
+          "trait_weights": {
+            "decisive": 2,
+            "brave": 1
+          }
+        },
+        {
+          "id": "FAN_P05_B_START_C03",
+          "text": "فتح قناة سرية مع الكيان المتكلم باسم الصدع",
+          "next_part_id": "FAN_P05_B_ENTITY_CONTACT",
+          "effects": {
+            "xp": 42,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 2,
+            "curious": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P05_B_LAST_SUMMIT",
+      "title": "قمة المرآة الأخيرة",
+      "text": "يجتمع ممثلو القوى القارية في مرصد السكون تحت حراسة مشددة. لا أحد يثق كليًا بأحد، لكن الجميع يعرف أن الانقسام الآن يعني انهيارًا متسلسلًا. تُعرض ثلاثة مسارات على الطاولة: إغلاق صارم للنواة، مراقبة مشتركة عالية الخطورة، أو استثمار القوة النواتية لإنهاء عصر الحروب بسرعة. كل مسار يحمل وعدًا وكلفة أخلاقية وسياسية هائلة.",
+      "choices": [
+        {
+          "id": "FAN_P05_B_LAST_SUMMIT_C01",
+          "text": "تمرير مسار الإغلاق الصارم",
+          "next_part_id": "FAN_P05_B_PILLAR_DEFENSE",
+          "effects": {
+            "xp": 40,
+            "world_stability": 2,
+            "reputation": 2
+          },
+          "trait_weights": {
+            "just": 2,
+            "honorable": 1
+          }
+        },
+        {
+          "id": "FAN_P05_B_LAST_SUMMIT_C02",
+          "text": "تمرير مسار المراقبة المشتركة",
+          "next_part_id": "FAN_P05_B_PILLAR_DEFENSE",
+          "effects": {
+            "xp": 41,
+            "world_stability": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "pragmatic": 2,
+            "strategic": 1
+          }
+        },
+        {
+          "id": "FAN_P05_B_LAST_SUMMIT_C03",
+          "text": "تمرير مسار تسليح النواة",
+          "next_part_id": "FAN_P05_B_PILLAR_DEFENSE",
+          "effects": {
+            "xp": 42,
+            "corruption": 2,
+            "reputation": -1
+          },
+          "trait_weights": {
+            "ruthless": 2,
+            "greedy": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P05_B_WAR_PREP",
+      "title": "طبول الحافة",
+      "text": "تتحول السهول المحيطة بالمرصد إلى معسكرات متجاورة لقوات لم تقاتل معًا من قبل. آرين يقود وحدات الردع السريع، ولِيان تشرف على شبكة تثبيت نبضات مؤقتة. التقارير تقول إن خلايا متطرفة تريد كسر الأعمدة الحامية للنواة حتى لو انهارت المدن المحيطة. المعركة ليست ضد جيش واحد، بل ضد فكرة ترى الفوضى خلاصًا.",
+      "choices": [
+        {
+          "id": "FAN_P05_B_WAR_PREP_C01",
+          "text": "توزيع القوات على حماية الأعمدة السبعة",
+          "next_part_id": "FAN_P05_B_PILLAR_DEFENSE",
+          "effects": {
+            "xp": 41,
+            "world_stability": 2,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "leader": 2,
+            "careful": 1
+          }
+        },
+        {
+          "id": "FAN_P05_B_WAR_PREP_C02",
+          "text": "إطلاق ضربة استباقية على قواعد المهاجمين",
+          "next_part_id": "FAN_P05_B_SHADOW_STORM",
+          "effects": {
+            "xp": 42,
+            "world_stability": 0,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "decisive": 2,
+            "ruthless": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P05_B_ENTITY_CONTACT",
+      "title": "لغة ما قبل الكلمات",
+      "text": "عند منتصف الليل، تفتح قناة انعكاس عميقة. يظهر الكيان كصوت متعدد الطبقات أكثر من كونه هيئة واضحة. يقول: 'أنتم لا تمنعونني ولا تطلقونني... أنتم تختارون أي نسخة من عالمكم ستبقى.' يعرض عليك معرفة قديمة عن أصل الشظايا مقابل 'اعتراف' بأن البشرية فشلت في إدارة قوتها دون وسيط نواتي.",
+      "choices": [
+        {
+          "id": "FAN_P05_B_ENTITY_CONTACT_C01",
+          "text": "رفض العرض وقطع القناة",
+          "next_part_id": "FAN_P05_B_PILLAR_DEFENSE",
+          "effects": {
+            "xp": 41,
+            "corruption": -1,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "honorable": 2,
+            "just": 1
+          }
+        },
+        {
+          "id": "FAN_P05_B_ENTITY_CONTACT_C02",
+          "text": "قبول المعرفة دون التزام سياسي",
+          "next_part_id": "FAN_P05_B_SHADOW_STORM",
+          "effects": {
+            "xp": 43,
+            "mystery": 3,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "curious": 2,
+            "pragmatic": 1
+          }
+        },
+        {
+          "id": "FAN_P05_B_ENTITY_CONTACT_C03",
+          "text": "التحالف المؤقت مع الكيان لصد الفصائل المتطرفة",
+          "next_part_id": "FAN_P05_B_SHADOW_STORM",
+          "effects": {
+            "xp": 44,
+            "corruption": 2,
+            "shards": 2
+          },
+          "trait_weights": {
+            "cunning": 2,
+            "greedy": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P05_B_PILLAR_DEFENSE",
+      "title": "حراسة الأعمدة السبعة",
+      "text": "تبدأ ليلة الاصطفاف. الأعمدة السبعة المحيطة بالنواة تشتعل بضوء متغير بين الأزرق والفضي، ومع كل ومضة تتبدل الجاذبية السحرية للحظات. تتعرض النقاط الدفاعية لهجمات مركزة: تخريب داخلي، قصف بعيد، ومحاولات انتحال هوية القادة. رغم ذلك، يتماسك الخط الأول بفضل التنسيق بينك وبين آرين.",
+      "choices": [
+        {
+          "id": "FAN_P05_B_PILLAR_DEFENSE_C01",
+          "text": "التمسك بالدفاع حتى انتهاء الاصطفاف",
+          "next_part_id": "FAN_P05_B_CORE_TRIAL",
+          "effects": {
+            "xp": 42,
+            "world_stability": 2,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "brave": 2,
+            "leader": 1
+          }
+        },
+        {
+          "id": "FAN_P05_B_PILLAR_DEFENSE_C02",
+          "text": "تحويل جزء من الدفاع إلى هجوم مضاد",
+          "next_part_id": "FAN_P05_B_SHADOW_STORM",
+          "effects": {
+            "xp": 43,
+            "world_stability": 0,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "decisive": 2,
+            "ruthless": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P05_B_SHADOW_STORM",
+      "title": "عاصفة الظلال",
+      "text": "يتحول محيط المرصد إلى فوضى سريعة: نسخ وهمية للقادة، إشارات متضاربة، وانهيارات قصيرة في الذاكرة لدى الجنود. لِيان تثبت أن مصدر التشويش ليس من خارج الدفاعات فقط، بل من شظايا مزروعة مسبقًا داخل معدات الحلفاء. هذه لحظة اختبار ثقة: من تُبقي قريبًا ومن تعزله الآن؟",
+      "choices": [
+        {
+          "id": "FAN_P05_B_SHADOW_STORM_C01",
+          "text": "عزل كل الوحدات المشتبه بها فورًا",
+          "next_part_id": "FAN_P05_B_CORE_TRIAL",
+          "effects": {
+            "xp": 43,
+            "world_stability": 1,
+            "reputation": -1
+          },
+          "trait_weights": {
+            "careful": 2,
+            "ruthless": 1
+          }
+        },
+        {
+          "id": "FAN_P05_B_SHADOW_STORM_C02",
+          "text": "المخاطرة بالإبقاء على الوحدات تحت رقابة حية",
+          "next_part_id": "FAN_P05_B_CORE_TRIAL",
+          "effects": {
+            "xp": 44,
+            "trust_aren": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "strategic": 2,
+            "pragmatic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P05_B_CORE_TRIAL",
+      "title": "محكمة النواة",
+      "text": "مع اقتراب الذروة، تفتح النواة فضاءً اختباريًا لثوانٍ تتحول فيها الساحة إلى قاعة هائلة من الضوء المكسور. يسمع الجميع الصوت نفسه لكن كلًّا يفسره بطريقة مختلفة. يظهر أمامك مشهدان محتملان: قارة مستقرة بثمن حرية أقل، أو قارة حرة بفوضى أعلى. الكيان لا يفرض قرارًا مباشرًا، لكنه يجبرك على الاختيار أمام الشهود.",
+      "choices": [
+        {
+          "id": "FAN_P05_B_CORE_TRIAL_C01",
+          "text": "اختيار الاستقرار عبر قفل النواة لعقود",
+          "next_part_id": "FAN_P05_B_END_STABLE",
+          "effects": {
+            "xp": 45,
+            "world_stability": 3,
+            "reputation": 2,
+            "corruption": -1
+          },
+          "trait_weights": {
+            "just": 2,
+            "honorable": 1
+          }
+        },
+        {
+          "id": "FAN_P05_B_CORE_TRIAL_C02",
+          "text": "اختيار توازن هش: نافذة محدودة وتناوب قاري",
+          "next_part_id": "FAN_P05_B_END_BALANCED",
+          "effects": {
+            "xp": 44,
+            "world_stability": 1,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "pragmatic": 2,
+            "strategic": 1
+          }
+        },
+        {
+          "id": "FAN_P05_B_CORE_TRIAL_C03",
+          "text": "اختيار التحرير القوي: توسيع الاتصال بالنواة",
+          "next_part_id": "FAN_P05_B_END_DANGEROUS",
+          "effects": {
+            "xp": 46,
+            "corruption": 3,
+            "shards": 3
+          },
+          "trait_weights": {
+            "chaotic": 2,
+            "greedy": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P05_B_END_STABLE",
+      "title": "النهاية الكبرى (Stable): فجر منضبط",
+      "text": "تُغلق النواة ضمن مصفوفة قارية جديدة تُدار باتفاق علني متعدد الأطراف. تتراجع الهزات تدريجيًا، وتعود طرق الإمداد للاستقرار، وتبدأ المدن مشروع إعادة بناء طويل لكنه واضح الاتجاه. يخسر العالم بعض أسراره مؤقتًا، لكنه يكسب فرصة جيل كامل يعيش بلا شبح انهيار يومي. آرين يقف بجانبك ويقول: 'هذا ليس نهاية الرحلة... لكنه نهاية عصر الخوف.'",
+      "choices": [],
+      "ending": "stable"
+    },
+    {
+      "id": "FAN_P05_B_END_BALANCED",
+      "title": "النهاية الكبرى (Balanced): عهد الحارسين",
+      "text": "تختار نظام التناوب القاري على نافذة نواتية محدودة، فينشأ مجلس جديد للحراسة تشارك فيه القوى الكبرى والصغرى معًا. لا تختفي المخاطر، لكنها تصبح قابلة للإدارة بالشفافية والمساءلة. القارة تبقى يقظة، وأنت تترك وراءك نظامًا حيًا يحتاج قادة حكماء أكثر من أبطال فرديين. النهاية هنا ليست إغلاقًا، بل مسؤولية مستمرة.",
+      "choices": [],
+      "ending": "balanced"
+    },
+    {
+      "id": "FAN_P05_B_END_DANGEROUS",
+      "title": "النهاية الكبرى (Dangerous): تاج بلا سماء",
+      "text": "تفتح الاتصال بالنواة أبعد مما فعل أي قائد قبلك. لحظيًا، تنكسر جبهات الفوضى ويتوقف النزيف القاري، لكن الثمن ثقيل: العالم يدخل عصر قوة مركزة حولك وحول من يقدر على لمس النواة. الناس يصفقون خوفًا وأملًا في آن واحد. هذا انتصار هائل... أو بداية سقوط أسطوري. هنا تنتهي الفانتازيا على حافة سؤال مفتوح: من يحرس الحارس الأخير؟",
+      "choices": [],
+      "ending": "dangerous"
+    }
+  ],
+  "handoff": {
+    "next_file": "retro_p01_a.json",
+    "entry_points": [
+      "FAN_P05_B_END_STABLE",
+      "FAN_P05_B_END_BALANCED",
+      "FAN_P05_B_END_DANGEROUS"
+    ],
+    "notes": "بداية عالم Retro يجب أن تعكس إرث نهاية الفانتازيا: إما نظام قاري منضبط، أو حراسة تناوبية، أو قوة مركزية غامضة مع أثر نواتي متبقٍ."
+  }
+}
