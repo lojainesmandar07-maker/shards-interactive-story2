@@ -1,0 +1,629 @@
+{
+  "metadata": {
+    "world_id": "fantasy",
+    "arc_id": "fantasy_p02",
+    "part_id": "fantasy_p02_b",
+    "title": "الجزء الثاني (ب): محكمة الرماد والنجوم",
+    "language": "ar",
+    "version": "1.0.0",
+    "start_part_id": "FAN_P02_B_START",
+    "recommended_level": 5,
+    "description": "تكملة مباشرة لنتائج الجزء الثاني (أ)، حيث تتحول التوازنات السياسية إلى اختبار ميداني في قلب الصدع الشمالي."
+  },
+  "parts": [
+    {
+      "id": "FAN_P02_B_START",
+      "title": "بعد القاعة",
+      "text": "مع نهاية ليلة المجلس، لا تنام المدينة. الرسائل تُنقل بالخفاء، والأبراج تشعل نار الإشارات فوق الأسطح. أنت وآرين تقفان عند شرفة حجرية تشرف على السوق القديم، حيث بدأ الناس يتحدثون عنك إما كمنقذٍ مؤقت أو كخطرٍ مؤجل. يصل رسول من ماريس يحمل ختمًا عاجلًا: تم رصد تمزق جديد في الصدع الشمالي، والفرق الاستكشافية اختفت خلال ساعات. القرار الآن ليس سياسيًا فقط؛ إنه قرار بقاء.",
+      "choices": [
+        {
+          "id": "FAN_P02_B_START_C01",
+          "text": "التحرك فورًا بقوة صغيرة وسريعة",
+          "next_part_id": "FAN_P02_B_NORTH_FAST",
+          "effects": {
+            "xp": 20,
+            "world_stability": 1,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "decisive": 2,
+            "brave": 1
+          }
+        },
+        {
+          "id": "FAN_P02_B_START_C02",
+          "text": "بناء تحالف ميداني قبل التحرك",
+          "next_part_id": "FAN_P02_B_NORTH_ALLIANCE",
+          "effects": {
+            "xp": 22,
+            "reputation": 2,
+            "trust_aren": 1
+          },
+          "trait_weights": {
+            "diplomatic": 2,
+            "leader": 1
+          }
+        },
+        {
+          "id": "FAN_P02_B_START_C03",
+          "text": "زيارة الأرشيف السري أولًا لفهم طبيعة التمزق",
+          "next_part_id": "FAN_P02_B_ARCHIVE",
+          "effects": {
+            "xp": 24,
+            "mystery": 2,
+            "shards": 1
+          },
+          "trait_weights": {
+            "wise": 2,
+            "curious": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_B_NORTH_FAST",
+      "title": "طريق الريح السوداء",
+      "text": "تغادرون قبل طلوع الشمس. الطريق الشمالي موحش؛ الأشجار مائلة كأنها هربت من شيءٍ لم تستطع الهرب منه. كلما اقتربت، تزداد رائحة الحديد المحترق في الهواء. على مسافة قريبة من المعسكر المفقود، تجد آثار قتال بلا جثث: فقط دوائر رماد وأسلحة مذابة.",
+      "choices": [
+        {
+          "id": "FAN_P02_B_NORTH_FAST_C01",
+          "text": "تتبع الدوائر حتى مركزها",
+          "next_part_id": "FAN_P02_B_ASH_RING",
+          "effects": {
+            "xp": 18,
+            "mystery": 2,
+            "world_stability": -1
+          },
+          "trait_weights": {
+            "curious": 2
+          }
+        },
+        {
+          "id": "FAN_P02_B_NORTH_FAST_C02",
+          "text": "إقامة نقطة حماية واستدعاء دعم",
+          "next_part_id": "FAN_P02_B_FIELD_CAMP",
+          "effects": {
+            "xp": 16,
+            "world_stability": 1,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "careful": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_B_NORTH_ALLIANCE",
+      "title": "حلف تحت المطر",
+      "text": "تجمع ممثلين من ثلاث جهات: حرّاس البوابة، كشافة الوادي، ورابطة المعالجين. الاجتماع متوتر، لكن آرين يدعمك أمامهم بخريطة تُظهر أن أي فشل جديد سيكسر خط الدفاع عن العاصمة. بعد ساعات من الشد والجذب، يوافقون على إرسال قوة مشتركة بشروط دقيقة.",
+      "choices": [
+        {
+          "id": "FAN_P02_B_NORTH_ALLIANCE_C01",
+          "text": "قبول الشروط كاملة للحفاظ على الوحدة",
+          "next_part_id": "FAN_P02_B_FIELD_CAMP",
+          "effects": {
+            "xp": 20,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "diplomatic": 2
+          }
+        },
+        {
+          "id": "FAN_P02_B_NORTH_ALLIANCE_C02",
+          "text": "تعديل الشروط لصلاحيات قيادية أوسع",
+          "next_part_id": "FAN_P02_B_COMMAND_TENSION",
+          "effects": {
+            "xp": 21,
+            "corruption": 1,
+            "reputation": -1
+          },
+          "trait_weights": {
+            "leader": 1,
+            "ruthless": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_B_ARCHIVE",
+      "title": "غرفة النجوم المطفأة",
+      "text": "الأرشيف السري تحت القلعة أقدم مما قيل في السجلات. الجدران تحمل خرائط سماوية ونقوشًا عن دورات الصدع كل مئة عام. تكتشف سجلًا ناقصًا يذكر اسم 'محكمة الرماد'، وهي جهة كانت تحاكم مستخدمي شظايا التاج بدلاً من إعدامهم فورًا. إذا صحّ هذا، فالأزمة الحالية ليست جديدة... لكنها تعود في ثوب مختلف.",
+      "choices": [
+        {
+          "id": "FAN_P02_B_ARCHIVE_C01",
+          "text": "نسخ السجل ومشاركته مع ماريس",
+          "next_part_id": "FAN_P02_B_FIELD_CAMP",
+          "effects": {
+            "xp": 22,
+            "reputation": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "honorable": 1,
+            "wise": 1
+          }
+        },
+        {
+          "id": "FAN_P02_B_ARCHIVE_C02",
+          "text": "إخفاء السجل واستخدامه كورقة استراتيجية",
+          "next_part_id": "FAN_P02_B_SECRET_LEDGER",
+          "effects": {
+            "xp": 23,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_B_FIELD_CAMP",
+      "title": "المعسكر الرابع",
+      "text": "عند أطراف الصدع، يُبنى المعسكر الرابع على عجل. الجنود متعبون لكن منظمون، والسماء فوقهم مشروخة بخط ضوء أزرق يتسع ببطء. يتم العثور على ناجية واحدة من الفريق المفقود: مهندسة اسمها لِيان، تقول إن الصوت داخل الصدع 'ينادي الناس بأسمائهم' ويجبرهم على المشي نحوه.",
+      "choices": [
+        {
+          "id": "FAN_P02_B_FIELD_CAMP_C01",
+          "text": "الاستماع الكامل لشهادة لِيان",
+          "next_part_id": "FAN_P02_B_LIAN_TESTIMONY",
+          "effects": {
+            "xp": 18,
+            "mystery": 1,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "patient": 2
+          }
+        },
+        {
+          "id": "FAN_P02_B_FIELD_CAMP_C02",
+          "text": "إرسال فريق فوري لاستطلاع حافة الصدع",
+          "next_part_id": "FAN_P02_B_RIFT_EDGE",
+          "effects": {
+            "xp": 19,
+            "brave": 1,
+            "world_stability": -1
+          },
+          "trait_weights": {
+            "decisive": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_B_COMMAND_TENSION",
+      "title": "قيادة متنازعة",
+      "text": "تعديلك للشروط يخلق احتكاكًا مبكرًا. قائدة الحرس 'سَلمى' ترى أنك توسّع سلطتك أكثر من اللازم، بينما يعتبرك بعض الكشافة الوحيد القادر على اتخاذ القرار تحت الضغط. الانقسام لا يزال قابلًا للترميم، لكن الوقت يضغط والصّدع لا ينتظر.",
+      "choices": [
+        {
+          "id": "FAN_P02_B_COMMAND_TENSION_C01",
+          "text": "منح سَلمى قيادة الجبهة الأمامية لتهدئة التوتر",
+          "next_part_id": "FAN_P02_B_RIFT_EDGE",
+          "effects": {
+            "xp": 20,
+            "reputation": 2,
+            "corruption": -1
+          },
+          "trait_weights": {
+            "diplomatic": 1,
+            "leader": 1
+          }
+        },
+        {
+          "id": "FAN_P02_B_COMMAND_TENSION_C02",
+          "text": "التمسك بالقيادة الكاملة",
+          "next_part_id": "FAN_P02_B_RIFT_EDGE",
+          "effects": {
+            "xp": 21,
+            "corruption": 1,
+            "reputation": -1
+          },
+          "trait_weights": {
+            "ruthless": 1,
+            "decisive": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_B_SECRET_LEDGER",
+      "title": "السجل المخفي",
+      "text": "تخفي نسخة السجل في غلاف جلدي بين معداتك. آرين يلاحظ توترك لكنه لا يضغط عليك. لاحقًا، حين ينام المعسكر، تقرأ الصفحة الأخيرة المكتوبة بحبر باهت: 'من يعبر محكمة الرماد بنجاح، يرى وجه الصدع الحقيقي.'",
+      "choices": [
+        {
+          "id": "FAN_P02_B_SECRET_LEDGER_C01",
+          "text": "إخبار آرين بالحقيقة الآن",
+          "next_part_id": "FAN_P02_B_LIAN_TESTIMONY",
+          "effects": {
+            "xp": 19,
+            "trust_aren": 2,
+            "corruption": -1
+          },
+          "trait_weights": {
+            "loyal": 2
+          }
+        },
+        {
+          "id": "FAN_P02_B_SECRET_LEDGER_C02",
+          "text": "الاحتفاظ بالسر حتى تتضح الصورة",
+          "next_part_id": "FAN_P02_B_RIFT_EDGE",
+          "effects": {
+            "xp": 20,
+            "mystery": 1,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_B_ASH_RING",
+      "title": "الحلقة المحروقة",
+      "text": "تصل إلى دائرة رماد أكبر من ساحة كاملة. في المركز تقف مسلة سوداء منقوشة بأسماء مفقودين، بعضها جديد وبعضها من قرون مضت. حين تلمس المسلة، تسمع صدى أصوات متداخلة تطلب 'شاهدًا عادلًا'. يبدو أن الصدع لا يريد مجرد طاقة... بل حكمًا.",
+      "choices": [
+        {
+          "id": "FAN_P02_B_ASH_RING_C01",
+          "text": "تفعيل المسلة وفتح الممر السحري",
+          "next_part_id": "FAN_P02_B_TRIAL_GATE",
+          "effects": {
+            "xp": 24,
+            "mystery": 3,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "curious": 2,
+            "brave": 1
+          }
+        },
+        {
+          "id": "FAN_P02_B_ASH_RING_C02",
+          "text": "تفكيك المسلة جزئيًا لحماية المعسكر",
+          "next_part_id": "FAN_P02_B_DEFENSE_PLAN",
+          "effects": {
+            "xp": 20,
+            "world_stability": 2,
+            "mystery": -1
+          },
+          "trait_weights": {
+            "careful": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_B_LIAN_TESTIMONY",
+      "title": "شهادة لِيان",
+      "text": "تحكي لِيان أنها سمعت الصدع ينطق باسم أخيها المتوفى، وأن نصف الفريق ترك العتاد وذهب خلف الصوت دون مقاومة. لكنها تؤكد أيضًا أن أحدهم قاوم النداء عبر ترديد 'قسم الحراسة القديم'. هذا قد يكون مفتاحًا ذهنيًا لمواجهة تأثير الصدع.",
+      "choices": [
+        {
+          "id": "FAN_P02_B_LIAN_TESTIMONY_C01",
+          "text": "تعليم القسم لكل الجنود قبل التقدم",
+          "next_part_id": "FAN_P02_B_RIFT_EDGE",
+          "effects": {
+            "xp": 21,
+            "world_stability": 1,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "leader": 2
+          }
+        },
+        {
+          "id": "FAN_P02_B_LIAN_TESTIMONY_C02",
+          "text": "استخدام القسم على فريق صغير فقط لتجربة سريعة",
+          "next_part_id": "FAN_P02_B_RIFT_EDGE",
+          "effects": {
+            "xp": 19,
+            "world_stability": 0,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "strategic": 1,
+            "careful": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_B_RIFT_EDGE",
+      "title": "حافة النداء",
+      "text": "تصلون إلى الحافة مع أول ضوء نهاري. الصدع ليس مجرد شق في الأرض؛ إنه فضاء متحرك تتقاطع فيه صور مدن لم تُبنَ بعد مع أنقاض مدن اندثرت. يسمع الجميع همسًا مختلفًا، كأن كل فرد يُختبر بجرحه الخاص. آرين يضع يده على سيفه ويطلب منك قرارًا واضحًا الآن.",
+      "choices": [
+        {
+          "id": "FAN_P02_B_RIFT_EDGE_C01",
+          "text": "الدخول أنت وآرين فقط",
+          "next_part_id": "FAN_P02_B_TRIAL_GATE",
+          "effects": {
+            "xp": 22,
+            "trust_aren": 1,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "brave": 2
+          }
+        },
+        {
+          "id": "FAN_P02_B_RIFT_EDGE_C02",
+          "text": "إرسال فريق أول واستلام تقارير مباشرة",
+          "next_part_id": "FAN_P02_B_DEFENSE_PLAN",
+          "effects": {
+            "xp": 18,
+            "world_stability": 1,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "leader": 1,
+            "careful": 1
+          }
+        },
+        {
+          "id": "FAN_P02_B_RIFT_EDGE_C03",
+          "text": "استخدام شظية لفك طبقة الوهم قبل أي حركة",
+          "next_part_id": "FAN_P02_B_SHARD_RESONANCE",
+          "effects": {
+            "xp": 24,
+            "mystery": 3,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "curious": 1,
+            "chaotic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_B_TRIAL_GATE",
+      "title": "بوابة المحكمة",
+      "text": "داخل الصدع تظهر بوابة مقوسة معلقة فوق هاوية ضوء، مكتوب عليها: 'لا عبور بلا شهادة.' تتجسد ظلال لثلاث شخصيات: قاضٍ مجهول، حارس مكسور، وطفلة تحمل تاجًا محترقًا. كل ظل يمثل مبدأ: العدالة، الذاكرة، والرغبة. عليك اختيار الباب الذي يبدأ المحاكمة.",
+      "choices": [
+        {
+          "id": "FAN_P02_B_TRIAL_GATE_C01",
+          "text": "باب العدالة",
+          "next_part_id": "FAN_P02_B_TRIAL_JUSTICE",
+          "effects": {
+            "xp": 23,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "just": 2
+          }
+        },
+        {
+          "id": "FAN_P02_B_TRIAL_GATE_C02",
+          "text": "باب الذاكرة",
+          "next_part_id": "FAN_P02_B_TRIAL_MEMORY",
+          "effects": {
+            "xp": 23,
+            "mystery": 2,
+            "trust_aren": 1
+          },
+          "trait_weights": {
+            "loyal": 1,
+            "wise": 1
+          }
+        },
+        {
+          "id": "FAN_P02_B_TRIAL_GATE_C03",
+          "text": "باب الرغبة",
+          "next_part_id": "FAN_P02_B_TRIAL_DESIRE",
+          "effects": {
+            "xp": 24,
+            "shards": 2,
+            "corruption": 2
+          },
+          "trait_weights": {
+            "greedy": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_B_DEFENSE_PLAN",
+      "title": "خطة الدفاع الثلاثية",
+      "text": "تختار بناء شبكة دفاع حول الصدع: طوق رماة، دائرة معالجين، ونقاط انسحاب مدروسة. الخطة تنجح في تقليل الخسائر لكنها تمنح الصدع وقتًا ليعيد تشكيل نفسه. بعض القادة يمدحون حكمتك، وآخرون يتهمونك بالتردد.",
+      "choices": [
+        {
+          "id": "FAN_P02_B_DEFENSE_PLAN_C01",
+          "text": "الالتزام بالخطة حتى النهاية",
+          "next_part_id": "FAN_P02_B_END_STABLE",
+          "effects": {
+            "xp": 22,
+            "world_stability": 2,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "careful": 2
+          }
+        },
+        {
+          "id": "FAN_P02_B_DEFENSE_PLAN_C02",
+          "text": "تحويل الدفاع إلى هجوم مركز",
+          "next_part_id": "FAN_P02_B_TRIAL_GATE",
+          "effects": {
+            "xp": 21,
+            "world_stability": 0,
+            "brave": 1
+          },
+          "trait_weights": {
+            "decisive": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_B_SHARD_RESONANCE",
+      "title": "رنين الشظية",
+      "text": "حين ترفع الشظية أمام الصدع، يخرج منها خيط ضوء يلتف حول معصمك مثل قيد ساخن. الوهم يتراجع فعلًا، وتظهر ممرات أكثر وضوحًا، لكن الرنين يدخل أعماق رأسك ويترك أثرًا لا يمكن تجاهله. آرين ينبهك: 'كل كشف هنا يترك دينًا في روحك.'",
+      "choices": [
+        {
+          "id": "FAN_P02_B_SHARD_RESONANCE_C01",
+          "text": "الاستمرار بالرنين للوصول إلى القلب بسرعة",
+          "next_part_id": "FAN_P02_B_TRIAL_DESIRE",
+          "effects": {
+            "xp": 25,
+            "mystery": 2,
+            "corruption": 2
+          },
+          "trait_weights": {
+            "chaotic": 2
+          }
+        },
+        {
+          "id": "FAN_P02_B_SHARD_RESONANCE_C02",
+          "text": "إيقاف الرنين فورًا والعودة للممر الآمن",
+          "next_part_id": "FAN_P02_B_TRIAL_MEMORY",
+          "effects": {
+            "xp": 22,
+            "corruption": -1,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "wise": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_B_TRIAL_JUSTICE",
+      "title": "ميزان بلا قاضٍ",
+      "text": "تدخل قاعة دائرية فارغة إلا من ميزان حجري ضخم. يسمع صوت بلا جسد يسألك: 'حين يتعارض القانون مع النجاة، ماذا تختار؟' تُعرض أمامك مشاهد من قراراتك السابقة، وكل مشهد يحمل ثمنًا مختلفًا على الناس.",
+      "choices": [
+        {
+          "id": "FAN_P02_B_TRIAL_JUSTICE_C01",
+          "text": "اختيار القانون حتى لو كان قاسيًا",
+          "next_part_id": "FAN_P02_B_END_STABLE",
+          "effects": {
+            "xp": 24,
+            "reputation": 2,
+            "world_stability": 2
+          },
+          "trait_weights": {
+            "just": 2,
+            "honorable": 1
+          }
+        },
+        {
+          "id": "FAN_P02_B_TRIAL_JUSTICE_C02",
+          "text": "اختيار النجاة حتى لو كسرت القاعدة",
+          "next_part_id": "FAN_P02_B_END_BALANCED",
+          "effects": {
+            "xp": 23,
+            "reputation": 1,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "pragmatic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_B_TRIAL_MEMORY",
+      "title": "ممر الوجوه",
+      "text": "تتحول الأرض إلى ممر طويل من زجاج داكن، وتظهر داخله وجوه من رحلتك: من أنقذتهم ومن خذلتهم ومن لم تتمكن من إنقاذهم. كل وجه يسألك سؤالًا مختلفًا، لكن المعنى واحد: هل أنت مخلص للهدف أم لصورتك عن نفسك؟",
+      "choices": [
+        {
+          "id": "FAN_P02_B_TRIAL_MEMORY_C01",
+          "text": "الاعتراف بالأخطاء علنًا أمام آرين",
+          "next_part_id": "FAN_P02_B_END_STABLE",
+          "effects": {
+            "xp": 24,
+            "trust_aren": 2,
+            "corruption": -1
+          },
+          "trait_weights": {
+            "loyal": 2,
+            "honorable": 1
+          }
+        },
+        {
+          "id": "FAN_P02_B_TRIAL_MEMORY_C02",
+          "text": "دفن الندم والتركيز على القوة فقط",
+          "next_part_id": "FAN_P02_B_END_DANGEROUS",
+          "effects": {
+            "xp": 25,
+            "corruption": 2,
+            "shards": 1
+          },
+          "trait_weights": {
+            "ruthless": 1,
+            "decisive": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_B_TRIAL_DESIRE",
+      "title": "قلب النار الزرقاء",
+      "text": "في قاعة الرغبة، يطفو تاج نصف مُذاب فوق عمود نار زرقاء. الصوت يقول: 'خذ ما تريد الآن، وادفع لاحقًا.' ترى لمحة مستقبل: مدن موحدة تحت رايتك... لكن عيون الناس فيها خالية. الإغراء واضح، والثمن أوضح إن كنت تجرؤ على النظر.",
+      "choices": [
+        {
+          "id": "FAN_P02_B_TRIAL_DESIRE_C01",
+          "text": "رفض التاج والانسحاب بالحد الأدنى من المكسب",
+          "next_part_id": "FAN_P02_B_END_BALANCED",
+          "effects": {
+            "xp": 24,
+            "corruption": -1,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "wise": 1,
+            "careful": 1
+          }
+        },
+        {
+          "id": "FAN_P02_B_TRIAL_DESIRE_C02",
+          "text": "أخذ التاج الجزئي وقبول الثمن",
+          "next_part_id": "FAN_P02_B_END_DANGEROUS",
+          "effects": {
+            "xp": 27,
+            "shards": 3,
+            "corruption": 3
+          },
+          "trait_weights": {
+            "greedy": 2,
+            "chaotic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_B_END_STABLE",
+      "title": "خاتمة أ: عهد الحراسة",
+      "text": "تعود من الصدع ومعك صيغة دفاع جديدة تجمع بين القسم القديم وتقنيات لِيان. الخطر لم ينتهِ، لكنه لم يعد عشوائيًا. ماريس تعلن تشكيل 'دائرة الحراسة العليا' وتدعوك لقيادة المرحلة التالية. آرين يبتسم للمرة الأولى منذ أيام: 'الآن بدأنا نحمي المستقبل بدل مطاردته.'",
+      "choices": [],
+      "ending": "stable"
+    },
+    {
+      "id": "FAN_P02_B_END_BALANCED",
+      "title": "خاتمة ب: نصر بنصف ضوء",
+      "text": "تحقق اختراق مهم دون خسارة الروح كاملة. الصدع أبطأ، والمجلس أقل ارتباكًا، لكن الملفات السوداء لم تُغلق بعد. أمامك طريق يحتاج صبرًا وقرارات أصعب، لأن النصف الذي لم تحسمه اليوم سيعود أقوى غدًا.",
+      "choices": [],
+      "ending": "balanced"
+    },
+    {
+      "id": "FAN_P02_B_END_DANGEROUS",
+      "title": "خاتمة ج: تاج في الظل",
+      "text": "ربحت قوة لا يملكها غيرك، لكن شيئًا فيك صار يجيب همس الصدع بدل مقاومته. الجنود يطيعونك، والخصوم يخافونك، وآرين ينظر إليك بصمت ثقيل لا يعرف هل يثق أم يحذر. المرحلة القادمة ستحدد إن كنت قائدًا عظيمًا... أو بداية كارثة جديدة.",
+      "choices": [],
+      "ending": "dangerous"
+    }
+  ],
+  "handoff": {
+    "next_file": "fantasy_p03_a.json",
+    "entry_points": [
+      "FAN_P02_B_END_STABLE",
+      "FAN_P02_B_END_BALANCED",
+      "FAN_P02_B_END_DANGEROUS"
+    ],
+    "notes": "يجب أن يبدأ الجزء الثالث بتفرعات مختلفة حسب نتيجة المحكمة، مع استدعاء شخصيات جديدة مرتبطة بمحكمة الرماد."
+  }
+}
