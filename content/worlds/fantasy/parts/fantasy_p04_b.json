@@ -1,0 +1,455 @@
+{
+  "metadata": {
+    "world_id": "fantasy",
+    "arc_id": "fantasy_p04",
+    "part_id": "fantasy_p04_b",
+    "title": "الجزء الرابع (ب): عيون تحت الملح",
+    "language": "ar",
+    "version": "1.0.0",
+    "start_part_id": "FAN_P04_B_START",
+    "recommended_level": 9,
+    "description": "تداعيات قرار ممر الملح الثالث، حيث تنفجر خطوط الإمداد وتظهر جبهة جديدة تربط المهربين مباشرة بقلب الصدع."
+  },
+  "parts": [
+    {
+      "id": "FAN_P04_B_START",
+      "title": "الأسبوع الذي اختنقت فيه الطرق",
+      "text": "بعد أحداث ممر الملح الثالث، لا تبقى المدن على إيقاعها المعتاد. خطوط الطعام تتأخر، القوافل العسكرية تصل ناقصة، وأسعار الملح ترتفع لدرجة تهدد الأحياء الفقيرة أولًا. في الوقت نفسه، تتناقل الاستخبارات تقارير عن ظهور رموز جديدة على جدران المخازن: عين سوداء داخل دائرة ملحية. نادين تصفها بأنها ختم 'حلقة الجذر'، شبكة لا تبيع الشظايا فقط، بل تتاجر بحق الوصول إلى الصدع نفسه. آرين يقول بوضوح: 'المرحلة القادمة ليست تهريبًا... إنها حرب بنية تحتية.'",
+      "choices": [
+        {
+          "id": "FAN_P04_B_START_C01",
+          "text": "فتح جبهة إمداد طارئة لحماية المدن",
+          "next_part_id": "FAN_P04_B_RELIEF_ROUTE",
+          "effects": {
+            "xp": 30,
+            "world_stability": 2,
+            "reputation": 2
+          },
+          "trait_weights": {
+            "leader": 2,
+            "honorable": 1
+          }
+        },
+        {
+          "id": "FAN_P04_B_START_C02",
+          "text": "مطاردة حلقة الجذر قبل توسعها",
+          "next_part_id": "FAN_P04_B_ROOT_HUNT",
+          "effects": {
+            "xp": 31,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "decisive": 2,
+            "curious": 1
+          }
+        },
+        {
+          "id": "FAN_P04_B_START_C03",
+          "text": "دعوة تحالف إقليمي عاجل",
+          "next_part_id": "FAN_P04_B_REGIONAL_SUMMIT",
+          "effects": {
+            "xp": 29,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "diplomatic": 2,
+            "strategic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_B_RELIEF_ROUTE",
+      "title": "خط الرحمة",
+      "text": "تؤسس مسار إمداد سريع عبر القرى الجبلية لتجاوز الطرق المخترقة. لِيان تنجح في تعديل عربات قديمة لتعمل بطاقة أقل وتتحمل التحولات السحرية المؤقتة قرب الصدع. الناس يستقبلون القوافل كأنها أمل مؤجل وصل أخيرًا، لكنك تعلم أن أي هجوم منظم على هذا الخط قد يعيد الفوضى خلال يوم واحد.",
+      "choices": [
+        {
+          "id": "FAN_P04_B_RELIEF_ROUTE_C01",
+          "text": "مرافقة القافلة الأولى بنفسك",
+          "next_part_id": "FAN_P04_B_FIRST_CONVOY",
+          "effects": {
+            "xp": 30,
+            "reputation": 2,
+            "trust_aren": 1
+          },
+          "trait_weights": {
+            "leader": 1,
+            "brave": 1
+          }
+        },
+        {
+          "id": "FAN_P04_B_RELIEF_ROUTE_C02",
+          "text": "إرسال آرين للقيادة والبدء بتحقيق موازٍ",
+          "next_part_id": "FAN_P04_B_SIGNAL_TRACE",
+          "effects": {
+            "xp": 31,
+            "mystery": 2,
+            "trust_aren": 1
+          },
+          "trait_weights": {
+            "strategic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_B_ROOT_HUNT",
+      "title": "صيد الجذر",
+      "text": "تبدأ المطاردة من الخرائط المشفرة التي سقطت في ممر الملح. يتضح أن حلقة الجذر لا تستخدم قادة ظاهرين؛ كل خلية تعرف جزءًا صغيرًا فقط من الشبكة. هذا يقلل التسرب لكنه يجعل إسقاطهم كاملًا أصعب. تصل إلى إشارة بأن مركز التنسيق المؤقت في 'صهريج النحاس'، منشأة مائية مهجورة قرب خط الصدع الغربي.",
+      "choices": [
+        {
+          "id": "FAN_P04_B_ROOT_HUNT_C01",
+          "text": "مداهمة صهريج النحاس فورًا",
+          "next_part_id": "FAN_P04_B_COPPER_CISTERN",
+          "effects": {
+            "xp": 32,
+            "brave": 1,
+            "world_stability": -1
+          },
+          "trait_weights": {
+            "decisive": 2,
+            "ruthless": 1
+          }
+        },
+        {
+          "id": "FAN_P04_B_ROOT_HUNT_C02",
+          "text": "زرع مراقبة طويلة قبل أي هجوم",
+          "next_part_id": "FAN_P04_B_SIGNAL_TRACE",
+          "effects": {
+            "xp": 31,
+            "mystery": 3,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "careful": 2,
+            "cunning": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_B_REGIONAL_SUMMIT",
+      "title": "قمة العواصم الصغرى",
+      "text": "تجمع ممثلين من خمس مدن حدودية في حصن محايد. النقاشات تتراوح بين من يطالب بإغلاق الحدود كليًا، ومن يرى أن الإغلاق سيخدم المهربين فقط. نادين تدفع باتجاه خريطة صلاحيات مشتركة، بينما بعض الجنرالات يريدون سلطة ميدانية كاملة. الخلاف حاد، لكن الجميع يتفق على نقطة واحدة: الوقت ينفد.",
+      "choices": [
+        {
+          "id": "FAN_P04_B_REGIONAL_SUMMIT_C01",
+          "text": "فرض ميثاق طوارئ موحد",
+          "next_part_id": "FAN_P04_B_UNIFIED_PROTOCOL",
+          "effects": {
+            "xp": 30,
+            "world_stability": 2,
+            "reputation": 2
+          },
+          "trait_weights": {
+            "leader": 2,
+            "diplomatic": 1
+          }
+        },
+        {
+          "id": "FAN_P04_B_REGIONAL_SUMMIT_C02",
+          "text": "قبول ميثاق مرن لكل مدينة",
+          "next_part_id": "FAN_P04_B_FLEX_PROTOCOL",
+          "effects": {
+            "xp": 29,
+            "mystery": 1,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "pragmatic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_B_FIRST_CONVOY",
+      "title": "القافلة التي لا يجب أن تسقط",
+      "text": "أثناء عبور القافلة الأولى لوادي الكلس، تتعرض لهجوم دقيق من رماة مقنعين يستهدفون عجلات العربات لا الحراس. الأسلوب يدل على هدف تعطيل طويل لا قتل مباشر. تنجح في صد الموجة الأولى، لكن أحد المهاجمين يترك وراءه شارة معدنية عليها رمز عين الجذر محفورًا فوق خريطة مصغرة لموقع غير معروف.",
+      "choices": [
+        {
+          "id": "FAN_P04_B_FIRST_CONVOY_C01",
+          "text": "ملاحقة المهاجمين المنسحبين",
+          "next_part_id": "FAN_P04_B_SALT_TUNNEL",
+          "effects": {
+            "xp": 32,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "brave": 2
+          }
+        },
+        {
+          "id": "FAN_P04_B_FIRST_CONVOY_C02",
+          "text": "تأمين القافلة أولًا ثم تحليل الشارة",
+          "next_part_id": "FAN_P04_B_SIGNAL_TRACE",
+          "effects": {
+            "xp": 30,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "careful": 2,
+            "leader": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_B_SIGNAL_TRACE",
+      "title": "خيط الإشارة",
+      "text": "لِيان تفك ترميز الشارة وتجد أنها تبث ترددًا منخفضًا يتزامن مع نبضات الصدع. بتتبع الإشارة، تكتشف سلسلة أجهزة مدفونة تحت محطات الملح، مهمتها على ما يبدو تعديل مزاج الصدع محليًا لتسهيل مرور شحنات محددة. هذا يعني أن المهربين لا يختبئون من الصدع؛ إنهم يتفاوضون معه.",
+      "choices": [
+        {
+          "id": "FAN_P04_B_SIGNAL_TRACE_C01",
+          "text": "تعطيل الأجهزة كلها دفعة واحدة",
+          "next_part_id": "FAN_P04_B_COPPER_CISTERN",
+          "effects": {
+            "xp": 33,
+            "world_stability": 0,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "decisive": 2,
+            "wise": 1
+          }
+        },
+        {
+          "id": "FAN_P04_B_SIGNAL_TRACE_C02",
+          "text": "إعادة توجيه الأجهزة لكشف غرفة التحكم",
+          "next_part_id": "FAN_P04_B_COPPER_CISTERN",
+          "effects": {
+            "xp": 34,
+            "mystery": 3,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 2,
+            "strategic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_B_UNIFIED_PROTOCOL",
+      "title": "بروتوكول موحد",
+      "text": "تُقِر القمة بروتوكولًا موحدًا: تفتيش مشترك، سجلات شفافة، وقوة تدخل إقليمية واحدة. التنفيذ صعب لكنه يمنحك إطارًا قانونيًا قويًا. بالمقابل، تتلقى تهديدات مفتوحة من تجار كبار يرون أن النظام الجديد سيكسر نفوذهم المزمن.",
+      "choices": [
+        {
+          "id": "FAN_P04_B_UNIFIED_PROTOCOL_C01",
+          "text": "تطبيق البروتوكول فورًا دون استثناءات",
+          "next_part_id": "FAN_P04_B_SALT_TUNNEL",
+          "effects": {
+            "xp": 31,
+            "world_stability": 2,
+            "reputation": 2
+          },
+          "trait_weights": {
+            "just": 2,
+            "leader": 1
+          }
+        },
+        {
+          "id": "FAN_P04_B_UNIFIED_PROTOCOL_C02",
+          "text": "تطبيق تدريجي لتفادي الانفجار الاقتصادي",
+          "next_part_id": "FAN_P04_B_FLEX_PROTOCOL",
+          "effects": {
+            "xp": 30,
+            "world_stability": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "pragmatic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_B_FLEX_PROTOCOL",
+      "title": "بروتوكول مرن",
+      "text": "تسمح لكل مدينة بهامش تنفيذ خاص، فينجح التعاون ظاهريًا لكن تظهر فجوات كبيرة في التتبع. بعض الجهات تستغل المرونة لإخفاء شحنات مشبوهة تحت غطاء 'استثناء محلي'. آرين يرى أن هذا النهج يكسب الوقت لكنه يطيل عمر المرض.",
+      "choices": [
+        {
+          "id": "FAN_P04_B_FLEX_PROTOCOL_C01",
+          "text": "تشديد سريع على المدن الأكثر اختراقًا",
+          "next_part_id": "FAN_P04_B_SALT_TUNNEL",
+          "effects": {
+            "xp": 31,
+            "reputation": 1,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "decisive": 1,
+            "pragmatic": 1
+          }
+        },
+        {
+          "id": "FAN_P04_B_FLEX_PROTOCOL_C02",
+          "text": "الإبقاء على المرونة مع مراقبة استخبارية أعمق",
+          "next_part_id": "FAN_P04_B_COPPER_CISTERN",
+          "effects": {
+            "xp": 32,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 1,
+            "strategic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_B_SALT_TUNNEL",
+      "title": "نفق الملح السفلي",
+      "text": "يقودك التتبع إلى نفق تحت سلسلة مخازن قديمة. النفق ليس مجرد طريق تهريب؛ إنه مركز فرز حيث تُفصل شحنات الغذاء عن شحنات الشظايا، ثم تُعاد عنونتها بأسماء مدن مختلفة. على الجدار الرئيسي ترى عبارة: 'من يملك التدفق يملك القرار.' يبدو أن الخصم يفهم السياسة أكثر من كثير من الملوك.",
+      "choices": [
+        {
+          "id": "FAN_P04_B_SALT_TUNNEL_C01",
+          "text": "الاستيلاء على النفق وتحويله لخط حكومي",
+          "next_part_id": "FAN_P04_B_CISTERN_ASSAULT",
+          "effects": {
+            "xp": 33,
+            "world_stability": 2,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "leader": 2,
+            "strategic": 1
+          }
+        },
+        {
+          "id": "FAN_P04_B_SALT_TUNNEL_C02",
+          "text": "نسف النفق لقطع الشبكة فورًا",
+          "next_part_id": "FAN_P04_B_CISTERN_ASSAULT",
+          "effects": {
+            "xp": 32,
+            "world_stability": 0,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "ruthless": 2,
+            "decisive": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_B_COPPER_CISTERN",
+      "title": "صهريج النحاس",
+      "text": "في الصهريج المهجور، تسمع هديرًا منخفضًا كنبض ضخم. في القاعة المركزية تجد مصفوفة من أحجار انعكاس متصلة بخارطة إمداد كاملة للمدن. يقف مهندس عجوز يعرّف نفسه بـ'ناظر الجذر' ويقول: 'لا ندمر المدن. نحن نختار من يتلقى النجاة أولًا.' الفكرة مرعبة لأنها منطقية جزئيًا في عالم ينهار.",
+      "choices": [
+        {
+          "id": "FAN_P04_B_COPPER_CISTERN_C01",
+          "text": "اعتقال ناظر الجذر وتفكيك المصفوفة",
+          "next_part_id": "FAN_P04_B_CISTERN_ASSAULT",
+          "effects": {
+            "xp": 34,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "just": 2,
+            "honorable": 1
+          }
+        },
+        {
+          "id": "FAN_P04_B_COPPER_CISTERN_C02",
+          "text": "إجباره على تشغيل المصفوفة لمصلحتك مؤقتًا",
+          "next_part_id": "FAN_P04_B_CISTERN_ASSAULT",
+          "effects": {
+            "xp": 35,
+            "mystery": 2,
+            "corruption": 2
+          },
+          "trait_weights": {
+            "cunning": 2,
+            "ruthless": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_B_CISTERN_ASSAULT",
+      "title": "معركة الجذر",
+      "text": "تندلع المواجهة النهائية داخل بنية الصهريج. فرق المهربين لا تقاتل كجيش، بل كخلايا تعطل الاتصالات وتضرب نقاط الإمداد. آرين يقود الجبهة اليسرى، ولِيان تعمل على تعطيل حجر التحكم المركزي. خلال القتال يظهر رسول ملثم ويقدم عرضًا أخيرًا: 'سلّموا إدارة التدفق لحلقة الجذر وسنثبت استقرار الصدع خلال شهر.' العرض يبدو فخًا... لكنه ليس بلا إغراء.",
+      "choices": [
+        {
+          "id": "FAN_P04_B_CISTERN_ASSAULT_C01",
+          "text": "رفض العرض وحسم المعركة بالقوة",
+          "next_part_id": "FAN_P04_B_END_STABLE",
+          "effects": {
+            "xp": 36,
+            "world_stability": 2,
+            "reputation": 2,
+            "corruption": -1
+          },
+          "trait_weights": {
+            "brave": 2,
+            "just": 1
+          }
+        },
+        {
+          "id": "FAN_P04_B_CISTERN_ASSAULT_C02",
+          "text": "قبول هدنة مشروطة مع تفكيك تدريجي",
+          "next_part_id": "FAN_P04_B_END_BALANCED",
+          "effects": {
+            "xp": 35,
+            "world_stability": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "pragmatic": 2,
+            "strategic": 1
+          }
+        },
+        {
+          "id": "FAN_P04_B_CISTERN_ASSAULT_C03",
+          "text": "قبول العرض سرًا مقابل التحكم بالصدع",
+          "next_part_id": "FAN_P04_B_END_DANGEROUS",
+          "effects": {
+            "xp": 37,
+            "corruption": 3,
+            "shards": 2
+          },
+          "trait_weights": {
+            "greedy": 2,
+            "cunning": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_B_END_STABLE",
+      "title": "خاتمة أ: طريق مفتوح",
+      "text": "تنتصر في معركة الجذر وتكسر العمود اللوجستي للشبكة. تعود الإمدادات تدريجيًا إلى المدن، وتُنشأ هيئة رقابة شفافة على الطرق بعيدًا عن السوق الأسود. الخطر لا يختفي، لكنه يفقد قدرته على خنق الناس بسرعة. للمرة الأولى منذ وقت طويل، يتراجع الخوف خطوة كاملة أمام النظام.",
+      "choices": [],
+      "ending": "stable"
+    },
+    {
+      "id": "FAN_P04_B_END_BALANCED",
+      "title": "خاتمة ب: هدنة الممرات",
+      "text": "تختار تسوية صعبة تمنع الانفجار الفوري وتحفظ بعض قدرات الشبكة تحت رقابة مشددة. النتيجة تمنحك وقتًا ثمينًا، لكنها تبقي خصومًا أذكياء داخل اللعبة. كل مدينة تتنفس، لكن بعين مفتوحة دائمًا. المرحلة القادمة ستحدد إن كانت الهدنة جسرًا... أم فخًا مؤجلًا.",
+      "choices": [],
+      "ending": "balanced"
+    },
+    {
+      "id": "FAN_P04_B_END_DANGEROUS",
+      "title": "خاتمة ج: سيد التدفق",
+      "text": "تقبل الاتفاق السري وتصبح ممسكًا بخيوط الإمداد والصدع معًا. المدن لا تنهار، بل تستقر بسرعة مذهلة، لكن على بنية ظل لا يعرفها الناس. نفوذك يصعد فوق كل مؤسسة، ومعه يرتفع احتمال السقوط إن انكشفت الحقيقة. لقد ربحت السيطرة... وربما خسرت الطريق للعودة.",
+      "choices": [],
+      "ending": "dangerous"
+    }
+  ],
+  "handoff": {
+    "next_file": "fantasy_p05_a.json",
+    "entry_points": [
+      "FAN_P04_B_END_STABLE",
+      "FAN_P04_B_END_BALANCED",
+      "FAN_P04_B_END_DANGEROUS"
+    ],
+    "notes": "يبدأ الجزء الخامس على مستوى قاري: تداعيات لوجستية وسياسية واسعة مع أول اقتراب مباشر من نواة الصدع."
+  }
+}
