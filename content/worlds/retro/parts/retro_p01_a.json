@@ -1,0 +1,1779 @@
+{
+  "metadata": {
+    "world_id": "retro",
+    "arc_id": "retro_p01",
+    "part_id": "retro_p01_a",
+    "title": "الجزء الأول (أ): أشرطة الأمس",
+    "language": "ar",
+    "version": "1.0.0",
+    "start_part_id": "RET_P01_A_START",
+    "recommended_level": 11,
+    "description": "افتتاحية عالم Retro بقصة تحقيق زمني-نيوني مترابطة تمهّد لبقية الأجزاء دون حلقات مكسورة."
+  },
+  "parts": [
+    {
+      "id": "RET_P01_A_START",
+      "title": "مدينة النيون البارد",
+      "text": "في عام 2194، تستيقظ مدينة \"نوفا-رترو\" على انقطاع كهربائي قصير يكشف السماء لأول مرة منذ سنوات. أنت محقق تابع لوحدة \"الأرشيف الزمني\"، وتصل إلى مكتبك لتجد شريط كاسيت قديمًا يدور وحده. الصوت المسجّل يهمس: \"إذا أردت إنقاذ الغد، ابحث عن أمس الذي سُرق.\" قبل أن ينتهي التسجيل، تظهر على جدار المكتب خريطة متقطعة تشير إلى ثلاث نقاط: محطة المترو الصامتة، سوق الشرائط السوداء، وبرج الساعة العكسي.",
+      "choices": [
+        {
+          "id": "RET_P01_A_START_C01",
+          "text": "الذهاب إلى محطة المترو الصامتة",
+          "next_part_id": "RET_P01_A_METRO",
+          "effects": {
+            "xp": 22,
+            "reputation": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "brave": 1,
+            "careful": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_START_C02",
+          "text": "تفتيش سوق الشرائط السوداء",
+          "next_part_id": "RET_P01_A_MARKET",
+          "effects": {
+            "xp": 23,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "cunning": 1,
+            "curious": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_START_C03",
+          "text": "تسلّق برج الساعة العكسي",
+          "next_part_id": "RET_P01_A_TOWER",
+          "effects": {
+            "xp": 24,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "decisive": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_METRO",
+      "title": "المحطة بلا قطارات",
+      "text": "المحطة فارغة إلا من ضوء أزرق ينعكس على قضبان صدئة. تجد آلة تذاكر قديمة ما زالت تعمل بعملة منتهية منذ أربعين عامًا. عند إدخال قطعة معدنية، تطبع الآلة تذكرة تحمل تاريخ الغد وسطرًا واحدًا: \"الراكب التالي لا يملك ظلًا.\" في آخر الرصيف، تسمع خطوات لا تراها.",
+      "choices": [
+        {
+          "id": "RET_P01_A_METRO_C01",
+          "text": "تتبّع الخطوات إلى النفق الخلفي",
+          "next_part_id": "RET_P01_A_TUNNEL",
+          "effects": {
+            "xp": 21,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "curious": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_METRO_C02",
+          "text": "تحليل التذكرة داخل المختبر الميداني",
+          "next_part_id": "RET_P01_A_LAB_VAN",
+          "effects": {
+            "xp": 20,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "wise": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_MARKET",
+      "title": "سوق الشرائط السوداء",
+      "text": "في السوق، كل متجر يبيع ذاكرة على هيئة شريط: ذكريات حب، اعترافات سياسية، وحتى لحظات موت. تاجر ملثم يريك شريطًا مكتوبًا عليه اسمك الشخصي مع تاريخ لم يأتِ بعد. يطلب ثمناً غريبًا: \"أعطني دقيقة من ذاكرتك، وخذ الحقيقة.\" آرين-7، شريكك الآلي نصف البشري، يحذّرك من التلاعب الزمني.",
+      "choices": [
+        {
+          "id": "RET_P01_A_MARKET_C01",
+          "text": "شراء الشريط مقابل ذاكرة قصيرة",
+          "next_part_id": "RET_P01_A_MEMORY_TRADE",
+          "effects": {
+            "xp": 24,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "greedy": 1,
+            "cunning": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_MARKET_C02",
+          "text": "رفض الصفقة وتعقب التاجر",
+          "next_part_id": "RET_P01_A_CHASE_ALLEY",
+          "effects": {
+            "xp": 22,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "honorable": 1,
+            "brave": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_TOWER",
+      "title": "برج الساعة العكسي",
+      "text": "الساعة في أعلى البرج تتحرك للخلف. كلما اقتربت، تسمع دقاتها كنبض قلب معدني ضخم. داخل غرفة التروس تجد لوحة تحكم حديثة مخفية خلف آلية قديمة، وكأن أحدهم دمج عصرين عمدًا. شاشة صغيرة تعرض جملة متكررة: \"إعادة التزامن خلال 09:59.\"",
+      "choices": [
+        {
+          "id": "RET_P01_A_TOWER_C01",
+          "text": "فصل الطاقة عن التروس العكسية",
+          "next_part_id": "RET_P01_A_POWER_CUT",
+          "effects": {
+            "xp": 23,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "decisive": 1,
+            "wise": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_TOWER_C02",
+          "text": "ترك النظام يعمل وتتبع مصدر الإشارة",
+          "next_part_id": "RET_P01_A_SIGNAL_HUNT",
+          "effects": {
+            "xp": 24,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "strategic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_TUNNEL",
+      "title": "نفق الصدى المغناطيسي",
+      "text": "النفق مغطى بملصقات قديمة لحفلات لم تُقم أبدًا. كل عشر خطوات يتشوه الصوت حولك، فتسمع كلماتك قبل أن تنطقها. تصل إلى باب فولاذي كتب عليه \"الأمس المؤجل\". بجانبه قفل يعمل ببصمة حرارية غير بشرية.",
+      "choices": [
+        {
+          "id": "RET_P01_A_TUNNEL_C01",
+          "text": "استخدام يد آرين-7 لفتح القفل",
+          "next_part_id": "RET_P01_A_ARCHIVE_DOOR",
+          "effects": {
+            "xp": 22,
+            "trust_aren": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "loyal": 1,
+            "careful": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_TUNNEL_C02",
+          "text": "تفجير القفل والدخول بالقوة",
+          "next_part_id": "RET_P01_A_ARCHIVE_BREACH",
+          "effects": {
+            "xp": 23,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "ruthless": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_LAB_VAN",
+      "title": "مختبر العربة المتنقلة",
+      "text": "داخل العربة، تحلل الحبر فتكتشف أنه مصنوع من جزيئات أرشيفية تُستخدم عادة لختم أوامر الحكومة العليا. التذكرة لا تخبرك بالمستقبل؛ إنها تصريح مرور مزوّر إلى منطقة زمنية محظورة. يظهر على الشاشة اسم الجهة المصدرة: \"دائرة الفجر المكسور\".",
+      "choices": [
+        {
+          "id": "RET_P01_A_LAB_VAN_C01",
+          "text": "إرسال النتائج مباشرة إلى القيادة",
+          "next_part_id": "RET_P01_A_COMMAND_FEED",
+          "effects": {
+            "xp": 21,
+            "reputation": 2
+          },
+          "trait_weights": {
+            "honorable": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_LAB_VAN_C02",
+          "text": "إخفاء النتائج ومتابعة التحقيق وحدك",
+          "next_part_id": "RET_P01_A_SECRET_FILE",
+          "effects": {
+            "xp": 23,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_MEMORY_TRADE",
+      "title": "صفقة الدقيقة الواحدة",
+      "text": "يسحب التاجر دقيقة من ذاكرتك عبر جهاز نحاسي متصل بمشغل كاسيت. تشعر بفراغ بسيط، ثم تسمع الشريط الذي اشتريته: صوتك أنت تحذر نفسك من \"القطار 9\" وتذكر اسمًا: ليرا. عند نهاية الشريط، يظهر عنوان مخزن مهجور قرب الميناء الداخلي.",
+      "choices": [
+        {
+          "id": "RET_P01_A_MEMORY_TRADE_C01",
+          "text": "الذهاب إلى الميناء الداخلي فورًا",
+          "next_part_id": "RET_P01_A_DRY_HARBOR",
+          "effects": {
+            "xp": 24,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "decisive": 1,
+            "curious": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_MEMORY_TRADE_C02",
+          "text": "البحث أولًا عن ليرا في السجلات",
+          "next_part_id": "RET_P01_A_LYRA_RECORD",
+          "effects": {
+            "xp": 22,
+            "mystery": 1,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "wise": 1,
+            "strategic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_CHASE_ALLEY",
+      "title": "زقاق النيجاتيف",
+      "text": "تطارد التاجر عبر أزقة ضيقة تعكس ألوان النيون كصور فوتوغرافية سالبة. قبل الإمساك به، يرمي لك بطاقة من ورق فيلم قديم مكتوب عليها \"من لا يملك ماضيًا، يشتري ماضي الآخرين\". يختفي خلف باب سري يقود إلى شبكة صرف قديمة.",
+      "choices": [
+        {
+          "id": "RET_P01_A_CHASE_ALLEY_C01",
+          "text": "الدخول إلى شبكة الصرف",
+          "next_part_id": "RET_P01_A_DRAIN_GRID",
+          "effects": {
+            "xp": 23,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "brave": 1,
+            "curious": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_CHASE_ALLEY_C02",
+          "text": "تحليل البطاقة في مركز الجنائيات",
+          "next_part_id": "RET_P01_A_FORENSIC",
+          "effects": {
+            "xp": 21,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "careful": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_POWER_CUT",
+      "title": "انطفاء محسوب",
+      "text": "حين تفصل الطاقة، تتوقف عقارب الساعة وتظهر فتحة أرضية لم تكن موجودة. بداخلها صندوق تسجيلات يحمل شعار \"برنامج استرجاع الزمن المدني\" الملغى منذ عقود. أول ملف بداخله مسجل باسم: نوفا-رترو // نسخة احتياطية.",
+      "choices": [
+        {
+          "id": "RET_P01_A_POWER_CUT_C01",
+          "text": "فتح الملف واستعادة النسخة الاحتياطية",
+          "next_part_id": "RET_P01_A_CITY_BACKUP",
+          "effects": {
+            "xp": 24,
+            "mystery": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "wise": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_POWER_CUT_C02",
+          "text": "إرسال الصندوق إلى الحفظ العسكري",
+          "next_part_id": "RET_P01_A_MILITARY_LOCK",
+          "effects": {
+            "xp": 22,
+            "reputation": 2
+          },
+          "trait_weights": {
+            "honorable": 1,
+            "leader": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_SIGNAL_HUNT",
+      "title": "صائد الإشارة",
+      "text": "تتبع الإشارة يقودك إلى هوائي مخفي فوق سطح مدرسة قديمة. الجهاز يبث على ترددات موسيقية من الثمانينيات، لكن في الخلفية توجد نبضات رقمية دقيقة. تفك الشفرة الأولية لتجد إحداثيات تحت عنوان: \"المسرح الأحمر\".",
+      "choices": [
+        {
+          "id": "RET_P01_A_SIGNAL_HUNT_C01",
+          "text": "التوجه إلى المسرح الأحمر",
+          "next_part_id": "RET_P01_A_RED_THEATER",
+          "effects": {
+            "xp": 24,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "curious": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_SIGNAL_HUNT_C02",
+          "text": "نصب مصيدة لإشارة العودة",
+          "next_part_id": "RET_P01_A_TRAP_SIGNAL",
+          "effects": {
+            "xp": 23,
+            "strategic": 1,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "strategic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_ARCHIVE_DOOR",
+      "title": "باب الأرشيف",
+      "text": "يفتح الباب على قاعة مليئة بأشرطة مرتبة زمنيًا، لكن السنوات مفقودة بترتيب متعمد: 2178، 2184، 2191، 2194. في الوسط، شاشة أنبوبية تعرض وجه امرأة تقول: \"أنا ليرا. إن رأيتني فالنظام فشل.\"",
+      "choices": [
+        {
+          "id": "RET_P01_A_ARCHIVE_DOOR_C01",
+          "text": "تشغيل رسالة ليرا كاملة",
+          "next_part_id": "RET_P01_A_LYRA_MESSAGE",
+          "effects": {
+            "xp": 25,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "curious": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_ARCHIVE_DOOR_C02",
+          "text": "نسخ الأرشيف أولًا قبل أي تشغيل",
+          "next_part_id": "RET_P01_A_ARCHIVE_COPY",
+          "effects": {
+            "xp": 24,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "careful": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_ARCHIVE_BREACH",
+      "title": "اقتحام الأرشيف",
+      "text": "الاقتحام يطلق إنذارًا صامتًا. الأضواء تتحول إلى الأحمر، وتبدأ بعض الأشرطة في الذوبان الذاتي. تنقذ جزءًا صغيرًا فقط قبل الاحتراق: مقطع يذكر أن \"القطار 9\" ليس قطارًا بل بروتوكول نقل وعي.",
+      "choices": [
+        {
+          "id": "RET_P01_A_ARCHIVE_BREACH_C01",
+          "text": "تتبع بروتوكول القطار 9",
+          "next_part_id": "RET_P01_A_TRAIN_PROTOCOL",
+          "effects": {
+            "xp": 25,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "ruthless": 1,
+            "decisive": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_ARCHIVE_BREACH_C02",
+          "text": "إخماد الحريق وإنقاذ ما يمكن",
+          "next_part_id": "RET_P01_A_ARCHIVE_RESCUE",
+          "effects": {
+            "xp": 23,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "honorable": 1,
+            "brave": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_COMMAND_FEED",
+      "title": "قناة القيادة",
+      "text": "ترسل النتائج فتطلب منك القيادة التجميد الفوري للتحقيق حتى وصول فريق مركزي. الرد سريع بشكل مريب، وكأنه جاهز مسبقًا. آرين-7 يرصد تشويشًا على القناة يعني أن الرسالة وصلت لطرف ثالث أيضًا.",
+      "choices": [
+        {
+          "id": "RET_P01_A_COMMAND_FEED_C01",
+          "text": "الالتزام بالتجميد وانتظار الفريق",
+          "next_part_id": "RET_P01_A_TEAM_DELAY",
+          "effects": {
+            "xp": 22,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "honorable": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_COMMAND_FEED_C02",
+          "text": "كسر الأوامر والمتابعة سرًا",
+          "next_part_id": "RET_P01_A_ROGUE_PATH",
+          "effects": {
+            "xp": 25,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_SECRET_FILE",
+      "title": "ملف الظل",
+      "text": "تخفي النتائج في ملف مشفر وتربطه بهوية مزيفة. بعد دقائق، يحاول أحدهم الدخول إلى جهازك بفك تشفير عسكري. الفشل يترك أثرًا واحدًا: معرف وحدة تُدعى \"فريق الاستبدال 9\".",
+      "choices": [
+        {
+          "id": "RET_P01_A_SECRET_FILE_C01",
+          "text": "تتبع معرف فريق الاستبدال 9",
+          "next_part_id": "RET_P01_A_REPLACE_TEAM",
+          "effects": {
+            "xp": 25,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "strategic": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_SECRET_FILE_C02",
+          "text": "حذف كل النسخ والاعتماد على الذاكرة",
+          "next_part_id": "RET_P01_A_MEMORY_ONLY",
+          "effects": {
+            "xp": 23,
+            "corruption": 1,
+            "reputation": -1
+          },
+          "trait_weights": {
+            "chaotic": 1,
+            "brave": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_DRY_HARBOR",
+      "title": "الميناء الجاف",
+      "text": "المخزن المهجور مليء بعربات قطار قديمة بلا عجلات. في الوسط منصة حديدية عليها خطوط عصبية صناعية، كأنها مصممة لنقل شيء غير مادي. تجد شعارًا محفورًا: \"القطار 9 – رحلة واحدة بلا عودة.\"",
+      "choices": [
+        {
+          "id": "RET_P01_A_DRY_HARBOR_C01",
+          "text": "تشغيل المنصة لفهم آلية النقل",
+          "next_part_id": "RET_P01_A_PLATFORM_BOOT",
+          "effects": {
+            "xp": 26,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "curious": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_DRY_HARBOR_C02",
+          "text": "تفكيك المنصة ونقلها للمختبر",
+          "next_part_id": "RET_P01_A_PLATFORM_MOVE",
+          "effects": {
+            "xp": 24,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "careful": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_LYRA_RECORD",
+      "title": "سجل ليرا",
+      "text": "تبحث في السجلات فتكتشف أن ليرا كانت مهندسة رئيسية في برنامج \"الزمن المدني\" ثم اختفت رسميًا قبل ثلاث سنوات. ملفها الأخير مصنف \"هوية مستبدلة\"، وهي فئة لا تُستخدم إلا إذا تم نسخ الوعي إلى جسد بديل.",
+      "choices": [
+        {
+          "id": "RET_P01_A_LYRA_RECORD_C01",
+          "text": "زيارة آخر عنوان معروف لليرا",
+          "next_part_id": "RET_P01_A_OLD_APARTMENT",
+          "effects": {
+            "xp": 24,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "curious": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_LYRA_RECORD_C02",
+          "text": "طلب فك تصنيف الملف بالقضاء",
+          "next_part_id": "RET_P01_A_COURT_ORDER",
+          "effects": {
+            "xp": 22,
+            "reputation": 2
+          },
+          "trait_weights": {
+            "honorable": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_DRAIN_GRID",
+      "title": "شبكة المصارف القديمة",
+      "text": "في الأعماق، تسمع ضجيج تيار كهربائي لا ماء. الشبكة تحولت إلى ممرات كابل عملاقة. تجد محطة صغيرة عليها شاشات CRT تعرض وجوهًا تتبدل بسرعة. أحد الوجوه يتوقف على وجهك ثم يكتب: \"النسخة الأصلية؟\"",
+      "choices": [
+        {
+          "id": "RET_P01_A_DRAIN_GRID_C01",
+          "text": "فصل التيار عن محطة الوجوه",
+          "next_part_id": "RET_P01_A_FACE_NODE",
+          "effects": {
+            "xp": 25,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "wise": 1,
+            "decisive": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_DRAIN_GRID_C02",
+          "text": "التفاعل مع المحطة لمعرفة المقصود",
+          "next_part_id": "RET_P01_A_FACE_DIALOG",
+          "effects": {
+            "xp": 26,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "curious": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_FORENSIC",
+      "title": "مختبر الجنائيات",
+      "text": "تكشف البطاقة أثر مركب كيميائي يستخدم في تحنيط الأشرطة طويلة الأمد. هذا المركب لا يباع تجاريًا، بل يُصدر فقط لمرصد السكون التقني في ضواحي المدينة. الرابط بين السوق غير الشرعي والمرصد الرسمي يفتح فرضية الخيانة المؤسسية.",
+      "choices": [
+        {
+          "id": "RET_P01_A_FORENSIC_C01",
+          "text": "مواجهة إدارة المرصد رسميًا",
+          "next_part_id": "RET_P01_A_OBSERVATORY_GATE",
+          "effects": {
+            "xp": 24,
+            "reputation": 2
+          },
+          "trait_weights": {
+            "honorable": 1,
+            "leader": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_FORENSIC_C02",
+          "text": "التسلل إلى المرصد دون تصريح",
+          "next_part_id": "RET_P01_A_OBSERVATORY_BACKDOOR",
+          "effects": {
+            "xp": 26,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_CITY_BACKUP",
+      "title": "النسخة الاحتياطية للمدينة",
+      "text": "عند تشغيل النسخة الاحتياطية، تظهر خريطة كاملة لمدينة نوفا-رترو كما كانت قبل عشرين سنة. بعض الأحياء المهدمة اليوم كانت موجودة بحيوية، وأحياء جديدة اليوم غير موجودة أصلًا. تدرك أن المدينة عاشت \"إعادة كتابة\" جزئية.",
+      "choices": [
+        {
+          "id": "RET_P01_A_CITY_BACKUP_C01",
+          "text": "مقارنة الخريطة مع الواقع ميدانيًا",
+          "next_part_id": "RET_P01_A_GHOST_BLOCK",
+          "effects": {
+            "xp": 26,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "wise": 1,
+            "curious": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_CITY_BACKUP_C02",
+          "text": "رفع تقرير علني للمدينة",
+          "next_part_id": "RET_P01_A_PUBLIC_ALERT",
+          "effects": {
+            "xp": 24,
+            "reputation": 2,
+            "world_stability": -1
+          },
+          "trait_weights": {
+            "honorable": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_MILITARY_LOCK",
+      "title": "ختم عسكري",
+      "text": "الفريق العسكري يصل بسرعة مقلقة ويصادر الصندوق. قائدهم يوقع ورقة مصادرة بتاريخ الغد، لا اليوم. حين تعترض، يقول: \"نحن هنا لحماية التسلسل، لا لإرضاء فضول المحققين.\" آرين-7 يسجل بصمت تردد شارة القائد.",
+      "choices": [
+        {
+          "id": "RET_P01_A_MILITARY_LOCK_C01",
+          "text": "ملاحقة الفريق العسكري سريًا",
+          "next_part_id": "RET_P01_A_SHADOW_CONVOY",
+          "effects": {
+            "xp": 25,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "brave": 1,
+            "cunning": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_MILITARY_LOCK_C02",
+          "text": "استخدام المسار القانوني لاستعادة الصندوق",
+          "next_part_id": "RET_P01_A_LEGAL_PUSH",
+          "effects": {
+            "xp": 23,
+            "reputation": 2
+          },
+          "trait_weights": {
+            "honorable": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_RED_THEATER",
+      "title": "المسرح الأحمر",
+      "text": "الستارة ممزقة والمقاعد مغطاة بالغبار، لكن المسرح يعمل بالكامل وكأن العرض بدأ قبل دقيقة. على الخشبة جهاز عرض أفلام قديم يكرر مشهدًا واحدًا: قطار يدخل نفقًا مضيئًا ويخرج بلا ركاب. في المقصورة العلوية دفتر ملاحظات يحمل اسم ليرا.",
+      "choices": [
+        {
+          "id": "RET_P01_A_RED_THEATER_C01",
+          "text": "قراءة الدفتر كاملًا",
+          "next_part_id": "RET_P01_A_LYRA_JOURNAL",
+          "effects": {
+            "xp": 26,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "curious": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_RED_THEATER_C02",
+          "text": "فحص جهاز العرض تقنيًا",
+          "next_part_id": "RET_P01_A_PROJECTOR_CODE",
+          "effects": {
+            "xp": 25,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "wise": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_TRAP_SIGNAL",
+      "title": "مصيدة الإشارة",
+      "text": "تنصب مصيدة وتنتظر، فتلتقط إشارة راجعة من داخل مقر الشرطة نفسها. المرسل يستخدم قناة \"التحقيقات الباردة\" وهي قناة لا يفترض أن يعرف مفاتيحها إلا ثلاثة أشخاص. الخرق داخلي بشكل مؤكد.",
+      "choices": [
+        {
+          "id": "RET_P01_A_TRAP_SIGNAL_C01",
+          "text": "مواجهة المشتبه بهم الثلاثة مباشرة",
+          "next_part_id": "RET_P01_A_INTERNAL_HEARING",
+          "effects": {
+            "xp": 24,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "decisive": 1,
+            "leader": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_TRAP_SIGNAL_C02",
+          "text": "اختبار ولاءهم عبر معلومات مزيفة",
+          "next_part_id": "RET_P01_A_LOYALTY_TEST",
+          "effects": {
+            "xp": 26,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "strategic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_LYRA_MESSAGE",
+      "title": "رسالة ليرا",
+      "text": "ليرا في التسجيل تبدو مرهقة لكنها حاسمة: \"إذا كنت تسمعني، فإما أني ميتة... أو مكررة. برنامج القطار 9 ينقل الذكريات لتثبيت الحكم، لا لإنقاذ الناس. ابحث عن قاعة إعادة التشغيل قبل دقة الساعة الصفرية.\"",
+      "choices": [
+        {
+          "id": "RET_P01_A_LYRA_MESSAGE_C01",
+          "text": "التحرك فورًا نحو قاعة إعادة التشغيل",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 27,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "decisive": 1,
+            "brave": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_LYRA_MESSAGE_C02",
+          "text": "التحقق من صحة التسجيل أولًا",
+          "next_part_id": "RET_P01_A_SIGNAL_AUDIT",
+          "effects": {
+            "xp": 25,
+            "wise": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "careful": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_ARCHIVE_COPY",
+      "title": "نسخ الأرشيف",
+      "text": "تنجح في نسخ ملفات حساسة تكشف وجود قوائم \"استبدال الوعي\" لسياسيين وقادة أمن. كل اسم في القائمة يحمل تاريخين: تاريخ الميلاد، وتاريخ النسخة. بعض التواريخ الثانية حدثت قبل أيام.",
+      "choices": [
+        {
+          "id": "RET_P01_A_ARCHIVE_COPY_C01",
+          "text": "نشر القائمة على نطاق محدود للنخب",
+          "next_part_id": "RET_P01_A_ELITE_SHOCK",
+          "effects": {
+            "xp": 26,
+            "reputation": 1,
+            "world_stability": -1
+          },
+          "trait_weights": {
+            "strategic": 1,
+            "chaotic": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_ARCHIVE_COPY_C02",
+          "text": "حفظ القائمة كدليل للضربة النهائية",
+          "next_part_id": "RET_P01_A_FINAL_DOSSIER",
+          "effects": {
+            "xp": 27,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "careful": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_TRAIN_PROTOCOL",
+      "title": "بروتوكول القطار 9",
+      "text": "تفك الشفرة وتكتشف أن القطار 9 يُفعّل عند \"دقة الصفر\" لإعادة كتابة ذاكرة المدينة بجرعة موحدة. إذا تم تشغيله، سيستيقظ الناس غدًا بنسخة واقع محسّنة سياسيًا لكنها مزيفة.",
+      "choices": [
+        {
+          "id": "RET_P01_A_TRAIN_PROTOCOL_C01",
+          "text": "تعطيل البروتوكول من المصدر",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 28,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "brave": 1,
+            "just": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_TRAIN_PROTOCOL_C02",
+          "text": "استخدام البروتوكول ضد المشغلين",
+          "next_part_id": "RET_P01_A_REVERSE_INJECT",
+          "effects": {
+            "xp": 29,
+            "corruption": 2,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_ARCHIVE_RESCUE",
+      "title": "إنقاذ الأرشيف",
+      "text": "تنقذ صناديق عشوائية، لكن بينها شريط يحمل عنوانًا بسيطًا: \"النسخة الأولى منك\". لا تفتحه فورًا. تشعر أن الإجابة التي تبحث عنها قد تكسر ثقتك بنفسك قبل أن تكشف العدو.",
+      "choices": [
+        {
+          "id": "RET_P01_A_ARCHIVE_RESCUE_C01",
+          "text": "فتح شريط النسخة الأولى",
+          "next_part_id": "RET_P01_A_SELF_TAPE",
+          "effects": {
+            "xp": 28,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "curious": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_ARCHIVE_RESCUE_C02",
+          "text": "تأجيل الشريط والتركيز على المهمة",
+          "next_part_id": "RET_P01_A_FINAL_DOSSIER",
+          "effects": {
+            "xp": 26,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "careful": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_TEAM_DELAY",
+      "title": "تأخر الفريق",
+      "text": "الفريق المركزي لا يصل، لكن تصلك رسالة تفيد أنه \"وصل وأنهى المهمة\". التناقض يؤكد وجود نسخة مزيفة تتحرك باسم الوحدة. الوقت يضيق، ودقة الصفر تقترب.",
+      "choices": [
+        {
+          "id": "RET_P01_A_TEAM_DELAY_C01",
+          "text": "اعتبار القيادة مخترقة والتحرك مستقلًا",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 27,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "decisive": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_TEAM_DELAY_C02",
+          "text": "محاولة استعادة القناة الرسمية",
+          "next_part_id": "RET_P01_A_SIGNAL_AUDIT",
+          "effects": {
+            "xp": 25,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "honorable": 1,
+            "wise": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_ROGUE_PATH",
+      "title": "المسار المارق",
+      "text": "تختار العمل خارج الأوامر. آرين-7 يتبعك رغم علمه أن هذا قد يُصنف كتمرد. في الطريق إلى قلب الشبكة، يرسل لك رسالة قصيرة: \"إذا سقطت، احفظ المدينة لا اسمي.\"",
+      "choices": [
+        {
+          "id": "RET_P01_A_ROGUE_PATH_C01",
+          "text": "الوصول المباشر لقاعة إعادة التشغيل",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 29,
+            "trust_aren": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "loyal": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_ROGUE_PATH_C02",
+          "text": "جمع أدلة أخيرة قبل المواجهة",
+          "next_part_id": "RET_P01_A_FINAL_DOSSIER",
+          "effects": {
+            "xp": 27,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "strategic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_REBOOT_HALL",
+      "title": "قاعة إعادة التشغيل",
+      "text": "القاعة تقع تحت محطة القطار المركزية. آلاف الأشرطة متصلة بجدار دائري عملاق، وفي الوسط كرسي تحكم واحد. على الشاشة الرئيسية يبدأ العد التنازلي: 00:12:00. يظهر خصمك أخيرًا: المفوض \"ساير\"، الذي يعترف أنه نسخ نفسه ثلاث مرات ليضمن بقاء النظام.",
+      "choices": [
+        {
+          "id": "RET_P01_A_REBOOT_HALL_C01",
+          "text": "مواجهة ساير وإيقاف العد يدويًا",
+          "next_part_id": "RET_P01_A_FINAL_CONFRONT",
+          "effects": {
+            "xp": 30,
+            "brave": 1,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "brave": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_REBOOT_HALL_C02",
+          "text": "اختراق النظام وتغيير وجهة البث",
+          "next_part_id": "RET_P01_A_FINAL_CONFRONT",
+          "effects": {
+            "xp": 31,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_SIGNAL_AUDIT",
+      "title": "تدقيق الإشارة",
+      "text": "تثبت أن نصف القنوات الرسمية يعمل عبر طبقة انعكاس مزيفة. أي أمر رسمي قد يكون صادقًا أو مفبركًا. الحل الوحيد: تفعيل قناة بديلة قديمة تُعرف بـ\"راديو الفجر\" لإرسال رسالة موحدة للمدينة قبل دقة الصفر.",
+      "choices": [
+        {
+          "id": "RET_P01_A_SIGNAL_AUDIT_C01",
+          "text": "تشغيل راديو الفجر فورًا",
+          "next_part_id": "RET_P01_A_FINAL_CONFRONT",
+          "effects": {
+            "xp": 29,
+            "reputation": 1,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "honorable": 1,
+            "leader": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_SIGNAL_AUDIT_C02",
+          "text": "الإبقاء على الصمت لتجنب الذعر",
+          "next_part_id": "RET_P01_A_FINAL_CONFRONT",
+          "effects": {
+            "xp": 28,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "careful": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_FINAL_DOSSIER",
+      "title": "الملف الحاسم",
+      "text": "تجمع كل الأدلة: قائمة الاستبدال، سجل القطار 9، ملاحظات ليرا، وهوية ساير المكررة. الملف يكفي لإسقاط النظام، لكنه أيضًا قد يدفع المدينة لفوضى ثقة لا رجعة فيها إذا نُشر بلا إطار انتقال.",
+      "choices": [
+        {
+          "id": "RET_P01_A_FINAL_DOSSIER_C01",
+          "text": "استخدام الملف كأداة تفاوض أثناء المواجهة",
+          "next_part_id": "RET_P01_A_FINAL_CONFRONT",
+          "effects": {
+            "xp": 30,
+            "reputation": 1,
+            "strategic": 1
+          },
+          "trait_weights": {
+            "strategic": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_FINAL_DOSSIER_C02",
+          "text": "نشر الملف علنًا قبل المواجهة",
+          "next_part_id": "RET_P01_A_FINAL_CONFRONT",
+          "effects": {
+            "xp": 31,
+            "world_stability": -1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "chaotic": 1,
+            "brave": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_REPLACE_TEAM",
+      "title": "فريق الاستبدال 9",
+      "text": "تتبع المعرّف يقودك إلى وحدة تعمل بهويات متبدلة. تكتشف أنهم يراقبون المحققين ويستبدلون مساراتهم قبل الوصول للحقيقة.",
+      "choices": [
+        {
+          "id": "RET_P01_A_REPLACE_TEAM_C01",
+          "text": "اختراق خادم الفريق وسحب الخرائط",
+          "next_part_id": "RET_P01_A_FINAL_DOSSIER",
+          "effects": {
+            "xp": 26,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_REPLACE_TEAM_C02",
+          "text": "تفكيك الوحدة ميدانيًا",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 27,
+            "brave": 1
+          },
+          "trait_weights": {
+            "decisive": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_MEMORY_ONLY",
+      "title": "الاعتماد على الذاكرة",
+      "text": "بعد حذف الملفات، يصبح عقلك هو الدليل الوحيد. تتضاعف المسؤولية، لكنك تتحرك أسرع من أي تتبع رقمي.",
+      "choices": [
+        {
+          "id": "RET_P01_A_MEMORY_ONLY_C01",
+          "text": "تسجيل مذكرات صوتية محمية",
+          "next_part_id": "RET_P01_A_SIGNAL_AUDIT",
+          "effects": {
+            "xp": 24,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "careful": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_MEMORY_ONLY_C02",
+          "text": "المضي بلا أي سجل",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 26,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "chaotic": 1,
+            "brave": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_PLATFORM_BOOT",
+      "title": "إقلاع المنصة",
+      "text": "المنصة تعرض خرائط نقل وعي لحظية. ترى اسم \"ساير\" يتكرر كعقدة توزيع رئيسية.",
+      "choices": [
+        {
+          "id": "RET_P01_A_PLATFORM_BOOT_C01",
+          "text": "نسخ جداول النقل",
+          "next_part_id": "RET_P01_A_FINAL_DOSSIER",
+          "effects": {
+            "xp": 27,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "strategic": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_PLATFORM_BOOT_C02",
+          "text": "إيقاف المنصة لمنع أي رحلة",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 26,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "just": 1,
+            "decisive": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_PLATFORM_MOVE",
+      "title": "نقل المنصة",
+      "text": "أثناء النقل يهاجم مجهولون القافلة، ما يثبت أن المنصة مفتاح مهم للخصم.",
+      "choices": [
+        {
+          "id": "RET_P01_A_PLATFORM_MOVE_C01",
+          "text": "تأمين المنصة في مخبأك",
+          "next_part_id": "RET_P01_A_FINAL_DOSSIER",
+          "effects": {
+            "xp": 25,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "careful": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_PLATFORM_MOVE_C02",
+          "text": "استخدامها كطعم لتعقب المهاجمين",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 27,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_OLD_APARTMENT",
+      "title": "شقة ليرا القديمة",
+      "text": "تجد جدرانًا مغطاة بمخططات زمنية وأسطرًا تقول: \"كل نسخة تريد أن تكون الأصل.\"",
+      "choices": [
+        {
+          "id": "RET_P01_A_OLD_APARTMENT_C01",
+          "text": "أخذ مخطط النفق النهائي",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 26,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "curious": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_OLD_APARTMENT_C02",
+          "text": "الاحتفاظ بالمذكرات كدليل",
+          "next_part_id": "RET_P01_A_FINAL_DOSSIER",
+          "effects": {
+            "xp": 24,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "careful": 1,
+            "honorable": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_COURT_ORDER",
+      "title": "أمر قضائي",
+      "text": "القاضي يوافق على الطلب جزئيًا ويمنحك ساعة واحدة للوصول لملف ليرا قبل الإغلاق التلقائي.",
+      "choices": [
+        {
+          "id": "RET_P01_A_COURT_ORDER_C01",
+          "text": "استخدام الساعة للوصول للملف المركزي",
+          "next_part_id": "RET_P01_A_SIGNAL_AUDIT",
+          "effects": {
+            "xp": 24,
+            "reputation": 2
+          },
+          "trait_weights": {
+            "honorable": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_COURT_ORDER_C02",
+          "text": "تجاوز نطاق الأمر واسترجاع كل الملفات",
+          "next_part_id": "RET_P01_A_FINAL_DOSSIER",
+          "effects": {
+            "xp": 26,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 1,
+            "decisive": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_FACE_NODE",
+      "title": "عقدة الوجوه",
+      "text": "العقدة تكشف قاعدة بيانات وجوه مزيفة تُستخدم لتغطية عمليات الاستبدال.",
+      "choices": [
+        {
+          "id": "RET_P01_A_FACE_NODE_C01",
+          "text": "تدمير القاعدة",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 26,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "decisive": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_FACE_NODE_C02",
+          "text": "نسخها للمقارنة الجنائية",
+          "next_part_id": "RET_P01_A_FINAL_DOSSIER",
+          "effects": {
+            "xp": 25,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "wise": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_FACE_DIALOG",
+      "title": "حوار مع المحطة",
+      "text": "المحطة تجيبك بنبرة بشرية: \"أنت لست الأول الذي يسأل من هو الأصل.\" ثم تعرض مسارًا إلى القاعة النهائية.",
+      "choices": [
+        {
+          "id": "RET_P01_A_FACE_DIALOG_C01",
+          "text": "قبول المسار",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 27,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "curious": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_FACE_DIALOG_C02",
+          "text": "رفضه والتحقق منه عبر قناة مستقلة",
+          "next_part_id": "RET_P01_A_SIGNAL_AUDIT",
+          "effects": {
+            "xp": 25,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "careful": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_OBSERVATORY_GATE",
+      "title": "بوابة المرصد",
+      "text": "الإدارة تنكر كل شيء، لكن سجلات الدخول تكشف زيارات ليلية باسم ساير.",
+      "choices": [
+        {
+          "id": "RET_P01_A_OBSERVATORY_GATE_C01",
+          "text": "مصادرة السجلات الرسمية",
+          "next_part_id": "RET_P01_A_FINAL_DOSSIER",
+          "effects": {
+            "xp": 25,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "honorable": 1,
+            "strategic": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_OBSERVATORY_GATE_C02",
+          "text": "الاندفاع للقاعة تحت المرصد",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 26,
+            "brave": 1
+          },
+          "trait_weights": {
+            "decisive": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_OBSERVATORY_BACKDOOR",
+      "title": "المدخل الخلفي للمرصد",
+      "text": "تتسلل عبر نفق خدمة وتلتقط بثًا مباشرًا لعدّ تنازلي مطابق لقاعة إعادة التشغيل.",
+      "choices": [
+        {
+          "id": "RET_P01_A_OBSERVATORY_BACKDOOR_C01",
+          "text": "قطع البث من المصدر",
+          "next_part_id": "RET_P01_A_SIGNAL_AUDIT",
+          "effects": {
+            "xp": 26,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "wise": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_OBSERVATORY_BACKDOOR_C02",
+          "text": "تتبع خط البث حتى القاعة",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 27,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_GHOST_BLOCK",
+      "title": "الحي الشبح",
+      "text": "تصل إلى حي غير موجود في الخرائط الحديثة لكنه قائم فعليًا خلف واجهات إعلانية.",
+      "choices": [
+        {
+          "id": "RET_P01_A_GHOST_BLOCK_C01",
+          "text": "توثيق الحي كدليل على إعادة الكتابة",
+          "next_part_id": "RET_P01_A_FINAL_DOSSIER",
+          "effects": {
+            "xp": 26,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "wise": 1,
+            "careful": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_GHOST_BLOCK_C02",
+          "text": "إخلاء السكان قبل دقة الصفر",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 25,
+            "reputation": 2
+          },
+          "trait_weights": {
+            "honorable": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_PUBLIC_ALERT",
+      "title": "إنذار عام",
+      "text": "إعلانك يثير الذعر، لكنه يكسر احتكار الرواية الرسمية. الشوارع تنقسم بين من يصدقك ومن يراك مخرّبًا.",
+      "choices": [
+        {
+          "id": "RET_P01_A_PUBLIC_ALERT_C01",
+          "text": "توحيد الخطاب عبر راديو الفجر",
+          "next_part_id": "RET_P01_A_SIGNAL_AUDIT",
+          "effects": {
+            "xp": 25,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "leader": 1,
+            "strategic": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_PUBLIC_ALERT_C02",
+          "text": "استثمار الفوضى لاقتحام القاعة",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 27,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "chaotic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_SHADOW_CONVOY",
+      "title": "قافلة الظل",
+      "text": "تراقب القافلة العسكرية وتكتشف أنها تنقل نسخ أشرطة وعي لا معدات قتالية.",
+      "choices": [
+        {
+          "id": "RET_P01_A_SHADOW_CONVOY_C01",
+          "text": "سرقة صندوق النسخ",
+          "next_part_id": "RET_P01_A_FINAL_DOSSIER",
+          "effects": {
+            "xp": 27,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_SHADOW_CONVOY_C02",
+          "text": "تتبعها حتى القاعة الرئيسية",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 26,
+            "strategic": 1
+          },
+          "trait_weights": {
+            "strategic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_LEGAL_PUSH",
+      "title": "ضغط قانوني",
+      "text": "ملفك القانوني ينجح جزئيًا ويمنحك شرعية مواجهة ساير علنًا.",
+      "choices": [
+        {
+          "id": "RET_P01_A_LEGAL_PUSH_C01",
+          "text": "استخدام الشرعية لكسب الحلفاء",
+          "next_part_id": "RET_P01_A_SIGNAL_AUDIT",
+          "effects": {
+            "xp": 24,
+            "reputation": 2
+          },
+          "trait_weights": {
+            "honorable": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_LEGAL_PUSH_C02",
+          "text": "استغلال المهلة لاختراق القاعة",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 25,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "decisive": 1,
+            "cunning": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_LYRA_JOURNAL",
+      "title": "دفتر ليرا",
+      "text": "الدفتر يؤكد أن ساير اختبر القطار 9 على أحياء كاملة ثم أعاد كتابة ذكرياتها.",
+      "choices": [
+        {
+          "id": "RET_P01_A_LYRA_JOURNAL_C01",
+          "text": "تحويل الدفتر إلى دليل رسمي",
+          "next_part_id": "RET_P01_A_FINAL_DOSSIER",
+          "effects": {
+            "xp": 26,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "honorable": 1,
+            "wise": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_LYRA_JOURNAL_C02",
+          "text": "القفز مباشرة إلى المواجهة",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 27,
+            "brave": 1
+          },
+          "trait_weights": {
+            "brave": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_PROJECTOR_CODE",
+      "title": "شفرة جهاز العرض",
+      "text": "الشفرة تحتوي مفاتيح تزامن العدّ التنازلي مع بث المدينة.",
+      "choices": [
+        {
+          "id": "RET_P01_A_PROJECTOR_CODE_C01",
+          "text": "استخدام المفاتيح لعكس البث",
+          "next_part_id": "RET_P01_A_SIGNAL_AUDIT",
+          "effects": {
+            "xp": 27,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "wise": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_PROJECTOR_CODE_C02",
+          "text": "حقن مفاتيح مزيفة في النظام",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 28,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_INTERNAL_HEARING",
+      "title": "جلسة داخلية",
+      "text": "المواجهة تكشف خيانة واحد من المشتبهين وتبرئ اثنين يمكن ضمهما لاحقًا.",
+      "choices": [
+        {
+          "id": "RET_P01_A_INTERNAL_HEARING_C01",
+          "text": "تجنيد البريئين لعملية الفجر",
+          "next_part_id": "RET_P01_A_SIGNAL_AUDIT",
+          "effects": {
+            "xp": 24,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "leader": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_INTERNAL_HEARING_C02",
+          "text": "اعتقال الجميع مؤقتًا",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 25,
+            "world_stability": 0
+          },
+          "trait_weights": {
+            "ruthless": 1,
+            "careful": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_LOYALTY_TEST",
+      "title": "اختبار الولاء",
+      "text": "المعلومة المزيفة تعود عبر قناة واحدة فقط، فتحدد الخائن بدقة.",
+      "choices": [
+        {
+          "id": "RET_P01_A_LOYALTY_TEST_C01",
+          "text": "استخدام الخائن كعميل مزدوج",
+          "next_part_id": "RET_P01_A_FINAL_DOSSIER",
+          "effects": {
+            "xp": 27,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "strategic": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_LOYALTY_TEST_C02",
+          "text": "إيقافه فورًا وإغلاق القناة",
+          "next_part_id": "RET_P01_A_SIGNAL_AUDIT",
+          "effects": {
+            "xp": 25,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "decisive": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_ELITE_SHOCK",
+      "title": "صدمة النخب",
+      "text": "وصول القائمة إلى النخب يخلق انقسامًا سريعًا: بعضهم يدعمك وبعضهم يحاول إسكاتك.",
+      "choices": [
+        {
+          "id": "RET_P01_A_ELITE_SHOCK_C01",
+          "text": "بناء تحالف مؤقت مع المؤيدين",
+          "next_part_id": "RET_P01_A_SIGNAL_AUDIT",
+          "effects": {
+            "xp": 25,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "diplomatic": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_ELITE_SHOCK_C02",
+          "text": "تجاوزهم والتركيز على القاعة",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 26,
+            "decisive": 1
+          },
+          "trait_weights": {
+            "decisive": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_REVERSE_INJECT",
+      "title": "حقن عكسي",
+      "text": "تحاول قلب القطار 9 على المشغلين فقط، لكن العملية تحتاج ضبطًا دقيقًا قبل التنفيذ.",
+      "choices": [
+        {
+          "id": "RET_P01_A_REVERSE_INJECT_C01",
+          "text": "تنفيذها من القاعة مباشرة",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 29,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        },
+        {
+          "id": "RET_P01_A_REVERSE_INJECT_C02",
+          "text": "إجراء محاكاة أولًا عبر راديو الفجر",
+          "next_part_id": "RET_P01_A_SIGNAL_AUDIT",
+          "effects": {
+            "xp": 27,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "wise": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_SELF_TAPE",
+      "title": "شريط النسخة الأولى",
+      "text": "الشريط يكشف أنك تعرضت لمحاولة استبدال فاشلة سابقًا، وأن مقاومة وعيك أنقذتك دون أن تعلم.",
+      "choices": [
+        {
+          "id": "RET_P01_A_SELF_TAPE_C01",
+          "text": "استثمار الحقيقة كقوة نفسية في المواجهة",
+          "next_part_id": "RET_P01_A_REBOOT_HALL",
+          "effects": {
+            "xp": 28,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "brave": 1,
+            "honorable": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_SELF_TAPE_C02",
+          "text": "إخفاء الحقيقة ومتابعة المهمة ببرود",
+          "next_part_id": "RET_P01_A_FINAL_DOSSIER",
+          "effects": {
+            "xp": 27,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "careful": 1,
+            "cunning": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_FINAL_CONFRONT",
+      "title": "الاثنتا عشرة دقيقة الأخيرة",
+      "text": "تقف أمام لوحة التحكم وساير أمامك، وآرين-7 يغطي الممرات الخلفية. العد ينخفض: 00:03:00. المدينة فوقكم تنتظر دون أن تدري. ساير يعرض صفقة: \"اتركني أعيد الضبط الليلة، وسأمنحك نسخة مدينة بلا حرب.\" ليرا (عبر القناة) تصرخ: \"المدينة التي تُسرق ذاكرتها لا تعيش... تُدار فقط.\" القرار النهائي بين يديك.",
+      "choices": [
+        {
+          "id": "RET_P01_A_FINAL_CONFRONT_C01",
+          "text": "إيقاف القطار 9 وتحرير الذاكرة العامة",
+          "next_part_id": "RET_P01_A_END_TRUE_DAWN",
+          "effects": {
+            "xp": 35,
+            "world_stability": 2,
+            "reputation": 2,
+            "corruption": -1
+          },
+          "trait_weights": {
+            "just": 2,
+            "honorable": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_FINAL_CONFRONT_C02",
+          "text": "تعديل القطار 9 إلى نسخة مراقبة مشتركة",
+          "next_part_id": "RET_P01_A_END_GUARDED_CITY",
+          "effects": {
+            "xp": 34,
+            "world_stability": 1,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "pragmatic": 2,
+            "strategic": 1
+          }
+        },
+        {
+          "id": "RET_P01_A_FINAL_CONFRONT_C03",
+          "text": "تبنّي النظام واستبدال ساير بنفسك",
+          "next_part_id": "RET_P01_A_END_NEON_THRONE",
+          "effects": {
+            "xp": 36,
+            "corruption": 3,
+            "shards": 2
+          },
+          "trait_weights": {
+            "greedy": 2,
+            "ruthless": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_A_END_TRUE_DAWN",
+      "title": "نهاية Retro P01.A (Stable): فجر حقيقي",
+      "text": "توقف البث قبل ثانيتين من دقة الصفر. تصحو المدينة على حقيقتها بكل ألمها وتاريخها، لكن للمرة الأولى لا يوجد أحد يملك زر إعادة كتابة العقول. يتم تشكيل مجلس انتقال شفاف، وتظهر ليرا علنًا لتقود إصلاح الأرشيف الزمني. آرين-7 يضع الكاسيت الأول على مكتبك ويبتسم: \"أنقذت الغد... بترك الأمس يتكلم.\"",
+      "choices": [],
+      "ending": "stable"
+    },
+    {
+      "id": "RET_P01_A_END_GUARDED_CITY",
+      "title": "نهاية Retro P01.A (Balanced): مدينة محروسة",
+      "text": "لا تلغي النظام كليًا، بل تعيد تصميمه تحت رقابة ثلاثية: القضاء، الأرشيف، وممثلي الأحياء. الفوضى لا تختفي، لكن الانهيار يتوقف. يحتفظ الناس بذاكرتهم الأساسية، وتُستخدم أدوات القطار 9 فقط في حالات الكارثة القصوى. المدينة تتنفس بحذر، لكنها تتقدم.",
+      "choices": [],
+      "ending": "balanced"
+    },
+    {
+      "id": "RET_P01_A_END_NEON_THRONE",
+      "title": "نهاية Retro P01.A (Dangerous): عرش النيون",
+      "text": "تختار أن ترث النظام بدل هدمه. توقف ساير وتجلس على كرسي التحكم، وتعيد ضبط المدينة بجرعة \"استقرار\" مدروسة. الجريمة تنخفض والحروب تتوقف، لكن الثمن ثقيل: الحقيقة تصبح خدمة مُدارة. في الشوارع يلمع النيون أكثر من أي وقت، بينما الأسئلة الكبرى تُدفن تحت صمت أنيق. القوة كاملة في يدك... والمدينة تعرف ذلك.",
+      "choices": [],
+      "ending": "dangerous"
+    }
+  ],
+  "handoff": {
+    "next_file": "retro_p01_b.json",
+    "entry_points": [
+      "RET_P01_A_END_TRUE_DAWN",
+      "RET_P01_A_END_GUARDED_CITY",
+      "RET_P01_A_END_NEON_THRONE"
+    ],
+    "notes": "يبدأ الجزء (ب) من أثر النهاية المختارة: مجلس انتقالي، رقابة مشتركة، أو حكم مركزي بواجهة مستقرة."
+  }
+}
