@@ -1,0 +1,661 @@
+{
+  "metadata": {
+    "world_id": "fantasy",
+    "arc_id": "fantasy_p03",
+    "part_id": "fantasy_p03_a",
+    "title": "الجزء الثالث (أ): مدينة الأقنعة السبع",
+    "language": "ar",
+    "version": "1.0.0",
+    "start_part_id": "FAN_P03_A_START",
+    "recommended_level": 6,
+    "description": "بداية الفصل الثالث بعد محكمة الرماد، حيث ينتقل الصراع من حدود الصدع إلى قلب المدن والتحالفات الخفية."
+  },
+  "parts": [
+    {
+      "id": "FAN_P03_A_START",
+      "title": "رسالة مختومة بالرماد",
+      "text": "بعد أيام من أحداث الصدع الشمالي، تصلك رسالة بلا مرسل رسمي، مختومة بشمع أسود يحمل رمز قناع مكسور. الرسالة قصيرة: 'الحقيقة لا تسكن القلاع، بل مدينة الأقنعة السبع. تعال قبل اكتمال القمر الثالث.' آرين يتعرف الرمز فورًا ويبدو عليه القلق. يقول إن هذه المدينة لا تظهر على الخرائط العادية، وإن من يدخلها باسمٍ واحد غالبًا يخرج بأسماء كثيرة.",
+      "choices": [
+        {
+          "id": "FAN_P03_A_START_C01",
+          "text": "الذهاب فورًا مع آرين فقط",
+          "next_part_id": "FAN_P03_A_ROAD_DIRECT",
+          "effects": {
+            "xp": 24,
+            "trust_aren": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "brave": 2,
+            "decisive": 1
+          }
+        },
+        {
+          "id": "FAN_P03_A_START_C02",
+          "text": "طلب دعم محدود من المجلس قبل المغادرة",
+          "next_part_id": "FAN_P03_A_ROAD_ESCORT",
+          "effects": {
+            "xp": 22,
+            "reputation": 1,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "leader": 1,
+            "careful": 1
+          }
+        },
+        {
+          "id": "FAN_P03_A_START_C03",
+          "text": "فحص الختم سحريًا لمعرفة الفخ",
+          "next_part_id": "FAN_P03_A_SEAL_READING",
+          "effects": {
+            "xp": 25,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "wise": 2,
+            "curious": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_A_ROAD_DIRECT",
+      "title": "طريق الأجراس الصامتة",
+      "text": "تسلكان ممرًا جبليًا قديمًا حيث تتدلى أجراس نحاسية لا تصدر صوتًا مهما عصفت الريح. في منتصف الطريق، تجدان قافلة مهجورة وعليها نفس شعار القناع المكسور. لا جثث، لا دماء، فقط آثار أقدام تتجه إلى الهاوية ثم تختفي فجأة كأن الأرض ابتلعتها.",
+      "choices": [
+        {
+          "id": "FAN_P03_A_ROAD_DIRECT_C01",
+          "text": "اتباع الآثار نحو الهاوية",
+          "next_part_id": "FAN_P03_A_GORGE_TRACE",
+          "effects": {
+            "xp": 23,
+            "mystery": 2,
+            "world_stability": -1
+          },
+          "trait_weights": {
+            "curious": 2
+          }
+        },
+        {
+          "id": "FAN_P03_A_ROAD_DIRECT_C02",
+          "text": "فحص القافلة بحثًا عن دليل سياسي",
+          "next_part_id": "FAN_P03_A_CARAVAN_CLUE",
+          "effects": {
+            "xp": 21,
+            "reputation": 1,
+            "shards": 1
+          },
+          "trait_weights": {
+            "strategic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_A_ROAD_ESCORT",
+      "title": "مرافقة تحت الشك",
+      "text": "تصل مع قوة صغيرة من حرّاس المجلس، لكن التوتر واضح بينهم وبين آرين. بعضهم يرى أن مهمة مدينة الأقنعة شأن استخباري لا عسكري، وبعضهم يعتقد أنك تخفي سبب الرحلة الحقيقي. قبل الغروب، تتعرض المجموعة لمحاولة تشويش سحري تجعل الجنود يرون ظلالًا متحركة على شكلهم هم.",
+      "choices": [
+        {
+          "id": "FAN_P03_A_ROAD_ESCORT_C01",
+          "text": "تقسيم القوة إلى فرق صغيرة لتقليل الفوضى",
+          "next_part_id": "FAN_P03_A_TEAM_SPLIT",
+          "effects": {
+            "xp": 22,
+            "world_stability": 1,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "leader": 2
+          }
+        },
+        {
+          "id": "FAN_P03_A_ROAD_ESCORT_C02",
+          "text": "توحيد القوة حولك ومنع أي انفصال",
+          "next_part_id": "FAN_P03_A_TEAM_LOCK",
+          "effects": {
+            "xp": 23,
+            "corruption": 1,
+            "reputation": -1
+          },
+          "trait_weights": {
+            "ruthless": 1,
+            "decisive": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_A_SEAL_READING",
+      "title": "ذاكرة الختم",
+      "text": "تضع الختم فوق دائرة رماد رفيعة، فتظهر طبقة خفية من الكتابة: 'الدخول بلا قناع يعني الدخول بلا صوت.' ثم تلمح صورة خاطفة لقاعة مستديرة بسبعة عروش فارغة وشخص واحد واقف في الوسط بلا ظل. آرين يهمس أن هذه علامة 'مجلس الأقنعة'، شبكة قديمة كانت تدير الحروب دون إعلانها.",
+      "choices": [
+        {
+          "id": "FAN_P03_A_SEAL_READING_C01",
+          "text": "مشاركة الرؤية كاملة مع المجلس",
+          "next_part_id": "FAN_P03_A_COUNCIL_BRIEF",
+          "effects": {
+            "xp": 24,
+            "reputation": 2,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "honorable": 2
+          }
+        },
+        {
+          "id": "FAN_P03_A_SEAL_READING_C02",
+          "text": "إخفاء تفاصيل العروش السبعة مؤقتًا",
+          "next_part_id": "FAN_P03_A_SECRET_APPROACH",
+          "effects": {
+            "xp": 25,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_A_GORGE_TRACE",
+      "title": "أسفل الحافة",
+      "text": "تجدان سلمًا حجريًا خفيًا ينزل داخل شق عمودي. في الأسفل، ممر منحوت في الصخر يقود إلى بوابة عليها سبعة مواضع لأقنعة معدنية. ستة المواضع فارغة، والسابع يحتوي قناعًا صدئًا مكتوبًا عليه 'الساكت'. المكان لا يبدو مهجورًا؛ هناك أثر نار جديد.",
+      "choices": [
+        {
+          "id": "FAN_P03_A_GORGE_TRACE_C01",
+          "text": "أخذ قناع 'الساكت' وفتح البوابة",
+          "next_part_id": "FAN_P03_A_MASK_GATE",
+          "effects": {
+            "xp": 26,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "brave": 1,
+            "curious": 1
+          }
+        },
+        {
+          "id": "FAN_P03_A_GORGE_TRACE_C02",
+          "text": "ترك القناع والبحث عن مدخل بديل",
+          "next_part_id": "FAN_P03_A_HIDDEN_TUNNEL",
+          "effects": {
+            "xp": 22,
+            "world_stability": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "careful": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_A_CARAVAN_CLUE",
+      "title": "دفتر الرحلة الأحمر",
+      "text": "داخل القافلة تجد دفترًا أحمر عليه ختم تجاري معروف من العاصمة، لكنه يحتوي أسماء رمزية بدل الأسماء الحقيقية: 'التاجر الثالث'، 'القاضي الصامت'، 'المرآة'. آخر صفحة تقول: 'الشحنة وصلت مدينة الأقنعة، لكن السعر تغيّر بعد ظهور صاحب الصدع.'",
+      "choices": [
+        {
+          "id": "FAN_P03_A_CARAVAN_CLUE_C01",
+          "text": "تسليم الدفتر لمحقق المجلس",
+          "next_part_id": "FAN_P03_A_COUNCIL_BRIEF",
+          "effects": {
+            "xp": 21,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "honorable": 1,
+            "diplomatic": 1
+          }
+        },
+        {
+          "id": "FAN_P03_A_CARAVAN_CLUE_C02",
+          "text": "الاحتفاظ بالدفتر واستجواب 'المرآة' بنفسك",
+          "next_part_id": "FAN_P03_A_SECRET_APPROACH",
+          "effects": {
+            "xp": 23,
+            "mystery": 2,
+            "shards": 1
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_A_TEAM_SPLIT",
+      "title": "فرق الظل",
+      "text": "يقود آرين فريق الاستطلاع، بينما تقود أنت فريق الحماية. الخطة تنجح في تقليل تأثير التشويش، ويتم العثور على إشارة مشفرة محفورة في صخرة: 'أقنعة المدينة لا تُلبس... بل تُنتزع.' العبارة تربك الجميع لكنها تؤكد أن جهة داخلية تحاول تحذيركم.",
+      "choices": [
+        {
+          "id": "FAN_P03_A_TEAM_SPLIT_C01",
+          "text": "اتباع الإشارة فورًا",
+          "next_part_id": "FAN_P03_A_MASK_GATE",
+          "effects": {
+            "xp": 24,
+            "mystery": 2,
+            "trust_aren": 1
+          },
+          "trait_weights": {
+            "leader": 1,
+            "curious": 1
+          }
+        },
+        {
+          "id": "FAN_P03_A_TEAM_SPLIT_C02",
+          "text": "تأمين موقع مؤقت وجمع معلومات إضافية",
+          "next_part_id": "FAN_P03_A_OUTPOST",
+          "effects": {
+            "xp": 22,
+            "world_stability": 1,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "careful": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_A_TEAM_LOCK",
+      "title": "القبضة الواحدة",
+      "text": "تمنع أي انفصال وتفرض نظامًا صارمًا للحركة. الانضباط يتحسن فعلًا، لكن الثقة تهتز. آرين يوافق على القرار تكتيكيًا، لكنه يحذرك من أن مدينة الأقنعة تحب القادة الذين يتحكمون بكل شيء... ثم تبتلعهم أولًا.",
+      "choices": [
+        {
+          "id": "FAN_P03_A_TEAM_LOCK_C01",
+          "text": "تخفيف القبضة بعد العبور الأول",
+          "next_part_id": "FAN_P03_A_OUTPOST",
+          "effects": {
+            "xp": 22,
+            "reputation": 1,
+            "corruption": -1
+          },
+          "trait_weights": {
+            "pragmatic": 2
+          }
+        },
+        {
+          "id": "FAN_P03_A_TEAM_LOCK_C02",
+          "text": "الاستمرار بسياسة السيطرة الكاملة",
+          "next_part_id": "FAN_P03_A_MASK_GATE",
+          "effects": {
+            "xp": 24,
+            "corruption": 2,
+            "reputation": -1
+          },
+          "trait_weights": {
+            "ruthless": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_A_COUNCIL_BRIEF",
+      "title": "جلسة الرماد الأبيض",
+      "text": "تعقد جلسة مختصرة مع ممثلي المجلس. تُعرض الأدلة على طاولة رخامية، ويظهر انقسام حاد: فريق يريد اقتحام المدينة فورًا، وآخر يرى أن أي هجوم مباشر سيؤدي إلى اختفاء المدينة بالكامل كما حدث قبل سبعين عامًا. يُمنح لك التفويض بشرط تقديم تقرير كل مرحلة.",
+      "choices": [
+        {
+          "id": "FAN_P03_A_COUNCIL_BRIEF_C01",
+          "text": "قبول الرقابة الكاملة للمجلس",
+          "next_part_id": "FAN_P03_A_OUTPOST",
+          "effects": {
+            "xp": 21,
+            "world_stability": 2,
+            "reputation": 2
+          },
+          "trait_weights": {
+            "honorable": 2
+          }
+        },
+        {
+          "id": "FAN_P03_A_COUNCIL_BRIEF_C02",
+          "text": "قبول التفويض مع هامش استقلال ميداني",
+          "next_part_id": "FAN_P03_A_MASK_GATE",
+          "effects": {
+            "xp": 23,
+            "mystery": 1,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "leader": 1,
+            "strategic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_A_SECRET_APPROACH",
+      "title": "الطريق غير المعلن",
+      "text": "تتحرك خارج قنوات المجلس الرسمية. تستخدم خريطة قديمة حصلت عليها من الأرشيف لتتبع قنوات ماء مهجورة تصل إلى أطراف المدينة. في الطريق، يقترب منكم طفل بوجه مغطى نصفه بقناع خزفي ويقول: 'المدينة تعرف أسماءكم قبل أن تدخلوها.' ثم يختفي في الضباب.",
+      "choices": [
+        {
+          "id": "FAN_P03_A_SECRET_APPROACH_C01",
+          "text": "ملاحقة الطفل لمعرفة بوابة سرية",
+          "next_part_id": "FAN_P03_A_HIDDEN_TUNNEL",
+          "effects": {
+            "xp": 25,
+            "mystery": 2,
+            "trust_aren": 1
+          },
+          "trait_weights": {
+            "curious": 2
+          }
+        },
+        {
+          "id": "FAN_P03_A_SECRET_APPROACH_C02",
+          "text": "تجاهل الطفل والدخول حسب الخطة",
+          "next_part_id": "FAN_P03_A_MASK_GATE",
+          "effects": {
+            "xp": 22,
+            "corruption": 1,
+            "reputation": -1
+          },
+          "trait_weights": {
+            "decisive": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_A_HIDDEN_TUNNEL",
+      "title": "نفق النوافذ العمياء",
+      "text": "النفق طويل ورطب، وعلى الجدران نوافذ حجرية مسدودة من الداخل. خلف كل نافذة تسمع أصواتًا متقطعة: ضحك، بكاء، جدال سياسي، وأحيانًا نفس العبارة: 'من يختار القناع، يختار الثمن.' في النهاية تصل إلى باب خشبي بسيط يفتح على ساحة داخلية مزدحمة رغم أن المدينة من الخارج بدت مهجورة.",
+      "choices": [
+        {
+          "id": "FAN_P03_A_HIDDEN_TUNNEL_C01",
+          "text": "الدخول كزوّار عاديين دون إعلان الهوية",
+          "next_part_id": "FAN_P03_A_CITY_SQUARE",
+          "effects": {
+            "xp": 23,
+            "mystery": 1,
+            "reputation": 0
+          },
+          "trait_weights": {
+            "cunning": 1,
+            "careful": 1
+          }
+        },
+        {
+          "id": "FAN_P03_A_HIDDEN_TUNNEL_C02",
+          "text": "إظهار الختم المكسور وطلب لقاء رسمي",
+          "next_part_id": "FAN_P03_A_FORMAL_ENTRY",
+          "effects": {
+            "xp": 24,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "diplomatic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_A_OUTPOST",
+      "title": "مخفر القمرين",
+      "text": "تقيمون مخفرًا قريبًا من أسوار المدينة غير المرئية. أثناء الحراسة الليلية يظهر ضوءان في السماء فوق الموقع وكأن قمرين صغيرين ينعكسان على طبقة زجاجية عملاقة. لِيان، التي لحقت بكم كخبيرة، تقترح أن المدينة محمية بحقل انعكاس يعيد تشكيل المداخل حسب نوايا الداخلين.",
+      "choices": [
+        {
+          "id": "FAN_P03_A_OUTPOST_C01",
+          "text": "استخدام أجهزة لِيان لكسر حقل الانعكاس",
+          "next_part_id": "FAN_P03_A_MASK_GATE",
+          "effects": {
+            "xp": 24,
+            "mystery": 2,
+            "world_stability": -1
+          },
+          "trait_weights": {
+            "wise": 1,
+            "decisive": 1
+          }
+        },
+        {
+          "id": "FAN_P03_A_OUTPOST_C02",
+          "text": "الانتظار حتى يفتح الحقل تلقائيًا",
+          "next_part_id": "FAN_P03_A_CITY_SQUARE",
+          "effects": {
+            "xp": 21,
+            "world_stability": 1,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "careful": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_A_MASK_GATE",
+      "title": "بوابة الأقنعة",
+      "text": "تصل أخيرًا إلى المدخل الرئيسي: قوس حجري ضخم تتدلى منه سبعة أقنعة معدنية، كل قناع ينظر باتجاه مختلف. صوت أنثوي غير مرئي يعلن: 'لا دخول بلا اختيار.' كل قناع يمنحك صفة مختلفة داخل المدينة، وقد يحدد من يثق بك أو يخونك.",
+      "choices": [
+        {
+          "id": "FAN_P03_A_MASK_GATE_C01",
+          "text": "اختيار قناع 'الوسيط'",
+          "next_part_id": "FAN_P03_A_CITY_SQUARE",
+          "effects": {
+            "xp": 24,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "diplomatic": 2
+          }
+        },
+        {
+          "id": "FAN_P03_A_MASK_GATE_C02",
+          "text": "اختيار قناع 'القاضي'",
+          "next_part_id": "FAN_P03_A_FORMAL_ENTRY",
+          "effects": {
+            "xp": 25,
+            "reputation": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "just": 2
+          }
+        },
+        {
+          "id": "FAN_P03_A_MASK_GATE_C03",
+          "text": "اختيار قناع 'الصيّاد'",
+          "next_part_id": "FAN_P03_A_SHADOW_ALLEY",
+          "effects": {
+            "xp": 26,
+            "shards": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "ruthless": 1,
+            "cunning": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_A_CITY_SQUARE",
+      "title": "الساحة التي لا تنام",
+      "text": "داخل المدينة، كل شيء حي بصورة مريبة: باعة أقنعة، منشدون يروون أخبار ممالك بعيدة قبل أن تقع، وقضاة ميدانيون يفصلون في النزاعات خلال دقائق. تجد إعلانًا كبيرًا عن حدث الليلة: 'جلسة الموازين السبع' حيث سيظهر ممثل مجلس الأقنعة. آرين يرى أن حضور الجلسة فرصة ذهبية... ومصيدة محتملة.",
+      "choices": [
+        {
+          "id": "FAN_P03_A_CITY_SQUARE_C01",
+          "text": "حضور الجلسة علنًا",
+          "next_part_id": "FAN_P03_A_SEVEN_SESSION",
+          "effects": {
+            "xp": 24,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "leader": 1,
+            "honorable": 1
+          }
+        },
+        {
+          "id": "FAN_P03_A_CITY_SQUARE_C02",
+          "text": "دخول الجلسة بهوية مخفية",
+          "next_part_id": "FAN_P03_A_SEVEN_SESSION",
+          "effects": {
+            "xp": 25,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_A_FORMAL_ENTRY",
+      "title": "قاعة البروتوكول الأسود",
+      "text": "يتم استقبالكم في قاعة رسمية تُضاء بنيران زرقاء منخفضة. تظهر امرأة تُدعى 'نادين' تُعرّف نفسها كأمينة الموازين. تقول إن المدينة مستعدة للتعاون في أزمة الصدع، لكن بشروط: تسليم اسم واحد من المتورطين في تجارة الشظايا داخل عاصمتك. الطلب صادم، لأنه يعني أن لديهم شبكة معلومات تتجاوز توقعاتك.",
+      "choices": [
+        {
+          "id": "FAN_P03_A_FORMAL_ENTRY_C01",
+          "text": "قبول التفاوض وطلب مهلة للتحقق",
+          "next_part_id": "FAN_P03_A_SEVEN_SESSION",
+          "effects": {
+            "xp": 23,
+            "reputation": 2,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "diplomatic": 2
+          }
+        },
+        {
+          "id": "FAN_P03_A_FORMAL_ENTRY_C02",
+          "text": "رفض الشرط واتهامهم بابتزاز سياسي",
+          "next_part_id": "FAN_P03_A_SHADOW_ALLEY",
+          "effects": {
+            "xp": 24,
+            "reputation": -1,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "brave": 1,
+            "ruthless": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_A_SHADOW_ALLEY",
+      "title": "زقاق المرايا",
+      "text": "الزقاق الضيق يعكس صورتك بشكل مختلف في كل مرآة معلقة على الجدار. في واحدة تبدو قائدًا عادلًا، وفي أخرى تبدو متعطشًا للسيطرة. في نهايته يقابلك رجل ملثم يقدم نفسه باسم 'المرآة' ويعرض صفقة: معلومات عن شبكة الشظايا مقابل إخراج شخص مهم من المدينة دون علم مجلس الأقنعة.",
+      "choices": [
+        {
+          "id": "FAN_P03_A_SHADOW_ALLEY_C01",
+          "text": "قبول الصفقة السرية",
+          "next_part_id": "FAN_P03_A_END_DANGEROUS",
+          "effects": {
+            "xp": 27,
+            "shards": 2,
+            "corruption": 2
+          },
+          "trait_weights": {
+            "cunning": 2,
+            "greedy": 1
+          }
+        },
+        {
+          "id": "FAN_P03_A_SHADOW_ALLEY_C02",
+          "text": "رفض الصفقة وإبلاغ نادين",
+          "next_part_id": "FAN_P03_A_END_BALANCED",
+          "effects": {
+            "xp": 24,
+            "reputation": 1,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "honorable": 1,
+            "strategic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_A_SEVEN_SESSION",
+      "title": "جلسة الموازين السبع",
+      "text": "تبدأ الجلسة في مسرح دائري، حيث يجلس سبعة مقاعد عالية خلف ستار رقيق لا يظهر من خلفه سوى ظلال. تُعرض قضيتك أمام المدينة: هل أنت حليف يحاول إغلاق الصدع، أم لاعب جديد يسعى لوراثة الفوضى؟ يمنحك رئيس الجلسة ثلاث دقائق لعرض موقفك قبل التصويت.",
+      "choices": [
+        {
+          "id": "FAN_P03_A_SEVEN_SESSION_C01",
+          "text": "خطاب شفاف يربط بين العدالة والاستقرار",
+          "next_part_id": "FAN_P03_A_END_STABLE",
+          "effects": {
+            "xp": 26,
+            "reputation": 3,
+            "world_stability": 2
+          },
+          "trait_weights": {
+            "leader": 2,
+            "just": 1
+          }
+        },
+        {
+          "id": "FAN_P03_A_SEVEN_SESSION_C02",
+          "text": "خطاب عملي يركز على القوة والنتائج",
+          "next_part_id": "FAN_P03_A_END_BALANCED",
+          "effects": {
+            "xp": 25,
+            "reputation": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "pragmatic": 2
+          }
+        },
+        {
+          "id": "FAN_P03_A_SEVEN_SESSION_C03",
+          "text": "التهديد بكشف أسرار المجلس إن رفضوا التعاون",
+          "next_part_id": "FAN_P03_A_END_DANGEROUS",
+          "effects": {
+            "xp": 27,
+            "corruption": 2,
+            "reputation": -2
+          },
+          "trait_weights": {
+            "ruthless": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_A_END_STABLE",
+      "title": "خاتمة أ: ميثاق المدينة",
+      "text": "تنتهي الجلسة بإقرار 'ميثاق المدينة': تعاون استخباري وتقني بين مجلس الأقنعة ومجلسك لإغلاق مسارات الشظايا تدريجيًا. لا أحد يثق بأحد بالكامل، لكن الاتفاق يضع قواعد لعب جديدة تقلل الانهيار. آرين يعلق: 'هذه أول مرة نكسب مدينة كاملة دون أن نسقط جدارًا.'",
+      "choices": [],
+      "ending": "stable"
+    },
+    {
+      "id": "FAN_P03_A_END_BALANCED",
+      "title": "خاتمة ب: هدنة الأقنعة",
+      "text": "تحصل على تعاون محدود: معلومات كافية لتفادي كارثة قريبة، دون كشف الشبكة كاملة. المدينة تبقي أوراقًا مهمة لنفسها، وأنت كذلك. النتيجة ليست مثالية، لكنها تمنحك طريقًا عمليًا للجزء القادم حيث ستُختبر الهدنة في الميدان.",
+      "choices": [],
+      "ending": "balanced"
+    },
+    {
+      "id": "FAN_P03_A_END_DANGEROUS",
+      "title": "خاتمة ج: قناع لا يُخلع",
+      "text": "تفوز بنفوذ سريع، لكنك تدخل رسميًا لعبة الابتزاز المتبادل. بعض أبواب المدينة تُفتح لك، وأخرى تُغلق نهائيًا. الأسوأ أن اسمك يُسجّل في سجل الأقنعة الدائمة، وهو سجل لمن أصبحوا جزءًا من النظام لا مجرد زوّار له. القوة هنا كبيرة... والخروج أصعب مما يبدو.",
+      "choices": [],
+      "ending": "dangerous"
+    }
+  ],
+  "handoff": {
+    "next_file": "fantasy_p03_b.json",
+    "entry_points": [
+      "FAN_P03_A_END_STABLE",
+      "FAN_P03_A_END_BALANCED",
+      "FAN_P03_A_END_DANGEROUS"
+    ],
+    "notes": "يبدأ الجزء (ب) بحدث اغتيال/اختفاء داخل مدينة الأقنعة، مع تأثير مباشر لاختيار القناع والتحالفات التي تأسست هنا."
+  }
+}
