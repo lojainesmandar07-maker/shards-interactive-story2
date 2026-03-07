@@ -1,0 +1,501 @@
+{
+  "metadata": {
+    "world_id": "fantasy",
+    "arc_id": "fantasy_p03",
+    "part_id": "fantasy_p03_b",
+    "title": "الجزء الثالث (ب): ليلة السكين الزجاجي",
+    "language": "ar",
+    "version": "1.0.0",
+    "start_part_id": "FAN_P03_B_START",
+    "recommended_level": 7,
+    "description": "استكمال مباشر لأحداث مدينة الأقنعة السبع، حيث تتفجر الهدنة بهجوم مفاجئ وتبدأ مطاردة الحقيقة داخل شبكة التحالفات المزدوجة."
+  },
+  "parts": [
+    {
+      "id": "FAN_P03_B_START",
+      "title": "صرخة عند الفجر",
+      "text": "قبل اكتمال الفجر بقليل، تهتز مدينة الأقنعة بصوت جرس واحد حاد. الجرس يعني حدثًا لا يمكن إخفاؤه: اغتيال أو خيانة من المستوى الأعلى. تصل الأخبار بسرعة: أمينة الموازين نادين اختفت من قاعة البروتوكول، وحارسها الشخصي وُجد مقتولًا بسكين زجاجي لا يترك بصمات. الشوارع تُغلق تدريجيًا، والناس يلبسون أقنعة داكنة كإشارة لحظر الكلام. آرين ينظر إليك بحدة: 'إذا لم نتحرك الآن، سيتحول كل شيء ضدنا.'",
+      "choices": [
+        {
+          "id": "FAN_P03_B_START_C01",
+          "text": "التوجه مباشرة إلى مسرح الجريمة",
+          "next_part_id": "FAN_P03_B_CRIME_SCENE",
+          "effects": {
+            "xp": 25,
+            "mystery": 2,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "decisive": 2,
+            "careful": 1
+          }
+        },
+        {
+          "id": "FAN_P03_B_START_C02",
+          "text": "تأمين آرين ولِيان أولًا ثم بدء التحقيق",
+          "next_part_id": "FAN_P03_B_SAFEHOUSE",
+          "effects": {
+            "xp": 23,
+            "trust_aren": 1,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "leader": 1,
+            "loyal": 1
+          }
+        },
+        {
+          "id": "FAN_P03_B_START_C03",
+          "text": "فتح قناة سرية مع 'المرآة' لمعرفة ما يجري",
+          "next_part_id": "FAN_P03_B_MIRROR_CONTACT",
+          "effects": {
+            "xp": 26,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_B_CRIME_SCENE",
+      "title": "قاعة الدم الصامت",
+      "text": "القاعة مطوقة بخيط أزرق من سحر التحنيط، يمنع تلاشي الآثار. الحارس المقتول يحمل على معصمه ختمًا صغيرًا على شكل قمر مكسور؛ نفس الرمز الذي ظهر في ملفات الصدع سابقًا. الأرضية اللامعة تعكس مشهدًا غريبًا: هناك ظل ثالث غير موجود جسديًا، كأنه قاتل عبر بوابة انعكاس.",
+      "choices": [
+        {
+          "id": "FAN_P03_B_CRIME_SCENE_C01",
+          "text": "فحص السكين الزجاجي بسحر التحليل",
+          "next_part_id": "FAN_P03_B_BLADE_ANALYSIS",
+          "effects": {
+            "xp": 24,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "wise": 2
+          }
+        },
+        {
+          "id": "FAN_P03_B_CRIME_SCENE_C02",
+          "text": "تتبع الظل الثالث عبر مسارات الانعكاس",
+          "next_part_id": "FAN_P03_B_REFLECTION_CHASE",
+          "effects": {
+            "xp": 25,
+            "mystery": 3,
+            "world_stability": -1
+          },
+          "trait_weights": {
+            "curious": 2,
+            "brave": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_B_SAFEHOUSE",
+      "title": "بيت النوافذ المغلقة",
+      "text": "تنقل آرين ولِيان إلى بيت آمن في حي الصناع. المكان قديم لكنه محصّن بأختام بدوية يصعب اختراقها. لِيان تشرح أن السكين الزجاجي لا يُصنع إلا في ورش محظورة خارج المدينة، ما يعني أن العملية خُطط لها من شبكة تمتد بين المدن لا من فصيل محلي فقط.",
+      "choices": [
+        {
+          "id": "FAN_P03_B_SAFEHOUSE_C01",
+          "text": "ترك آرين يقود التحقيق الميداني",
+          "next_part_id": "FAN_P03_B_REFLECTION_CHASE",
+          "effects": {
+            "xp": 22,
+            "trust_aren": 2,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "loyal": 2
+          }
+        },
+        {
+          "id": "FAN_P03_B_SAFEHOUSE_C02",
+          "text": "قيادة التحقيق بنفسك وعدم تقسيم القرار",
+          "next_part_id": "FAN_P03_B_BLADE_ANALYSIS",
+          "effects": {
+            "xp": 24,
+            "corruption": 1,
+            "reputation": -1
+          },
+          "trait_weights": {
+            "decisive": 2,
+            "ruthless": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_B_MIRROR_CONTACT",
+      "title": "شيفرة المرآة",
+      "text": "تستخدم كلمة المرور التي حصلت عليها في الزقاق القديم. بعد دقائق يظهر انعكاس رجل ملثم في بركة ماء ساكنة، دون حضور جسدي. المرآة يقول: 'نادين لم تُقتل... لكنها ليست حرة. هناك من يريد إجبارها على إعلان حرب بين المدينة والعاصمة.' ثم يطالب بثمن: إخراج شخص يُدعى 'الكاتب السابع' من السجن السفلي.",
+      "choices": [
+        {
+          "id": "FAN_P03_B_MIRROR_CONTACT_C01",
+          "text": "قبول الصفقة مؤقتًا للحصول على موقع نادين",
+          "next_part_id": "FAN_P03_B_PRISON_ROUTE",
+          "effects": {
+            "xp": 27,
+            "mystery": 2,
+            "corruption": 2
+          },
+          "trait_weights": {
+            "cunning": 2,
+            "greedy": 1
+          }
+        },
+        {
+          "id": "FAN_P03_B_MIRROR_CONTACT_C02",
+          "text": "رفض الصفقة وانتزاع المعلومات بالضغط",
+          "next_part_id": "FAN_P03_B_BLADE_ANALYSIS",
+          "effects": {
+            "xp": 24,
+            "reputation": 1,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "brave": 1,
+            "leader": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_B_BLADE_ANALYSIS",
+      "title": "عين الزجاج",
+      "text": "داخل معمل صغير تديره لِيان، يتم تسخين السكين على نار منخفضة. تتكشف خطوط دقيقة تشبه خرائط طرق تجارية، وعند المقبض يظهر اسم محفور: 'ورشة القمر الثامن'. آرين يتعرف الاسم من تقارير قديمة مرتبطة بتهريب الشظايا وتمويل مرتزقة الحدود. السكين ليس رسالة اغتيال فقط؛ إنه إيصال شحنة.",
+      "choices": [
+        {
+          "id": "FAN_P03_B_BLADE_ANALYSIS_C01",
+          "text": "تتبع ورشة القمر الثامن فورًا",
+          "next_part_id": "FAN_P03_B_WORKSHOP_RAID",
+          "effects": {
+            "xp": 25,
+            "mystery": 2,
+            "world_stability": -1
+          },
+          "trait_weights": {
+            "decisive": 2
+          }
+        },
+        {
+          "id": "FAN_P03_B_BLADE_ANALYSIS_C02",
+          "text": "استخدام اسم الورشة كطُعم لاستدراج الشبكة",
+          "next_part_id": "FAN_P03_B_BAIT_OPERATION",
+          "effects": {
+            "xp": 26,
+            "mystery": 2,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "strategic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_B_REFLECTION_CHASE",
+      "title": "مطاردة بين المرايا",
+      "text": "تدخل شبكة الأزقة العاكسة حيث تتكرر الصورة وتأخذك المسارات إلى نفسها إن أخطأت خطوة. يظهر الظل الثالث للحظات في كل مرآة ثم يختفي قبل الوصول إليه. بعد مطاردة مرهقة، تجد علامة على جدار مخفي: دائرة بداخلها سبعة خطوط، وعلامة ثامنة مشطوبة. نفس إشارة 'الكاتب السابع'.",
+      "choices": [
+        {
+          "id": "FAN_P03_B_REFLECTION_CHASE_C01",
+          "text": "متابعة أثر 'الكاتب السابع'",
+          "next_part_id": "FAN_P03_B_PRISON_ROUTE",
+          "effects": {
+            "xp": 26,
+            "mystery": 3,
+            "trust_aren": 1
+          },
+          "trait_weights": {
+            "curious": 2,
+            "careful": 1
+          }
+        },
+        {
+          "id": "FAN_P03_B_REFLECTION_CHASE_C02",
+          "text": "العودة بالمعلومة للمجلس لتوسيع التحالف",
+          "next_part_id": "FAN_P03_B_COUNCIL_SPLIT",
+          "effects": {
+            "xp": 23,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "diplomatic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_B_PRISON_ROUTE",
+      "title": "السجن السفلي",
+      "text": "الطريق إلى السجن يمر أسفل المدينة عبر درج حلزوني لا نهاية له. الحراس هناك لا يتكلمون، ويضعون أقنعة بيضاء بلا فتحات فم. في الزنزانة السابعة تجد 'الكاتب السابع': رجل نحيف بعينين يقظتين يقول إنه لا يريد الحرية، بل يريد أن يختار مَن يقرأ ما كتبه قبل أن يموت.",
+      "choices": [
+        {
+          "id": "FAN_P03_B_PRISON_ROUTE_C01",
+          "text": "إخراج الكاتب السابع مقابل موقع نادين",
+          "next_part_id": "FAN_P03_B_WRITER_DEAL",
+          "effects": {
+            "xp": 27,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        },
+        {
+          "id": "FAN_P03_B_PRISON_ROUTE_C02",
+          "text": "رفض الصفقة واستجوابه داخل السجن",
+          "next_part_id": "FAN_P03_B_WRITER_INTERROGATION",
+          "effects": {
+            "xp": 24,
+            "reputation": 1,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "just": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_B_WORKSHOP_RAID",
+      "title": "ورشة القمر الثامن",
+      "text": "تصل إلى مستودع صناعي عند أطراف المدينة. الورشة شبه مهجورة، لكن الأفران دافئة، ما يعني أن الطاقم غادر قبل دقائق. بين الأدوات تجد صندوقًا يحوي ثلاثة سكاكين زجاجية غير مكتملة، ووثيقة شحن موجهة إلى 'دار الموازين'. الخيانة في قلب المؤسسة، لا على هامشها.",
+      "choices": [
+        {
+          "id": "FAN_P03_B_WORKSHOP_RAID_C01",
+          "text": "مداهمة دار الموازين فورًا",
+          "next_part_id": "FAN_P03_B_HALL_ASSAULT",
+          "effects": {
+            "xp": 26,
+            "brave": 1,
+            "world_stability": -1
+          },
+          "trait_weights": {
+            "decisive": 2,
+            "ruthless": 1
+          }
+        },
+        {
+          "id": "FAN_P03_B_WORKSHOP_RAID_C02",
+          "text": "نصب كمين للمرسلين بدل الهجوم المباشر",
+          "next_part_id": "FAN_P03_B_BAIT_OPERATION",
+          "effects": {
+            "xp": 25,
+            "mystery": 1,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "strategic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_B_BAIT_OPERATION",
+      "title": "الطُعم الأزرق",
+      "text": "تنشر خبرًا مزيفًا بأن السكين الزجاجي الرابع تم العثور عليه وعليه اسم القاتل. خلال ساعة، يتحرك ثلاثة وكلاء منفصلين لمحاولة سرقة 'السكين'. يتم القبض على اثنين، بينما الثالث ينجح بالفرار ويترك خلفه ختمًا صغيرًا يحمل شعار المجلس الداخلي نفسه. اللعبة أصبحت مكشوفة جزئيًا.",
+      "choices": [
+        {
+          "id": "FAN_P03_B_BAIT_OPERATION_C01",
+          "text": "استجواب المقبوض عليهم مع نادين إن وجدت",
+          "next_part_id": "FAN_P03_B_COUNCIL_SPLIT",
+          "effects": {
+            "xp": 25,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "diplomatic": 1,
+            "leader": 1
+          }
+        },
+        {
+          "id": "FAN_P03_B_BAIT_OPERATION_C02",
+          "text": "مطاردة الوكيل الثالث فورًا",
+          "next_part_id": "FAN_P03_B_HALL_ASSAULT",
+          "effects": {
+            "xp": 26,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "brave": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_B_WRITER_DEAL",
+      "title": "كتاب الرماد",
+      "text": "يوافق الكاتب السابع على التعاون إذا سمحت له بقراءة صفحة من دفتره المحجوز. الصفحة تحتوي أسماء ثلاثة ممولين للهجوم، أحدهم عضو ظاهر في مجلس الأقنعة. بالمقابل يكشف أن نادين محتجزة في قاعة قديمة تحت دار الموازين، ومربوطة بقسم سحري يجبرها على الصمت.",
+      "choices": [
+        {
+          "id": "FAN_P03_B_WRITER_DEAL_C01",
+          "text": "الالتزام بالاتفاق وتأمين الكاتب كشاهد",
+          "next_part_id": "FAN_P03_B_COUNCIL_SPLIT",
+          "effects": {
+            "xp": 26,
+            "reputation": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "honorable": 1,
+            "strategic": 1
+          }
+        },
+        {
+          "id": "FAN_P03_B_WRITER_DEAL_C02",
+          "text": "استخدام المعلومات وترك الكاتب لمصيره",
+          "next_part_id": "FAN_P03_B_HALL_ASSAULT",
+          "effects": {
+            "xp": 27,
+            "corruption": 2,
+            "reputation": -1
+          },
+          "trait_weights": {
+            "ruthless": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_B_WRITER_INTERROGATION",
+      "title": "استجواب السطر الأخير",
+      "text": "ترفض الصفقة وتبدأ استجوابًا طويلًا. الكاتب السابع لا ينكسر بسهولة، لكنه يتجاوب عندما تذكر اسم نادين. يعترف أن هناك فصيلًا داخل المجلس يريد اغتيالها سياسيًا إن لم ينجح اغتيالها جسديًا، لأنها كانت على وشك كشف تمويل سري مرتبط بالصدع. يعطيك كلمة مرور واحدة: 'السكين لا يقتل وحده.'",
+      "choices": [
+        {
+          "id": "FAN_P03_B_WRITER_INTERROGATION_C01",
+          "text": "تسليم الكاتب للمحكمة الرسمية",
+          "next_part_id": "FAN_P03_B_COUNCIL_SPLIT",
+          "effects": {
+            "xp": 24,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "just": 2
+          }
+        },
+        {
+          "id": "FAN_P03_B_WRITER_INTERROGATION_C02",
+          "text": "إخفاء الكاتب واستخدامه كمصدر سري",
+          "next_part_id": "FAN_P03_B_HALL_ASSAULT",
+          "effects": {
+            "xp": 25,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_B_COUNCIL_SPLIT",
+      "title": "انقسام الموازين",
+      "text": "تجمع الأدلة في جلسة طارئة. لأول مرة يظهر التصدع داخل مجلس الأقنعة علنًا: ثلاثة أعضاء يطالبون بتحالف كامل معك لإنقاذ المدينة، واثنان يتهمونك بفبركة القضية لتوسيع نفوذك، وعضوان يلتزمان الصمت المريب. آرين يقترح خطة مزدوجة: تحرير نادين مع تثبيت الشرعية في القاعة خلال نفس الليلة.",
+      "choices": [
+        {
+          "id": "FAN_P03_B_COUNCIL_SPLIT_C01",
+          "text": "تنفيذ الخطة المزدوجة بتنسيق كامل",
+          "next_part_id": "FAN_P03_B_END_STABLE",
+          "effects": {
+            "xp": 28,
+            "world_stability": 2,
+            "reputation": 2,
+            "trust_aren": 1
+          },
+          "trait_weights": {
+            "leader": 2,
+            "diplomatic": 1
+          }
+        },
+        {
+          "id": "FAN_P03_B_COUNCIL_SPLIT_C02",
+          "text": "تثبيت الشرعية أولًا وتأجيل التحرير",
+          "next_part_id": "FAN_P03_B_END_BALANCED",
+          "effects": {
+            "xp": 26,
+            "reputation": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "pragmatic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_B_HALL_ASSAULT",
+      "title": "اقتحام دار الموازين",
+      "text": "تقرر الحسم بالقوة. يتم كسر الأبواب الداخلية في دار الموازين وسط اشتباك قصير وعنيف. تنجح في الوصول إلى القاعة السفلية حيث نادين مقيدة بحلقة سحرية، لكن القائد المعادي ينجح في الهرب عبر بوابة انعكاس قبل ثوانٍ. تنقذ الهدف، وتخسر فرصة إغلاق الملف سياسيًا في هذه الجولة.",
+      "choices": [
+        {
+          "id": "FAN_P03_B_HALL_ASSAULT_C01",
+          "text": "ملاحقة القائد الهارب فورًا",
+          "next_part_id": "FAN_P03_B_END_DANGEROUS",
+          "effects": {
+            "xp": 29,
+            "corruption": 2,
+            "world_stability": -1
+          },
+          "trait_weights": {
+            "ruthless": 2,
+            "brave": 1
+          }
+        },
+        {
+          "id": "FAN_P03_B_HALL_ASSAULT_C02",
+          "text": "تأمين نادين والعودة لبناء ملف قانوني",
+          "next_part_id": "FAN_P03_B_END_BALANCED",
+          "effects": {
+            "xp": 27,
+            "reputation": 1,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "careful": 1,
+            "leader": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P03_B_END_STABLE",
+      "title": "خاتمة أ: ميثاق السكين",
+      "text": "تُحرر نادين وتُعرض الأدلة أمام المجلس والمدينة في الليلة نفسها. يتم إقرار ميثاق جديد يمنع تصنيع السكاكين الزجاجية ويؤسس لجنة مشتركة بين مدينة الأقنعة والعاصمة لملاحقة تمويل الصدع. النصر ليس نهائيًا، لكنه يثبت أن التحالف ممكن عندما تُدار القوة بالقانون.",
+      "choices": [],
+      "ending": "stable"
+    },
+    {
+      "id": "FAN_P03_B_END_BALANCED",
+      "title": "خاتمة ب: هدوء فوق النار",
+      "text": "تنجح في منع الانفجار الكامل، لكن الملف يبقى مفتوحًا. بعض المتورطين يسقطون، وآخرون يختفون في الظل. المدينة تهدأ مؤقتًا، بينما الصدع في الخلفية لا يزال يتغذى على الفوضى السياسية. أمامك جولة قادمة تحتاج أدوات أعمق من السيف والتحالف وحدهما.",
+      "choices": [],
+      "ending": "balanced"
+    },
+    {
+      "id": "FAN_P03_B_END_DANGEROUS",
+      "title": "خاتمة ج: مطاردة بلا سقف",
+      "text": "تختار الملاحقة العنيفة وتدخل شبكة بوابات الانعكاس، لتتحول القضية إلى حرب ظلال مفتوحة. تنجو المدينة من الانهيار الفوري، لكنها تدخل مرحلة خوف دائم. اسمك يكبر بين الناس كقائد لا يتراجع... وكخصم لا يمكن توقع حدوده.",
+      "choices": [],
+      "ending": "dangerous"
+    }
+  ],
+  "handoff": {
+    "next_file": "fantasy_p04_a.json",
+    "entry_points": [
+      "FAN_P03_B_END_STABLE",
+      "FAN_P03_B_END_BALANCED",
+      "FAN_P03_B_END_DANGEROUS"
+    ],
+    "notes": "يبدأ الجزء الرابع بانتقال الصراع إلى شبكة التهريب بين المدن وربط مباشر بين أزمة الأقنعة والصدع العالمي."
+  }
+}
