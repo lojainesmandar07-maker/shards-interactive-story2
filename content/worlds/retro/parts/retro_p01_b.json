@@ -1,0 +1,807 @@
+{
+  "metadata": {
+    "world_id": "retro",
+    "arc_id": "retro_p01",
+    "part_id": "retro_p01_b",
+    "title": "الجزء الأول (ب): فجر النيجاتيف",
+    "language": "ar",
+    "version": "1.0.0",
+    "start_part_id": "RET_P01_B_START",
+    "recommended_level": 12,
+    "description": "استكمال مترابط للجزء الأول من Retro مع خاتمات كبرى تمهد للجزء الثاني دون حلقات أو روابط مكسورة."
+  },
+  "parts": [
+    {
+      "id": "RET_P01_B_START",
+      "title": "اليوم التالي للفجر",
+      "text": "بعد أحداث الجزء الأول، تستيقظ نوفا-رترو على واقع جديد لكنه هش. لوحات الشوارع تعرض رسائل توعية عن \"نزاهة الذاكرة\"، وفي الوقت نفسه تظهر إشاعات عن قطارات ليلية تنقل أشخاصًا بلا سجلات. تتلقى مكالمة مشفرة من ليرا: \"لدينا نافذة قصيرة قبل أن تعيد الشبكة تشكيل نفسها. الهدف التالي: قلب الأرشيف المظلم.\" آرين-7 يقف بجانبك ويقول إن أي خطوة متسرعة قد تعيد المدينة إلى فوضى النسخ.",
+      "choices": [
+        {
+          "id": "RET_P01_B_START_C01",
+          "text": "الذهاب مباشرة إلى قلب الأرشيف المظلم",
+          "next_part_id": "RET_P01_B_DARK_ARCHIVE",
+          "effects": {
+            "xp": 28,
+            "mystery": 1,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "decisive": 2
+          }
+        },
+        {
+          "id": "RET_P01_B_START_C02",
+          "text": "بدء حملة تهدئة الأحياء قبل العملية",
+          "next_part_id": "RET_P01_B_DISTRICT_TOUR",
+          "effects": {
+            "xp": 26,
+            "world_stability": 2,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "leader": 2,
+            "honorable": 1
+          }
+        },
+        {
+          "id": "RET_P01_B_START_C03",
+          "text": "تعقب إشارات القطارات الليلية أولًا",
+          "next_part_id": "RET_P01_B_NIGHT_RAIL",
+          "effects": {
+            "xp": 29,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "curious": 2,
+            "cunning": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_DARK_ARCHIVE",
+      "title": "قلب الأرشيف المظلم",
+      "text": "تقع المنشأة تحت مكتبة عامة مغلقة منذ عشرين سنة. الداخل مليء بخزائن أشرطة وعي مرتبة بالألوان لا بالتواريخ. ليرا تؤكد أن هناك \"طبقة ظل\" لا تظهر إلا إذا تم تشغيل نظام التحقق العكسي. على الجدار يظهر تحذير: \"أي تعديل غير مصرح يعيد كتابة الشاهد أولًا.\"",
+      "choices": [
+        {
+          "id": "RET_P01_B_DARK_ARCHIVE_C01",
+          "text": "تشغيل التحقق العكسي",
+          "next_part_id": "RET_P01_B_SHADOW_LAYER",
+          "effects": {
+            "xp": 30,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "wise": 2
+          }
+        },
+        {
+          "id": "RET_P01_B_DARK_ARCHIVE_C02",
+          "text": "نسخ الخزائن قبل أي تشغيل",
+          "next_part_id": "RET_P01_B_COLD_COPY",
+          "effects": {
+            "xp": 27,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "careful": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_DISTRICT_TOUR",
+      "title": "جولة الأحياء",
+      "text": "تمر بالأحياء الشرقية والغربية لرصد أثر نهاية الجزء السابق. في بعض الشوارع يعلّق الناس صور \"الذاكرة الحرة\"، وفي أخرى يطالبون بعودة نظام التحكم الكامل خوفًا من الانفلات. تتلقى تقارير عن مجموعتين متطرفتين: مجموعة تريد محو كل أرشيف، وأخرى تريد تسليم المدينة لخوارزمية حكم مركزية.",
+      "choices": [
+        {
+          "id": "RET_P01_B_DISTRICT_TOUR_C01",
+          "text": "فتح حوار علني مع قادة الأحياء",
+          "next_part_id": "RET_P01_B_PUBLIC_FORUM",
+          "effects": {
+            "xp": 27,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "diplomatic": 2
+          }
+        },
+        {
+          "id": "RET_P01_B_DISTRICT_TOUR_C02",
+          "text": "نشر قوات حماية خفيفة وبدء اعتقالات وقائية",
+          "next_part_id": "RET_P01_B_SECURITY_SWEEP",
+          "effects": {
+            "xp": 28,
+            "world_stability": 0,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "ruthless": 1,
+            "leader": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_NIGHT_RAIL",
+      "title": "القطار الليلي 11",
+      "text": "على خط سكك مهجور يظهر قطار شفاف بلا محرك واضح. العربات مغلقة بزجاج يعكس الوجوه بطريقة مختلفة لكل راكب. آرين-7 يرصد أن القطار يبث موجات محو دقيقة على تردد قديم كان يستخدمه ساير. القطار لا ينقل أجسادًا فقط؛ يبدو أنه ينقل \"أذونات هوية\".",
+      "choices": [
+        {
+          "id": "RET_P01_B_NIGHT_RAIL_C01",
+          "text": "الصعود إلى القطار ومراقبة المسار",
+          "next_part_id": "RET_P01_B_INSIDE_CAR",
+          "effects": {
+            "xp": 31,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "brave": 2
+          }
+        },
+        {
+          "id": "RET_P01_B_NIGHT_RAIL_C02",
+          "text": "تتبع القطار عن بعد عبر شبكة الإشارات",
+          "next_part_id": "RET_P01_B_SIGNAL_NET",
+          "effects": {
+            "xp": 29,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "strategic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_SHADOW_LAYER",
+      "title": "طبقة الظل",
+      "text": "عند تفعيل النظام تنفتح قاعدة بيانات ثانية تحتوي \"نسخ قرارات\" بدل نسخ أشخاص. أي قرار حكومي مهم يملك بدائل معدّة مسبقًا يمكن حقنها في الذاكرة العامة عند الطوارئ. أخطر ملف يحمل اسم \"صباح رمادي\" ومحدد للتفعيل خلال 48 ساعة.",
+      "choices": [
+        {
+          "id": "RET_P01_B_SHADOW_LAYER_C01",
+          "text": "تعطيل ملف صباح رمادي فورًا",
+          "next_part_id": "RET_P01_B_GRAY_MORNING",
+          "effects": {
+            "xp": 32,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "decisive": 2,
+            "just": 1
+          }
+        },
+        {
+          "id": "RET_P01_B_SHADOW_LAYER_C02",
+          "text": "تتبع من جدوله بدل تعطيله",
+          "next_part_id": "RET_P01_B_SCHEDULER_TRACE",
+          "effects": {
+            "xp": 33,
+            "mystery": 3
+          },
+          "trait_weights": {
+            "cunning": 2,
+            "curious": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_COLD_COPY",
+      "title": "نسخ بارد",
+      "text": "النسخ البارد يكشف تفاوتًا في بصمات التعديل: جهة تعدل الأرشيف بمهارة مؤسسية، وجهة أخرى تعدل بعنف وتترك أخطاء. هذا يعني صراعًا داخليًا بين طرفين يتحكمان بنفس النظام. ليرا تقترح استغلال الانقسام بدل مواجهته ككتلة واحدة.",
+      "choices": [
+        {
+          "id": "RET_P01_B_COLD_COPY_C01",
+          "text": "اختراق الطرف المؤسسي أولًا",
+          "next_part_id": "RET_P01_B_BUREAU_NODE",
+          "effects": {
+            "xp": 30,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "strategic": 2
+          }
+        },
+        {
+          "id": "RET_P01_B_COLD_COPY_C02",
+          "text": "تفكيك الطرف العنيف ميدانيًا",
+          "next_part_id": "RET_P01_B_STREET_CELL",
+          "effects": {
+            "xp": 31,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "brave": 1,
+            "ruthless": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_PUBLIC_FORUM",
+      "title": "منتدى الذاكرة العامة",
+      "text": "المنتدى يحضره مئات من السكان. النقاش حاد لكنه نادر الصدق. امرأة مسنة تعترف أنها فقدت ذكرى ابنها بسبب نسخة حكومية قبل سنوات، وشاب آخر يقول إن النسخ أنقذت حيّه من حرب أهلية. تدرك أن الحقيقة ليست خطًا واحدًا بل شبكة ألم ومصلحة.",
+      "choices": [
+        {
+          "id": "RET_P01_B_PUBLIC_FORUM_C01",
+          "text": "طرح ميثاق ذاكرة مدني ملزم",
+          "next_part_id": "RET_P01_B_CIVIL_CHARTER",
+          "effects": {
+            "xp": 29,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "honorable": 2,
+            "leader": 1
+          }
+        },
+        {
+          "id": "RET_P01_B_PUBLIC_FORUM_C02",
+          "text": "تحويل المنتدى إلى مجلس أزمة مصغّر",
+          "next_part_id": "RET_P01_B_CRISIS_COUNCIL",
+          "effects": {
+            "xp": 30,
+            "mystery": 1,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "pragmatic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_SECURITY_SWEEP",
+      "title": "حملة أمنية",
+      "text": "الانتشار الأمني يقلل الشغب سريعًا لكنه يثير شكوكًا واسعة. يتم القبض على خلية مسلحة تحمل مخططًا لتفجير مركز مزامنة الذاكرة، لكن يتبين أن بعض المعتقلين مجرد ناشطين عاديين. الخطأ هنا قد يقوض شرعيتك كلها.",
+      "choices": [
+        {
+          "id": "RET_P01_B_SECURITY_SWEEP_C01",
+          "text": "الإفراج الفوري عن الأبرياء والاعتذار العلني",
+          "next_part_id": "RET_P01_B_CIVIL_CHARTER",
+          "effects": {
+            "xp": 28,
+            "reputation": 2,
+            "corruption": -1
+          },
+          "trait_weights": {
+            "honorable": 2
+          }
+        },
+        {
+          "id": "RET_P01_B_SECURITY_SWEEP_C02",
+          "text": "الاستمرار في الحملة حتى تأمين المدينة",
+          "next_part_id": "RET_P01_B_CRISIS_COUNCIL",
+          "effects": {
+            "xp": 30,
+            "world_stability": 1,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "ruthless": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_INSIDE_CAR",
+      "title": "داخل العربة رقم 4",
+      "text": "داخل العربة تجد مقاعد قديمة وشاشات جديدة تبث وجوهًا لأشخاص مفقودين. في المؤخرة جهاز ختم هويات يطبع بطاقات دخول لدوائر حكومية حساسة. على أحد المقاعد ترى اسمًا مألوفًا: ساير-ألفا، ساير-بيتا، ساير-غاما... النسخ لم تختفِ كلها.",
+      "choices": [
+        {
+          "id": "RET_P01_B_INSIDE_CAR_C01",
+          "text": "تعطيل جهاز الختم",
+          "next_part_id": "RET_P01_B_ID_FORGE",
+          "effects": {
+            "xp": 32,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "decisive": 1,
+            "wise": 1
+          }
+        },
+        {
+          "id": "RET_P01_B_INSIDE_CAR_C02",
+          "text": "سرقة سجل النسخ أولًا",
+          "next_part_id": "RET_P01_B_SAIR_LIST",
+          "effects": {
+            "xp": 33,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_SIGNAL_NET",
+      "title": "شبكة الإشارات",
+      "text": "بتتبع الشبكة تكتشف أن القطار يتوقف دائمًا عند ثلاث محطات شبح غير موجودة في الخرائط: محطة الزجاج، محطة الفحم، ومحطة الفجر. كل محطة مرتبطة بمؤسسة مختلفة: الإعلام، الأمن، والقضاء.",
+      "choices": [
+        {
+          "id": "RET_P01_B_SIGNAL_NET_C01",
+          "text": "البدء بمحطة الإعلام",
+          "next_part_id": "RET_P01_B_MEDIA_NODE",
+          "effects": {
+            "xp": 30,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "strategic": 2
+          }
+        },
+        {
+          "id": "RET_P01_B_SIGNAL_NET_C02",
+          "text": "البدء بمحطة الأمن",
+          "next_part_id": "RET_P01_B_SECURITY_NODE",
+          "effects": {
+            "xp": 31,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "decisive": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_GRAY_MORNING",
+      "title": "ملف صباح رمادي",
+      "text": "الملف يحتوي خطة لإغراق المدينة بنشرة أخبار مزيفة متزامنة مع تعديلات ذاكرة انتقائية. الهدف: خلق إجماع مصطنع يقبل أي نظام حكم مؤقت. تعطيله ممكن، لكن سيحرق جزءًا من خوادم الأرشيف وقد يفقد الناس سجلات شخصية ثمينة.",
+      "choices": [
+        {
+          "id": "RET_P01_B_GRAY_MORNING_C01",
+          "text": "تعطيل الملف رغم الخسائر",
+          "next_part_id": "RET_P01_B_CORE_DEBATE",
+          "effects": {
+            "xp": 34,
+            "world_stability": 1,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "just": 2
+          }
+        },
+        {
+          "id": "RET_P01_B_GRAY_MORNING_C02",
+          "text": "تجميد الملف والبحث عن بديل أقل ضررًا",
+          "next_part_id": "RET_P01_B_CORE_DEBATE",
+          "effects": {
+            "xp": 33,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "pragmatic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_SCHEDULER_TRACE",
+      "title": "تتبع المجدول",
+      "text": "يقودك التتبع إلى مكتب مهجور في وزارة التخطيط. هناك تجد موظفًا مسنًا يصر أنه ينفذ \"سياسات تعافي\" لا مؤامرة. يريك وثائق تثبت أن بعض النسخ كانت فعلاً تمنع حروبًا. السؤال يصبح أخلاقيًا: هل كل تلاعب بالذاكرة شر مطلق؟",
+      "choices": [
+        {
+          "id": "RET_P01_B_SCHEDULER_TRACE_C01",
+          "text": "توقيفه وتسليم الوثائق للمحكمة",
+          "next_part_id": "RET_P01_B_CORE_DEBATE",
+          "effects": {
+            "xp": 32,
+            "reputation": 2
+          },
+          "trait_weights": {
+            "honorable": 2
+          }
+        },
+        {
+          "id": "RET_P01_B_SCHEDULER_TRACE_C02",
+          "text": "استجوابه والاستفادة من خبرته تقنيًا",
+          "next_part_id": "RET_P01_B_CORE_DEBATE",
+          "effects": {
+            "xp": 34,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_BUREAU_NODE",
+      "title": "عقدة البيروقراطية",
+      "text": "العقدة المؤسسية تعمل في خوادم نظيفة وبتوثيق كامل، لكنها تخفي بندًا يسمح \"بتعديل سياقي\" دون إذن قضائي خلال الطوارئ. هذا البند هو الثقب القانوني الذي ابتلع المدينة.",
+      "choices": [
+        {
+          "id": "RET_P01_B_BUREAU_NODE_C01",
+          "text": "إبطال البند علنًا",
+          "next_part_id": "RET_P01_B_CORE_DEBATE",
+          "effects": {
+            "xp": 33,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "just": 2
+          }
+        },
+        {
+          "id": "RET_P01_B_BUREAU_NODE_C02",
+          "text": "إعادة صياغة البند بقيود صارمة",
+          "next_part_id": "RET_P01_B_CORE_DEBATE",
+          "effects": {
+            "xp": 34,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "pragmatic": 2,
+            "leader": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_STREET_CELL",
+      "title": "خلية الشارع",
+      "text": "الخلية العنيفة يقودها شاب فقد أسرته بسبب نسخة خاطئة، فقرر تدمير كل الأرشيف. المواجهة معه تكشف أن ألم الضحايا صار وقودًا لفوضى لا تفرق بين حق وعدو.",
+      "choices": [
+        {
+          "id": "RET_P01_B_STREET_CELL_C01",
+          "text": "إيقاف الخلية بالقوة",
+          "next_part_id": "RET_P01_B_CORE_DEBATE",
+          "effects": {
+            "xp": 32,
+            "world_stability": 1,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "ruthless": 2
+          }
+        },
+        {
+          "id": "RET_P01_B_STREET_CELL_C02",
+          "text": "إقناع القائد بتسليم نفسه مقابل محاكمة عادلة",
+          "next_part_id": "RET_P01_B_CORE_DEBATE",
+          "effects": {
+            "xp": 33,
+            "reputation": 2
+          },
+          "trait_weights": {
+            "diplomatic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_CIVIL_CHARTER",
+      "title": "الميثاق المدني",
+      "text": "تصوغ مسودة ميثاق يحدد حدود تعديل الذاكرة: لا تعديل بلا أمر قضائي، حق المواطن في طلب نسخة سجله، ولجنة تدقيق مستقلة. المسودة تلقى دعمًا شعبيًا، لكنها تزعج أجهزة نافذة.",
+      "choices": [
+        {
+          "id": "RET_P01_B_CIVIL_CHARTER_C01",
+          "text": "تمرير الميثاق فورًا",
+          "next_part_id": "RET_P01_B_CORE_DEBATE",
+          "effects": {
+            "xp": 33,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "honorable": 2
+          }
+        },
+        {
+          "id": "RET_P01_B_CIVIL_CHARTER_C02",
+          "text": "تأجيله لحين إنهاء الأزمة الأمنية",
+          "next_part_id": "RET_P01_B_CORE_DEBATE",
+          "effects": {
+            "xp": 31,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "pragmatic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_CRISIS_COUNCIL",
+      "title": "مجلس الأزمة",
+      "text": "تجمع ممثلين عن الأحياء والأمن والقضاء في غرفة واحدة. المجلس منقسم لكنه أفضل من الشارع المنفلت. آرين-7 يقترح قرارًا حاسمًا: إما مركز قيادة شفاف لمدة 72 ساعة أو تفويض دائم لهيئة تقنية.",
+      "choices": [
+        {
+          "id": "RET_P01_B_CRISIS_COUNCIL_C01",
+          "text": "مركز قيادة شفاف مؤقت",
+          "next_part_id": "RET_P01_B_CORE_DEBATE",
+          "effects": {
+            "xp": 32,
+            "world_stability": 1,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "leader": 2
+          }
+        },
+        {
+          "id": "RET_P01_B_CRISIS_COUNCIL_C02",
+          "text": "تفويض الهيئة التقنية فورًا",
+          "next_part_id": "RET_P01_B_CORE_DEBATE",
+          "effects": {
+            "xp": 33,
+            "corruption": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "ruthless": 1,
+            "pragmatic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_ID_FORGE",
+      "title": "مسبك الهويات",
+      "text": "تعطيل جهاز الختم يكشف آلية إنتاج هويات حكومية خلال دقائق. هذه الآلية استخدمت لزرع نسخ ساير في مؤسسات متفرقة. ليرا تقترح بثًا عكسيًا يكشف كل هوية مزيفة دفعة واحدة.",
+      "choices": [
+        {
+          "id": "RET_P01_B_ID_FORGE_C01",
+          "text": "إطلاق البث العكسي فورًا",
+          "next_part_id": "RET_P01_B_CORE_DEBATE",
+          "effects": {
+            "xp": 34,
+            "mystery": 2,
+            "world_stability": 0
+          },
+          "trait_weights": {
+            "decisive": 2
+          }
+        },
+        {
+          "id": "RET_P01_B_ID_FORGE_C02",
+          "text": "اختبار البث على نطاق محدود",
+          "next_part_id": "RET_P01_B_CORE_DEBATE",
+          "effects": {
+            "xp": 33,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "careful": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_SAIR_LIST",
+      "title": "قائمة ساير",
+      "text": "القائمة تؤكد وجود ثلاث نسخ فعّالة: نسخة سياسية، نسخة أمنية، ونسخة إعلامية. إسقاط واحدة لا يكفي. تحتاج لخطة متزامنة قبل أن تتبادل النسخ السيطرة.",
+      "choices": [
+        {
+          "id": "RET_P01_B_SAIR_LIST_C01",
+          "text": "استهداف النسخة الأمنية أولًا",
+          "next_part_id": "RET_P01_B_CORE_DEBATE",
+          "effects": {
+            "xp": 34,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "decisive": 2
+          }
+        },
+        {
+          "id": "RET_P01_B_SAIR_LIST_C02",
+          "text": "استهداف النسخة الإعلامية أولًا",
+          "next_part_id": "RET_P01_B_CORE_DEBATE",
+          "effects": {
+            "xp": 35,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "strategic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_MEDIA_NODE",
+      "title": "محطة الإعلام الشبح",
+      "text": "تجد استوديو سريًا يبث نسخ أخبار مختلفة لكل حي بحسب نمط استجابته العاطفية. إنها ماكينة هندسة رأي عام كاملة.",
+      "choices": [
+        {
+          "id": "RET_P01_B_MEDIA_NODE_C01",
+          "text": "إغلاق الاستوديو فورًا",
+          "next_part_id": "RET_P01_B_CORE_DEBATE",
+          "effects": {
+            "xp": 33,
+            "reputation": 1,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "just": 1,
+            "decisive": 1
+          }
+        },
+        {
+          "id": "RET_P01_B_MEDIA_NODE_C02",
+          "text": "توجيه الاستوديو لبث حقيقة موحدة",
+          "next_part_id": "RET_P01_B_CORE_DEBATE",
+          "effects": {
+            "xp": 34,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "cunning": 1,
+            "leader": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_SECURITY_NODE",
+      "title": "محطة الأمن الشبح",
+      "text": "في المحطة الأمنية تجد أوامر اعتقال موقعة بأختام صحيحة وتواريخ مستحيلة. النظام القضائي نفسه يتم تغذيته بأوامر من زمن غير متزامن.",
+      "choices": [
+        {
+          "id": "RET_P01_B_SECURITY_NODE_C01",
+          "text": "إبطال كل الأوامر غير المتزامنة",
+          "next_part_id": "RET_P01_B_CORE_DEBATE",
+          "effects": {
+            "xp": 32,
+            "reputation": 2
+          },
+          "trait_weights": {
+            "honorable": 2
+          }
+        },
+        {
+          "id": "RET_P01_B_SECURITY_NODE_C02",
+          "text": "الإبقاء على الأوامر المفيدة مؤقتًا",
+          "next_part_id": "RET_P01_B_CORE_DEBATE",
+          "effects": {
+            "xp": 33,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "pragmatic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_CORE_DEBATE",
+      "title": "غرفة القرار المركزي",
+      "text": "تجتمع أنت وليرا وآرين-7 ومعكم أدلة كافية لإسقاط النسخ الثلاث. لكن طريقة الإسقاط ستحدد شكل المدينة القادم. نافذة التنفيذ 9 دقائق قبل أن يعاد تزامن الشبكة تلقائيًا. الخيارات أمامك واضحة وقاسية.",
+      "choices": [
+        {
+          "id": "RET_P01_B_CORE_DEBATE_C01",
+          "text": "تصفير الشبكة وإعادة البناء من الصفر",
+          "next_part_id": "RET_P01_B_FINAL_SEQUENCE",
+          "effects": {
+            "xp": 36,
+            "world_stability": 2,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "just": 2,
+            "brave": 1
+          }
+        },
+        {
+          "id": "RET_P01_B_CORE_DEBATE_C02",
+          "text": "إعادة هيكلة الشبكة تحت رقابة مدنية",
+          "next_part_id": "RET_P01_B_FINAL_SEQUENCE",
+          "effects": {
+            "xp": 35,
+            "world_stability": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "pragmatic": 2,
+            "leader": 1
+          }
+        },
+        {
+          "id": "RET_P01_B_CORE_DEBATE_C03",
+          "text": "السيطرة على الشبكة لمنع الانهيار بالقوة",
+          "next_part_id": "RET_P01_B_FINAL_SEQUENCE",
+          "effects": {
+            "xp": 37,
+            "corruption": 2,
+            "shards": 1
+          },
+          "trait_weights": {
+            "ruthless": 2,
+            "cunning": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_FINAL_SEQUENCE",
+      "title": "تسلسل الفجر الثاني",
+      "text": "المدينة كلها على حافة إعادة تزامن. النيون يطفأ ويشتعل على إيقاع العدّ الأخير. النسخ الثلاث من ساير تحاول التفاوض في آن واحد: واحدة تعدك بالسلام، واحدة بالسلطة، واحدة بالحقيقة. ليرا تمسك القناة المدنية، وآرين-7 يحمي لوحة التنفيذ. القرار النهائي الآن لا يحتمل التأجيل.",
+      "choices": [
+        {
+          "id": "RET_P01_B_FINAL_SEQUENCE_C01",
+          "text": "تحرير كامل للذاكرة وإسقاط كل النسخ",
+          "next_part_id": "RET_P01_B_END_TRUE_SIGNAL",
+          "effects": {
+            "xp": 40,
+            "world_stability": 2,
+            "reputation": 2,
+            "corruption": -1
+          },
+          "trait_weights": {
+            "honorable": 2,
+            "just": 1
+          }
+        },
+        {
+          "id": "RET_P01_B_FINAL_SEQUENCE_C02",
+          "text": "حل وسط: ذاكرة محمية مع رقابة جماعية",
+          "next_part_id": "RET_P01_B_END_SHARED_CITY",
+          "effects": {
+            "xp": 39,
+            "world_stability": 1,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "pragmatic": 2,
+            "strategic": 1
+          }
+        },
+        {
+          "id": "RET_P01_B_FINAL_SEQUENCE_C03",
+          "text": "إمساك مركزي بالشبكة تحت قيادتك",
+          "next_part_id": "RET_P01_B_END_IRON_NEON",
+          "effects": {
+            "xp": 41,
+            "corruption": 3,
+            "shards": 2
+          },
+          "trait_weights": {
+            "greedy": 2,
+            "ruthless": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RET_P01_B_END_TRUE_SIGNAL",
+      "title": "نهاية Retro P01.B (Stable): الإشارة الحقيقية",
+      "text": "تسقط النسخ الثلاث وتنجو المدينة من إعادة كتابة جديدة. يتم إطلاق \"راديو الحقيقة\" كأرشيف مفتوح يتيح لكل مواطن مراجعة سجله الزمني. العملية مؤلمة وتكشف جروحًا قديمة، لكنها تؤسس ثقة حقيقية. ليرا تعلن بداية مشروع العدالة الزمنية، وآرين-7 يسجل أول يوم بلا قناع بيانات.",
+      "choices": [],
+      "ending": "stable"
+    },
+    {
+      "id": "RET_P01_B_END_SHARED_CITY",
+      "title": "نهاية Retro P01.B (Balanced): مدينة مشتركة",
+      "text": "تختار إعادة هيكلة محسوبة: لا حرية مطلقة بلا حماية، ولا تحكم تقني بلا رقابة بشرية. تتشكل هيئة ثلاثية (مدنية-قضائية-تقنية) لإدارة الذاكرة العامة. النظام ليس مثاليًا لكنه قابل للإصلاح. نوفا-رترو تدخل عصرًا جديدًا عنوانه التفاوض الدائم بدل الصدمة الدائمة.",
+      "choices": [],
+      "ending": "balanced"
+    },
+    {
+      "id": "RET_P01_B_END_IRON_NEON",
+      "title": "نهاية Retro P01.B (Dangerous): النيون الحديدي",
+      "text": "تستولي على الشبكة المركزية وتوقف الانهيار فورًا. الشوارع تهدأ والجرائم تتراجع بسرعة، لكن مقابل ثمن صامت: الحقيقة تمر عبرك. المدينة تبدو آمنة، إلا أن كل ضوء فيها يذكّر بأن أحدًا ما يقرر ما يجب أن يتذكّره الجميع. القوة كاملة، والثقة ناقصة.",
+      "choices": [],
+      "ending": "dangerous"
+    }
+  ],
+  "handoff": {
+    "next_file": "retro_p02_a.json",
+    "entry_points": [
+      "RET_P01_B_END_TRUE_SIGNAL",
+      "RET_P01_B_END_SHARED_CITY",
+      "RET_P01_B_END_IRON_NEON"
+    ],
+    "notes": "يبدأ retro_p02_a من أثر النهاية المختارة: أرشيف مفتوح، هيئة مشتركة، أو حكم مركزي شبكي."
+  }
+}
