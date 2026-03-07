@@ -1,0 +1,780 @@
+{
+  "metadata": {
+    "world_id": "fantasy",
+    "arc_id": "fantasy_p02",
+    "part_id": "fantasy_p02_a",
+    "title": "الجزء الثاني (أ): صدى التاج المكسور",
+    "language": "ar",
+    "version": "1.0.0",
+    "start_part_id": "FAN_P02_A_START",
+    "recommended_level": 4,
+    "description": "امتداد مباشر لأحداث نهاية الجزء الأول، مع خيارات سياسية وسحرية تفتح مسارات النهاية الكبرى لاحقًا."
+  },
+  "parts": [
+    {
+      "id": "FAN_P02_A_START",
+      "title": "بوابة الرماد الأخيرة",
+      "text": "مع انطفاء ضوء الفجر خلف الأبراج الممزقة، يصل البطل وآرين إلى بوابة حجرية تلمع عليها حروف قديمة. الهواء بارد على غير العادة، وكأن الوادي نفسه يحبس أنفاسه. من داخل الضباب يظهر ثلاثة حرّاس بعباءات رمادية يحملون شعار التاج المكسور؛ لا يهاجمون، لكن أعينهم تتفحصك كأنهم يقيسون وزنك في ميزان الغد. آرين يهمس: 'أي كلمة هنا قد تبني مملكة أو تشعل حربًا.'",
+      "choices": [
+        {
+          "id": "FAN_P02_A_START_C01",
+          "text": "التحدث بهدوء مع الحرّاس وطلب المرور باسم الوعد القديم",
+          "next_part_id": "FAN_P02_A_GATE_DIPLOMACY",
+          "effects": {
+            "xp": 18,
+            "reputation": 2,
+            "trust_aren": 1
+          },
+          "trait_weights": {
+            "diplomatic": 2,
+            "calm": 1
+          }
+        },
+        {
+          "id": "FAN_P02_A_START_C02",
+          "text": "تفحّص الأحرف السحرية على البوابة قبل أي حديث",
+          "next_part_id": "FAN_P02_A_GATE_RUNES",
+          "effects": {
+            "xp": 20,
+            "mystery": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "wise": 2,
+            "curious": 1
+          }
+        },
+        {
+          "id": "FAN_P02_A_START_C03",
+          "text": "إظهار القوة وفرض العبور",
+          "next_part_id": "FAN_P02_A_GATE_FORCE",
+          "effects": {
+            "xp": 16,
+            "corruption": 1,
+            "reputation": -1
+          },
+          "trait_weights": {
+            "brave": 1,
+            "chaotic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_GATE_DIPLOMACY",
+      "title": "لغة العهود",
+      "text": "تذكر اسم المعاهدة المنسية بين المدن السبع وحماة الصدع. يتغير وجه كبير الحرّاس قليلًا، ثم يفتح راحته لتظهر عملة نحاسية عليها نصف تاج ونصف قمر. 'من يذكر هذا الرمز لا يكون جاهلًا.' يسمح لكم بالدخول إلى ممر طويل يقود إلى قاعة الحكم الرمادية، لكنه يحذرك: 'في الداخل، الحقيقة تُباع لمن يدفع.'",
+      "choices": [
+        {
+          "id": "FAN_P02_A_GATE_DIPLOMACY_C01",
+          "text": "طلب مرافقة رسمية من الحرّاس حتى القاعة",
+          "next_part_id": "FAN_P02_A_HALL_ENTRY_ESCORT",
+          "effects": {
+            "xp": 14,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "diplomatic": 1
+          }
+        },
+        {
+          "id": "FAN_P02_A_GATE_DIPLOMACY_C02",
+          "text": "الدخول وحدكما بصمت لتجنب لفت الأنظار",
+          "next_part_id": "FAN_P02_A_HALL_ENTRY_SHADOW",
+          "effects": {
+            "xp": 15,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "stealthy": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_GATE_RUNES",
+      "title": "قراءة الحجر الحي",
+      "text": "حين تمرر يدك على الخطوط المتشققة، تتحرك الأحرف كأنها كائنات ضوئية دقيقة. تكتشف رسالة مطموسة: 'التاج لا يحكم الأرض... بل ذاكرة الأرض.' آرين يصمت لحظة، ثم يعترف بأنه سمع هذه العبارة من سيدته القديمة التي اختفت قبل سقوط العاصمة. المعرفة هنا خطيرة، لكنها تمنحك مفاتيح تتجاوز السيوف.",
+      "choices": [
+        {
+          "id": "FAN_P02_A_GATE_RUNES_C01",
+          "text": "مشاركة الاكتشاف مع آرين لبناء ثقة أعمق",
+          "next_part_id": "FAN_P02_A_HALL_ENTRY_TRUST",
+          "effects": {
+            "xp": 17,
+            "trust_aren": 2,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "loyal": 2
+          }
+        },
+        {
+          "id": "FAN_P02_A_GATE_RUNES_C02",
+          "text": "إخفاء جزء من الرسالة واستخدامها لاحقًا كورقة ضغط",
+          "next_part_id": "FAN_P02_A_HALL_ENTRY_SECRET",
+          "effects": {
+            "xp": 17,
+            "corruption": 1,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_GATE_FORCE",
+      "title": "عبور الحديد",
+      "text": "تدفع أحد الحرّاس بعيدًا وتكسر صفهم بخطوة حاسمة. ينشب قتال قصير؛ سريع لكنه صاخب. تنتصر، إلا أن الصدمة تنتشر عبر الممرات كالنار، وتصل أخبارك إلى القاعة قبل وصولك. آرين غاضب: 'الانتصار السريع قد يكلّفنا أبوابًا كثيرة.'",
+      "choices": [
+        {
+          "id": "FAN_P02_A_GATE_FORCE_C01",
+          "text": "مداواة الحارس المصاب لإظهار أنك لست وحشًا",
+          "next_part_id": "FAN_P02_A_HALL_ENTRY_REPENT",
+          "effects": {
+            "xp": 13,
+            "reputation": 1,
+            "corruption": -1
+          },
+          "trait_weights": {
+            "merciful": 2
+          }
+        },
+        {
+          "id": "FAN_P02_A_GATE_FORCE_C02",
+          "text": "تركهم والاندفاع نحو القاعة",
+          "next_part_id": "FAN_P02_A_HALL_ENTRY_HOSTILE",
+          "effects": {
+            "xp": 14,
+            "corruption": 2,
+            "world_stability": -1
+          },
+          "trait_weights": {
+            "ruthless": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_HALL_ENTRY_ESCORT",
+      "title": "دخول المرايا الرسمية",
+      "text": "مع مرافقة الحرّاس، تعبر رواقًا طويلًا من المرايا السوداء. كل مرآة تعرض نسخة محتملة من مستقبلك: قائد عادل، طاغية، أو ظل بلا اسم. في القاعة، تجلس المستشارة 'ماريس' أمام خريطة حيّة تتحرك عليها حدود المدن مثل ماء مضطرب.",
+      "choices": [
+        {
+          "id": "FAN_P02_A_HALL_ENTRY_ESCORT_C01",
+          "text": "عرض تحالف مشروط لحماية الحدود",
+          "next_part_id": "FAN_P02_A_COUNCIL_NEGOTIATION",
+          "effects": {
+            "xp": 18,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "diplomatic": 2
+          }
+        },
+        {
+          "id": "FAN_P02_A_HALL_ENTRY_ESCORT_C02",
+          "text": "طلب معلومات سرية عن التاج قبل أي اتفاق",
+          "next_part_id": "FAN_P02_A_COUNCIL_SECRET",
+          "effects": {
+            "xp": 19,
+            "mystery": 2
+          },
+          "trait_weights": {
+            "curious": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_HALL_ENTRY_SHADOW",
+      "title": "على حافة السمع",
+      "text": "تدخلان من ممر جانبي تحت القاعة. تسمعان نقاشًا حادًا بين النبلاء: فريق يريد استدعاء قوة الصدع لضمان النصر، وآخر يرى أن ذلك انتحار مؤجل. آرين يشير إلى فتحة ضيقة تطل مباشرة على منصة المستشارة. لديك دقائق قليلة قبل أن يُكتشف وجودك.",
+      "choices": [
+        {
+          "id": "FAN_P02_A_HALL_ENTRY_SHADOW_C01",
+          "text": "التنصت حتى النهاية ثم الظهور بمعلومة حاسمة",
+          "next_part_id": "FAN_P02_A_COUNCIL_EXPOSE",
+          "effects": {
+            "xp": 20,
+            "mystery": 2,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "strategic": 2
+          }
+        },
+        {
+          "id": "FAN_P02_A_HALL_ENTRY_SHADOW_C02",
+          "text": "التراجع وتجنب المخاطرة العالية",
+          "next_part_id": "FAN_P02_A_COUNCIL_SAFE",
+          "effects": {
+            "xp": 15,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "careful": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_HALL_ENTRY_TRUST",
+      "title": "الاعتراف الذي يغيّر الطريق",
+      "text": "حين تشارك آرين الحقيقة كاملة، يزيل قفازه وتظهر علامة احتراق على معصمه: ختم قديم يربطه بحراس الذاكرة، التنظيم الذي لاحقه الجميع وظنه خائنًا. 'كنت أبحث عن شخص لا يطمع بالقوة فقط... بل يفهم ثمنها.' الثقة هنا تمنحك حليفًا نادرًا، لكنها تربط مصيرك بأسراره.",
+      "choices": [
+        {
+          "id": "FAN_P02_A_HALL_ENTRY_TRUST_C01",
+          "text": "الوقوف مع آرين علنًا أمام المجلس",
+          "next_part_id": "FAN_P02_A_COUNCIL_ALLY_AREN",
+          "effects": {
+            "xp": 22,
+            "trust_aren": 2,
+            "reputation": -1
+          },
+          "trait_weights": {
+            "loyal": 2,
+            "brave": 1
+          }
+        },
+        {
+          "id": "FAN_P02_A_HALL_ENTRY_TRUST_C02",
+          "text": "إبقاء تحالفكما سرّيًا مؤقتًا",
+          "next_part_id": "FAN_P02_A_COUNCIL_DOUBLE_GAME",
+          "effects": {
+            "xp": 21,
+            "trust_aren": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "cunning": 1,
+            "wise": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_HALL_ENTRY_SECRET",
+      "title": "ورقة في الظل",
+      "text": "تحتفظ بنصف الحقيقة في صدرك وتدخل القاعة بقناع بارد. المستشارة ماريس تلاحظ ترددك، بينما آرين يقرأ في صمتك شيئًا جديدًا. هنا تبدأ لعبة توازن دقيقة: كل كلمة قد تمنحك نفوذًا... أو تكشف أنك تخفي ما يكفي لإسقاط عرش كامل.",
+      "choices": [
+        {
+          "id": "FAN_P02_A_HALL_ENTRY_SECRET_C01",
+          "text": "مساومة ماريس على المعلومات مقابل امتيازات",
+          "next_part_id": "FAN_P02_A_COUNCIL_BARGAIN",
+          "effects": {
+            "xp": 20,
+            "shards": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "greedy": 1,
+            "cunning": 2
+          }
+        },
+        {
+          "id": "FAN_P02_A_HALL_ENTRY_SECRET_C02",
+          "text": "التظاهر بالحياد ومراقبة صراع المجلس",
+          "next_part_id": "FAN_P02_A_COUNCIL_OBSERVER",
+          "effects": {
+            "xp": 18,
+            "mystery": 1,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "patient": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_HALL_ENTRY_REPENT",
+      "title": "ندبة الرحمة",
+      "text": "قبل أن تكمل المسير، تعود للحارس المصاب وتغلق جرحه بلفافة علاج. تصلك نظرات مترددة من الجنود؛ البعض يراك خطرًا، وآخرون يلمحون بداخل قوتك بقايا عدل. عندما تدخل القاعة، لا تُستقبل كبطل ولا كعدو كامل... بل كسؤال مفتوح.",
+      "choices": [
+        {
+          "id": "FAN_P02_A_HALL_ENTRY_REPENT_C01",
+          "text": "إعلان أنك تسعى لإصلاح ما حدث عند البوابة",
+          "next_part_id": "FAN_P02_A_COUNCIL_REPAIR",
+          "effects": {
+            "xp": 17,
+            "reputation": 2,
+            "corruption": -1
+          },
+          "trait_weights": {
+            "honorable": 2
+          }
+        },
+        {
+          "id": "FAN_P02_A_HALL_ENTRY_REPENT_C02",
+          "text": "التركيز على المهمة وتجاهل النقاش الأخلاقي",
+          "next_part_id": "FAN_P02_A_COUNCIL_HARDLINE",
+          "effects": {
+            "xp": 18,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "pragmatic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_HALL_ENTRY_HOSTILE",
+      "title": "قاعة على حافة الانفجار",
+      "text": "تُفتح أبواب القاعة بقوة، فيسكت الجميع. الحرس يشهرون الرماح فورًا، لكن ماريس ترفع يدها: 'اتركوه يتكلم... أريد أن أفهم لماذا يأتي الإعصار بنفسه إلى عرشي.' التوتر كثيف؛ خطأ واحد يعني حربًا داخلية قبل شروق الصباح.",
+      "choices": [
+        {
+          "id": "FAN_P02_A_HALL_ENTRY_HOSTILE_C01",
+          "text": "تحدي المجلس وفرض شروطك بالقوة",
+          "next_part_id": "FAN_P02_A_COUNCIL_DOMINATE",
+          "effects": {
+            "xp": 19,
+            "corruption": 2,
+            "reputation": -2
+          },
+          "trait_weights": {
+            "ruthless": 2
+          }
+        },
+        {
+          "id": "FAN_P02_A_HALL_ENTRY_HOSTILE_C02",
+          "text": "خفض السلاح وإعطاء فرصة لحوار أخير",
+          "next_part_id": "FAN_P02_A_COUNCIL_LAST_CHANCE",
+          "effects": {
+            "xp": 20,
+            "reputation": 1,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "brave": 1,
+            "diplomatic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_COUNCIL_NEGOTIATION",
+      "title": "المعاهدة الرمادية",
+      "text": "يمتد الحوار لساعات بين خرائط محروقة وتقارير حدودية. تنجح في جمع ثلاث عائلات متنازعة حول صيغة مؤقتة: حماية مشتركة للممرات مقابل وقف العبث بالصدع. الاتفاق هش، لكنه أفضل من الانهيار الفوري.",
+      "choices": [
+        {
+          "id": "FAN_P02_A_COUNCIL_NEGOTIATION_C01",
+          "text": "توقيع المعاهدة الآن",
+          "next_part_id": "FAN_P02_A_END_STABLE",
+          "effects": {
+            "xp": 24,
+            "world_stability": 2,
+            "reputation": 2
+          },
+          "trait_weights": {
+            "leader": 2
+          }
+        },
+        {
+          "id": "FAN_P02_A_COUNCIL_NEGOTIATION_C02",
+          "text": "تأجيل التوقيع حتى الحصول على ضمانات إضافية",
+          "next_part_id": "FAN_P02_A_END_BALANCED",
+          "effects": {
+            "xp": 22,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "strategic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_COUNCIL_SECRET",
+      "title": "خزينة الهمس",
+      "text": "ماريس تقودك إلى غرفة دائرية تحت القاعة. في الداخل، صندوق بلوري يحفظ قطعًا من تاج قديم محاطًا بسلاسل ضوئية. تقول: 'كل من لمس هذا الشيء تغيّر... بعضهم صار منقذًا، والبعض صار لعنة.' المعرفة هنا تفتح أبواب قوة، لكنها تضعك أمام إغراء ثقيل.",
+      "choices": [
+        {
+          "id": "FAN_P02_A_COUNCIL_SECRET_C01",
+          "text": "فحص القطع دون لمسها",
+          "next_part_id": "FAN_P02_A_END_BALANCED",
+          "effects": {
+            "xp": 23,
+            "mystery": 2,
+            "corruption": 0
+          },
+          "trait_weights": {
+            "wise": 2
+          }
+        },
+        {
+          "id": "FAN_P02_A_COUNCIL_SECRET_C02",
+          "text": "لمس إحدى القطع لقراءة ذاكرتها",
+          "next_part_id": "FAN_P02_A_END_DANGEROUS",
+          "effects": {
+            "xp": 26,
+            "mystery": 3,
+            "corruption": 2
+          },
+          "trait_weights": {
+            "chaotic": 1,
+            "curious": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_COUNCIL_EXPOSE",
+      "title": "كلمة تكسر القناع",
+      "text": "تخرج من الظل وتكشف ما سمعته عن فصيل يريد تسخير الصدع كسلاح. القاعة تنفجر بالاتهامات، لكنك تقدم أسماء وتوقيتات دقيقة، فيسقط القناع عن أحد المستشارين الكبار. تربح معركة الحقيقة، وتخسر راحة الاختفاء.",
+      "choices": [
+        {
+          "id": "FAN_P02_A_COUNCIL_EXPOSE_C01",
+          "text": "الضغط لتأسيس محكمة فورية",
+          "next_part_id": "FAN_P02_A_END_STABLE",
+          "effects": {
+            "xp": 24,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "just": 2
+          }
+        },
+        {
+          "id": "FAN_P02_A_COUNCIL_EXPOSE_C02",
+          "text": "قبول تسوية سياسية لتجنب الفوضى",
+          "next_part_id": "FAN_P02_A_END_BALANCED",
+          "effects": {
+            "xp": 22,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "pragmatic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_COUNCIL_SAFE",
+      "title": "انسحاب محسوب",
+      "text": "تختار السلامة، لكنك لا تخرج خاليًا؛ تجمع ملاحظات دقيقة عن الولاءات المتبدلة داخل القاعة. أحيانًا النجاة ليست هروبًا، بل استثمارًا في لحظة أفضل.",
+      "choices": [
+        {
+          "id": "FAN_P02_A_COUNCIL_SAFE_C01",
+          "text": "تقديم تقريرك لآرين أولًا",
+          "next_part_id": "FAN_P02_A_END_BALANCED",
+          "effects": {
+            "xp": 20,
+            "trust_aren": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "loyal": 1
+          }
+        },
+        {
+          "id": "FAN_P02_A_COUNCIL_SAFE_C02",
+          "text": "حفظ التقرير لنفسك واستخدامه لاحقًا",
+          "next_part_id": "FAN_P02_A_END_DANGEROUS",
+          "effects": {
+            "xp": 21,
+            "corruption": 1,
+            "shards": 1
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_COUNCIL_ALLY_AREN",
+      "title": "تحالف مكشوف",
+      "text": "إعلانك دعم آرين يهز القاعة. البعض يعتبره خائنًا، وآخرون يرونه آخر حارس حقيقي للذاكرة. خيارك يشعل صراعًا سياسيًا واضحًا، لكنه يبني محورًا صلبًا للمستقبل: أنت وآرين ضد شبكة طويلة من الأكاذيب.",
+      "choices": [
+        {
+          "id": "FAN_P02_A_COUNCIL_ALLY_AREN_C01",
+          "text": "قبول المواجهة العلنية حتى النهاية",
+          "next_part_id": "FAN_P02_A_END_STABLE",
+          "effects": {
+            "xp": 25,
+            "trust_aren": 2,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "brave": 2
+          }
+        },
+        {
+          "id": "FAN_P02_A_COUNCIL_ALLY_AREN_C02",
+          "text": "تغيير التكتيك إلى ضغط هادئ داخل المجلس",
+          "next_part_id": "FAN_P02_A_END_BALANCED",
+          "effects": {
+            "xp": 23,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "strategic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_COUNCIL_DOUBLE_GAME",
+      "title": "رقصة الخيوط الرفيعة",
+      "text": "تبتسم للمجلس وتخفي نصف أوراقك. تتحرك بين الأطراف كمن يعزف على آلة دقيقة؛ خطوة زائدة تعني سقوط كل شيء. آرين يحترم ذكاءك، لكنه يحذرك: 'اللعبة الطويلة تبتلع أصحابها إن نسوا من هم.'",
+      "choices": [
+        {
+          "id": "FAN_P02_A_COUNCIL_DOUBLE_GAME_C01",
+          "text": "الاستمرار في اللعبة للحصول على نفوذ أكبر",
+          "next_part_id": "FAN_P02_A_END_DANGEROUS",
+          "effects": {
+            "xp": 24,
+            "shards": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        },
+        {
+          "id": "FAN_P02_A_COUNCIL_DOUBLE_GAME_C02",
+          "text": "إنهاء اللعبة سريعًا بصفقة محدودة",
+          "next_part_id": "FAN_P02_A_END_BALANCED",
+          "effects": {
+            "xp": 22,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "wise": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_COUNCIL_BARGAIN",
+      "title": "ثمن الحقيقة",
+      "text": "تساوم ماريس: معلومة مقابل امتياز. الصفقة تنجح، لكنك تشعر بثقل جديد؛ كل امتياز اشتريته اليوم قد يطالبك غدًا بولاء لا تريده.",
+      "choices": [
+        {
+          "id": "FAN_P02_A_COUNCIL_BARGAIN_C01",
+          "text": "القبول بثمن الصفقة كاملًا",
+          "next_part_id": "FAN_P02_A_END_DANGEROUS",
+          "effects": {
+            "xp": 23,
+            "corruption": 2,
+            "shards": 2
+          },
+          "trait_weights": {
+            "greedy": 2
+          }
+        },
+        {
+          "id": "FAN_P02_A_COUNCIL_BARGAIN_C02",
+          "text": "تقليل التزاماتك والانسحاب الجزئي",
+          "next_part_id": "FAN_P02_A_END_BALANCED",
+          "effects": {
+            "xp": 21,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "pragmatic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_COUNCIL_OBSERVER",
+      "title": "منصة المراقب",
+      "text": "تراقب دون انحياز معلن. تكتشف أن الوجوه الصاخبة ليست الأخطر؛ الخطر الحقيقي يجلس في الصف الخلفي، يتكلم قليلًا ويحرك الجميع. هذه المعرفة لا تصنع ضوءًا فوريًا، لكنها تصنع بوصلة دقيقة.",
+      "choices": [
+        {
+          "id": "FAN_P02_A_COUNCIL_OBSERVER_C01",
+          "text": "مشاركة الاكتشاف مع آرين فقط",
+          "next_part_id": "FAN_P02_A_END_BALANCED",
+          "effects": {
+            "xp": 20,
+            "trust_aren": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "patient": 2
+          }
+        },
+        {
+          "id": "FAN_P02_A_COUNCIL_OBSERVER_C02",
+          "text": "إرسال تقرير سري إلى ماريس",
+          "next_part_id": "FAN_P02_A_END_STABLE",
+          "effects": {
+            "xp": 21,
+            "reputation": 1,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "diplomatic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_COUNCIL_REPAIR",
+      "title": "جسر بعد الشرخ",
+      "text": "تعترف بخطأ البوابة علنًا وتطلب آلية مساءلة عادلة. القاعة لا تصفق، لكنها لا ترفض. في عالم اعتاد الكبرياء، الاعتراف يبدو قوة نادرة.",
+      "choices": [
+        {
+          "id": "FAN_P02_A_COUNCIL_REPAIR_C01",
+          "text": "اقتراح دورية مشتركة لحماية البوابة",
+          "next_part_id": "FAN_P02_A_END_STABLE",
+          "effects": {
+            "xp": 22,
+            "world_stability": 2,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "leader": 1,
+            "honorable": 1
+          }
+        },
+        {
+          "id": "FAN_P02_A_COUNCIL_REPAIR_C02",
+          "text": "الاكتفاء بالاعتذار والمتابعة",
+          "next_part_id": "FAN_P02_A_END_BALANCED",
+          "effects": {
+            "xp": 20,
+            "corruption": -1
+          },
+          "trait_weights": {
+            "merciful": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_COUNCIL_HARDLINE",
+      "title": "الطريق الصلب",
+      "text": "تعلن أن الهدف فوق كل اعتبار: إنقاذ المملكة من الانهيار أولًا، ثم مناقشة التفاصيل لاحقًا. المنطق يقنع البعض، ويخيف البعض الآخر.",
+      "choices": [
+        {
+          "id": "FAN_P02_A_COUNCIL_HARDLINE_C01",
+          "text": "طلب صلاحيات ميدانية واسعة",
+          "next_part_id": "FAN_P02_A_END_DANGEROUS",
+          "effects": {
+            "xp": 23,
+            "reputation": -1,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "ruthless": 1,
+            "pragmatic": 1
+          }
+        },
+        {
+          "id": "FAN_P02_A_COUNCIL_HARDLINE_C02",
+          "text": "قبول صلاحيات محدودة ومراجعة دورية",
+          "next_part_id": "FAN_P02_A_END_BALANCED",
+          "effects": {
+            "xp": 21,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "strategic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_COUNCIL_DOMINATE",
+      "title": "حكم الصدمة",
+      "text": "تفرض شروطك بقوة الحضور والخوف. المجلس ينحني، لكن الخوف لا ينتج ولاءً طويلًا. أنت تربح اليوم بسرعة، وتزرع غدًا مليئًا بالكمائن.",
+      "choices": [
+        {
+          "id": "FAN_P02_A_COUNCIL_DOMINATE_C01",
+          "text": "تثبيت الحكم بالقوة المستمرة",
+          "next_part_id": "FAN_P02_A_END_DANGEROUS",
+          "effects": {
+            "xp": 25,
+            "corruption": 3,
+            "world_stability": -1
+          },
+          "trait_weights": {
+            "ruthless": 2
+          }
+        },
+        {
+          "id": "FAN_P02_A_COUNCIL_DOMINATE_C02",
+          "text": "التراجع خطوة وفتح باب تفاوض من موقع قوة",
+          "next_part_id": "FAN_P02_A_END_BALANCED",
+          "effects": {
+            "xp": 23,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "strategic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_COUNCIL_LAST_CHANCE",
+      "title": "نافذة أخيرة",
+      "text": "خفضك للسلاح يربك من توقعوا الوحش. تمنح القاعة فرصة أخيرة، وتضع شرطًا واضحًا: 'إما مسار يوقف النزيف، أو لن يبقى شيء نحكمه.' لأول مرة منذ ساعات، يبدو أن الجميع يسمع بالفعل.",
+      "choices": [
+        {
+          "id": "FAN_P02_A_COUNCIL_LAST_CHANCE_C01",
+          "text": "تبنّي مسار التهدئة المرحلية",
+          "next_part_id": "FAN_P02_A_END_STABLE",
+          "effects": {
+            "xp": 24,
+            "world_stability": 2,
+            "reputation": 2
+          },
+          "trait_weights": {
+            "leader": 2
+          }
+        },
+        {
+          "id": "FAN_P02_A_COUNCIL_LAST_CHANCE_C02",
+          "text": "قبول هدنة قصيرة فقط والاستعداد للأسوأ",
+          "next_part_id": "FAN_P02_A_END_BALANCED",
+          "effects": {
+            "xp": 22,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "careful": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P02_A_END_STABLE",
+      "title": "خاتمة أ: فجر قابل للحياة",
+      "text": "تخرج من القاعة وقد خفّ ارتجاف المدينة. لم تنتهِ المعركة، لكنك نجحت في منع الانهيار الفوري وفتحت طريقًا يمكن السير عليه دون سقوط كل خطوة. آرين يقف بجانبك على الدرج الحجري ويقول: 'الجزء القادم لن يختبر قوتك فقط... بل قدرتك على حماية ما أنقذته.'",
+      "choices": [],
+      "ending": "stable"
+    },
+    {
+      "id": "FAN_P02_A_END_BALANCED",
+      "title": "خاتمة ب: ميزان فوق الهاوية",
+      "text": "لا نصر كامل ولا هزيمة كاملة. بنيت توازنًا حساسًا بين القوى، وكسبت وقتًا ثمينًا. الوقت هنا عملة أغلى من الذهب، لكنه يذوب بسرعة إن لم يُستثمر بحكمة. الظلال تتحرك، والجزء التالي يبدأ من هذا الخيط الرفيع.",
+      "choices": [],
+      "ending": "balanced"
+    },
+    {
+      "id": "FAN_P02_A_END_DANGEROUS",
+      "title": "خاتمة ج: دينٌ للمستقبل",
+      "text": "خرجت محمّلًا بالقوة والأسرار... وبفاتورة لم تُدفع بعد. ربما ربحت أدوات عظيمة، لكن بعضها بدأ يغير طريقتك في النظر إلى الناس والعالم. في الأفق، يلمع ضوء أحمر من جهة الصدع؛ كأنه تذكير بأن الثمن الحقيقي لم يأتِ بعد.",
+      "choices": [],
+      "ending": "dangerous"
+    }
+  ],
+  "handoff": {
+    "next_file": "fantasy_p02_b.json",
+    "entry_points": [
+      "FAN_P02_A_END_STABLE",
+      "FAN_P02_A_END_BALANCED",
+      "FAN_P02_A_END_DANGEROUS"
+    ],
+    "notes": "يجب أن يبدأ الجزء ب من نتائج سياسية مختلفة حسب النهاية، مع الحفاظ على جلسة اللاعب وإحصاءاته."
+  }
+}
