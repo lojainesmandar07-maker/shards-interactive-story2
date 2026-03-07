@@ -1,0 +1,458 @@
+{
+  "metadata": {
+    "world_id": "fantasy",
+    "arc_id": "fantasy_p05",
+    "part_id": "fantasy_p05_a",
+    "title": "الجزء الخامس (أ): حافة النواة",
+    "language": "ar",
+    "version": "1.0.0",
+    "start_part_id": "FAN_P05_A_START",
+    "recommended_level": 10,
+    "description": "تصعيد قاري بعد أزمة الممرات، حيث تتقاطع الجيوش والسياسة مع أول اقتراب مباشر من نواة الصدع."
+  },
+  "parts": [
+    {
+      "id": "FAN_P05_A_START",
+      "title": "دعوة من القارة كلها",
+      "text": "مع انتهاء جولة الممرات، تتلقى العاصمة ثلاث رسائل مختومة من قوى لم تجلس معًا منذ عقود: اتحاد السهول، حلف المدن الساحلية، ومجلس الجبال العليا. كلهم يطلبون الاجتماع في 'حصن الريح الخامسة' لمناقشة خطر جديد: نبضات الصدع لم تعد محلية، بل بدأت تتزامن عبر القارة كنبض قلب واحد. نادين تقول إن هذا يعني اقتراب 'نواة الصدع' من حالة تفتح جزئي، وآرين يضيف: 'إذا تأخرنا هذه المرة، لن يكون لدينا ممرات نخسرها... سنخسر مدنًا كاملة.'",
+      "choices": [
+        {
+          "id": "FAN_P05_A_START_C01",
+          "text": "قبول الدعوة والذهاب للقمّة فورًا",
+          "next_part_id": "FAN_P05_A_WIND_FORTRESS",
+          "effects": {
+            "xp": 34,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "leader": 2,
+            "diplomatic": 1
+          }
+        },
+        {
+          "id": "FAN_P05_A_START_C02",
+          "text": "إرسال وفد والبدء بتحقيق ميداني حول النبضات",
+          "next_part_id": "FAN_P05_A_PULSE_FIELD",
+          "effects": {
+            "xp": 35,
+            "mystery": 2,
+            "trust_aren": 1
+          },
+          "trait_weights": {
+            "strategic": 2,
+            "careful": 1
+          }
+        },
+        {
+          "id": "FAN_P05_A_START_C03",
+          "text": "التحرك سريًا نحو نقطة اقتراب النواة",
+          "next_part_id": "FAN_P05_A_SHADOW_ROUTE",
+          "effects": {
+            "xp": 36,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 2,
+            "brave": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P05_A_WIND_FORTRESS",
+      "title": "حصن الريح الخامسة",
+      "text": "القمّة تبدأ داخل قاعة نصفها حجر ونصفها زجاج أسود. الوفود متوترة، وكل طرف يتهم الآخر بالتسبب في صعود الصدع عبر التجارة أو الحرب أو السحر غير المنضبط. تُعرض خرائط حرارية تُظهر نقاط نبض الصدع، وتتضح حقيقة صادمة: أغلب النبضات تتركز قرب مراكز الإمداد والسياسة، لا قرب الجبهات العسكرية فقط.",
+      "choices": [
+        {
+          "id": "FAN_P05_A_WIND_FORTRESS_C01",
+          "text": "دفع القمّة نحو ميثاق قاري موحد",
+          "next_part_id": "FAN_P05_A_PACT_DRAFT",
+          "effects": {
+            "xp": 34,
+            "world_stability": 2,
+            "reputation": 2
+          },
+          "trait_weights": {
+            "diplomatic": 2,
+            "leader": 1
+          }
+        },
+        {
+          "id": "FAN_P05_A_WIND_FORTRESS_C02",
+          "text": "تركيز النقاش على فرق نواة الصدع فقط",
+          "next_part_id": "FAN_P05_A_CORE_TASKFORCE",
+          "effects": {
+            "xp": 35,
+            "mystery": 1,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "decisive": 2,
+            "pragmatic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P05_A_PULSE_FIELD",
+      "title": "حقل النبض",
+      "text": "في السهول الشرقية، تلاحظ فرقك ظاهرة جديدة: الأرض نفسها ترتجف بإيقاع منتظم كل ثلاث عشرة دقيقة. لِيان تؤكد أن التردد يشبه أجهزة التوجيه التي وجدت سابقًا، لكن على نطاق أكبر بكثير. بين الحفر الملحية تجد حجارة سوداء مزروعة على شكل قوس، وكأنها هوائيات تستدعي نبض النواة بدل تهدئته.",
+      "choices": [
+        {
+          "id": "FAN_P05_A_PULSE_FIELD_C01",
+          "text": "تعطيل الأحجار فورًا",
+          "next_part_id": "FAN_P05_A_SIGNAL_COLLAPSE",
+          "effects": {
+            "xp": 35,
+            "world_stability": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "decisive": 2,
+            "wise": 1
+          }
+        },
+        {
+          "id": "FAN_P05_A_PULSE_FIELD_C02",
+          "text": "تتبع مصدر التردد قبل أي تعطيل",
+          "next_part_id": "FAN_P05_A_DEEP_TRACE",
+          "effects": {
+            "xp": 37,
+            "mystery": 3,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "curious": 2,
+            "cunning": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P05_A_SHADOW_ROUTE",
+      "title": "مسار بلا خرائط",
+      "text": "تتحرك أنت وآرين عبر ممر جبلي غير رسمي تقترحه نادين. الطريق يمر بمخافر مهجورة تحمل علامات معارك قديمة، لكن الأثر الأوضح هو كتابات حديثة تقول: 'النواة ليست بابًا... بل مرآة.' في نهاية المسار تجد معسكر مراقبة صغيرًا تابعًا لجهة غير معروفة يراقب السماء لا الأرض.",
+      "choices": [
+        {
+          "id": "FAN_P05_A_SHADOW_ROUTE_C01",
+          "text": "اقتحام المعسكر فورًا",
+          "next_part_id": "FAN_P05_A_WATCH_CAMP",
+          "effects": {
+            "xp": 36,
+            "brave": 1,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "decisive": 2,
+            "ruthless": 1
+          }
+        },
+        {
+          "id": "FAN_P05_A_SHADOW_ROUTE_C02",
+          "text": "مراقبة المعسكر ثم التسلل",
+          "next_part_id": "FAN_P05_A_WATCH_CAMP",
+          "effects": {
+            "xp": 37,
+            "mystery": 2,
+            "trust_aren": 1
+          },
+          "trait_weights": {
+            "careful": 2,
+            "cunning": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P05_A_PACT_DRAFT",
+      "title": "مسودة الميثاق",
+      "text": "تبدأ صياغة الميثاق القاري: شفافية إمداد، منع تهريب الشظايا، وإطار موحد لتدخل فرق النواة. المشكلة أن كل دولة تريد بندًا يحميها من كشف ملفاتها القديمة. يصبح النص ساحة صراع بحد ذاته، لكنك تدرك أن وثيقة ناقصة أفضل من حرب كاملة بلا قواعد.",
+      "choices": [
+        {
+          "id": "FAN_P05_A_PACT_DRAFT_C01",
+          "text": "التمسك بميثاق صارم دون تنازلات",
+          "next_part_id": "FAN_P05_A_CORE_TASKFORCE",
+          "effects": {
+            "xp": 35,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "just": 2,
+            "leader": 1
+          }
+        },
+        {
+          "id": "FAN_P05_A_PACT_DRAFT_C02",
+          "text": "قبول مرونة سياسية لتمرير الاتفاق",
+          "next_part_id": "FAN_P05_A_CORE_TASKFORCE",
+          "effects": {
+            "xp": 34,
+            "mystery": 1,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "pragmatic": 2,
+            "diplomatic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P05_A_CORE_TASKFORCE",
+      "title": "فريق النواة",
+      "text": "يتشكل فريق مختلط: مقاتلون من ثلاث جبهات، مهندسو انعكاس، ومعالجو موجات. يتم اختيارك قائدًا ميدانيًا بحكم التجارب السابقة. أول مهمة للفريق: الوصول إلى 'مرصد السكون'، نقطة يُعتقد أنها أقرب موقع مستقر لرصد النواة دون الانهيار العقلي. آرين يطلب منك بروتوكول قرار واضح قبل الدخول.",
+      "choices": [
+        {
+          "id": "FAN_P05_A_CORE_TASKFORCE_C01",
+          "text": "اعتماد قرار مركزي صارم داخل الفريق",
+          "next_part_id": "FAN_P05_A_SILENCE_OBSERVATORY",
+          "effects": {
+            "xp": 35,
+            "reputation": 1,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "leader": 2,
+            "decisive": 1
+          }
+        },
+        {
+          "id": "FAN_P05_A_CORE_TASKFORCE_C02",
+          "text": "اعتماد قرار تشاركي مع صلاحيات طوارئ",
+          "next_part_id": "FAN_P05_A_SILENCE_OBSERVATORY",
+          "effects": {
+            "xp": 36,
+            "world_stability": 1,
+            "trust_aren": 1
+          },
+          "trait_weights": {
+            "diplomatic": 1,
+            "strategic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P05_A_SIGNAL_COLLAPSE",
+      "title": "انهيار الإشارة",
+      "text": "تعطيل الأحجار ينجح، لكن ليس بلا ثمن. موجة ارتدادية تضرب محيط الحقل وتسبب عواصف ضوئية قصيرة تربك البوصلات السحرية. السكان القريبون ينجون، إلا أن الفريق يرصد تغيرًا مفاجئًا في اتجاه النبضات: كأن النواة ردّت بتعديل مساراتها بدل التراجع.",
+      "choices": [
+        {
+          "id": "FAN_P05_A_SIGNAL_COLLAPSE_C01",
+          "text": "متابعة النبضات الجديدة فورًا",
+          "next_part_id": "FAN_P05_A_DEEP_TRACE",
+          "effects": {
+            "xp": 36,
+            "mystery": 2,
+            "world_stability": 0
+          },
+          "trait_weights": {
+            "decisive": 2,
+            "curious": 1
+          }
+        },
+        {
+          "id": "FAN_P05_A_SIGNAL_COLLAPSE_C02",
+          "text": "تثبيت المنطقة أولًا ثم التحرك",
+          "next_part_id": "FAN_P05_A_SILENCE_OBSERVATORY",
+          "effects": {
+            "xp": 34,
+            "reputation": 1,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "careful": 2,
+            "honorable": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P05_A_DEEP_TRACE",
+      "title": "التتبع العميق",
+      "text": "باستخدام مصفوفة لِيان المحمولة، تتبع التردد حتى سلسلة كهوف جليدية في الشمال. هناك تجد نقوشًا حديثة تشير إلى 'مفتاح النواة'، وهو جهاز يدمج شظايا خام مع حجر انعكاس نقي. إن كان هذا صحيحًا، فهناك جهة تحاول فتح مسار مباشر إلى قلب الصدع لا مجرد التعايش معه.",
+      "choices": [
+        {
+          "id": "FAN_P05_A_DEEP_TRACE_C01",
+          "text": "تدمير نموذج المفتاح فورًا",
+          "next_part_id": "FAN_P05_A_SILENCE_OBSERVATORY",
+          "effects": {
+            "xp": 37,
+            "world_stability": 1,
+            "corruption": -1
+          },
+          "trait_weights": {
+            "just": 2,
+            "brave": 1
+          }
+        },
+        {
+          "id": "FAN_P05_A_DEEP_TRACE_C02",
+          "text": "الاحتفاظ بالنموذج لدراسته",
+          "next_part_id": "FAN_P05_A_SILENCE_OBSERVATORY",
+          "effects": {
+            "xp": 38,
+            "mystery": 3,
+            "corruption": 2
+          },
+          "trait_weights": {
+            "cunning": 2,
+            "curious": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P05_A_WATCH_CAMP",
+      "title": "معسكر المراقبة الأسود",
+      "text": "داخل المعسكر تكتشف خرائط سماوية مفصلة تربط مواقع النبضات بحركة الأقمار لا بالزمن الأرضي فقط. الأهم أنك تجد قائمة أهداف مكتوب فيها: 'مرصد السكون – ليلة الاصطفاف'. واضح أن جهة ما تخطط لضرب المرصد في نفس لحظة اقتراب النواة. تحصل على وقت محدود للتحضير.",
+      "choices": [
+        {
+          "id": "FAN_P05_A_WATCH_CAMP_C01",
+          "text": "حرق المعسكر وإخفاء أثر زيارتك",
+          "next_part_id": "FAN_P05_A_SILENCE_OBSERVATORY",
+          "effects": {
+            "xp": 35,
+            "corruption": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "ruthless": 2
+          }
+        },
+        {
+          "id": "FAN_P05_A_WATCH_CAMP_C02",
+          "text": "تركه كفخ معلومات ومراقبة العائدين",
+          "next_part_id": "FAN_P05_A_SILENCE_OBSERVATORY",
+          "effects": {
+            "xp": 37,
+            "mystery": 2,
+            "trust_aren": 1
+          },
+          "trait_weights": {
+            "strategic": 2,
+            "careful": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P05_A_SILENCE_OBSERVATORY",
+      "title": "مرصد السكون",
+      "text": "المرصد مبني داخل فوهة خامدة تحيطها سبعة أعمدة رخامية مشققة. عند الدخول، يشعر الجميع بثقل ذهني كأن الأفكار تسير أبطأ من الزمن. تظهر النواة عبر مرآة سماوية ضخمة كدوامة ضوء داكنة تتخللها خطوط فضية. في نفس اللحظة، يبدأ هجوم من قوة مجهولة ترتدي أقنعة ناعمة بلا ملامح. الهجوم هدفه حجر الموازنة في مركز المرصد.",
+      "choices": [
+        {
+          "id": "FAN_P05_A_SILENCE_OBSERVATORY_C01",
+          "text": "الدفاع عن حجر الموازنة بأي ثمن",
+          "next_part_id": "FAN_P05_A_CORE_EDGE",
+          "effects": {
+            "xp": 38,
+            "world_stability": 2,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "brave": 2,
+            "honorable": 1
+          }
+        },
+        {
+          "id": "FAN_P05_A_SILENCE_OBSERVATORY_C02",
+          "text": "ملاحقة قائد القوة المهاجمة",
+          "next_part_id": "FAN_P05_A_CORE_EDGE",
+          "effects": {
+            "xp": 39,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "decisive": 2,
+            "cunning": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P05_A_CORE_EDGE",
+      "title": "حافة النواة",
+      "text": "بعد صد الهجوم، يفتح المرصد نافذة قصيرة على أقرب نقطة مرئية من نواة الصدع. ترى مشهدًا لا يشبه عالمك بالكامل: مدن محتملة، طرق لم تُبنَ بعد، ووجوه لأشخاص ماتوا منذ سنوات. يظهر صوت عميق بلا مصدر واضح: 'الفتح قادم، والسؤال ليس هل تمنعونه... بل من سيدفع الثمن.' أمامك ثلاثة قرارات ستحدد شكل الجزء القادم.",
+      "choices": [
+        {
+          "id": "FAN_P05_A_CORE_EDGE_C01",
+          "text": "إغلاق النافذة فورًا وحماية الواقع الحالي",
+          "next_part_id": "FAN_P05_A_END_STABLE",
+          "effects": {
+            "xp": 40,
+            "world_stability": 2,
+            "reputation": 2,
+            "corruption": -1
+          },
+          "trait_weights": {
+            "just": 2,
+            "careful": 1
+          }
+        },
+        {
+          "id": "FAN_P05_A_CORE_EDGE_C02",
+          "text": "الحفاظ على نافذة مراقبة محدودة تحت رقابة مشتركة",
+          "next_part_id": "FAN_P05_A_END_BALANCED",
+          "effects": {
+            "xp": 39,
+            "mystery": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "pragmatic": 2,
+            "strategic": 1
+          }
+        },
+        {
+          "id": "FAN_P05_A_CORE_EDGE_C03",
+          "text": "استخدام النافذة لاستخراج قوة مباشرة من النواة",
+          "next_part_id": "FAN_P05_A_END_DANGEROUS",
+          "effects": {
+            "xp": 41,
+            "corruption": 3,
+            "shards": 3
+          },
+          "trait_weights": {
+            "greedy": 2,
+            "chaotic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P05_A_END_STABLE",
+      "title": "خاتمة أ: عهد الحافة",
+      "text": "تغلق النافذة وتمنع الانزلاق المباشر إلى فوضى النواة. القرار يكلفك بعض الفرص المعرفية، لكنه يحمي المدن من تجارب خطرة في لحظة هشاشة قارية. يتم اعتماد مرصد السكون كمنطقة محمية دوليًا، وتبدأ مرحلة جديدة عنوانها: الاستقرار أولًا، ثم الفهم.",
+      "choices": [],
+      "ending": "stable"
+    },
+    {
+      "id": "FAN_P05_A_END_BALANCED",
+      "title": "خاتمة ب: نافذة مشروطة",
+      "text": "تحافظ على نافذة مراقبة صغيرة بإشراف متعدد الأطراف. تحصل القارة على معلومات ثمينة عن سلوك النواة، لكن الخطر يبقى حاضرًا في كل جلسة رصد. النجاح هنا يعتمد على ثقة هشة بين قوى لا تزال تتذكر حروبها القديمة. الطريق عملي... لكنه محفوف بالاختراق.",
+      "choices": [],
+      "ending": "balanced"
+    },
+    {
+      "id": "FAN_P05_A_END_DANGEROUS",
+      "title": "خاتمة ج: لمس القلب",
+      "text": "تختار استخراج القوة من النواة، فتنجح في لحظة وتفشل في أخرى. تكتسب طاقة هائلة تُعيد رسم موازين القوة فورًا، لكنك تفتح أيضًا أثرًا عكسيًا يجعل النواة تعرفك أنت تحديدًا. القارة ترتجف من احتمالين: منقذ يتجاوز الجميع... أو شرخ يبدأ من اسمك.",
+      "choices": [],
+      "ending": "dangerous"
+    }
+  ],
+  "handoff": {
+    "next_file": "fantasy_p05_b.json",
+    "entry_points": [
+      "FAN_P05_A_END_STABLE",
+      "FAN_P05_A_END_BALANCED",
+      "FAN_P05_A_END_DANGEROUS"
+    ],
+    "notes": "الجزء (ب) يبدأ بانقسام قاري حول قرار حافة النواة، مع أول ظهور لكيان يتكلم باسم الصدع مباشرة."
+  }
+}
