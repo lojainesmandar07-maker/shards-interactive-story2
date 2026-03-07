@@ -1,0 +1,556 @@
+{
+  "metadata": {
+    "world_id": "fantasy",
+    "arc_id": "fantasy_p04",
+    "part_id": "fantasy_p04_a",
+    "title": "الجزء الرابع (أ): ممرّات الملح والحديد",
+    "language": "ar",
+    "version": "1.0.0",
+    "start_part_id": "FAN_P04_A_START",
+    "recommended_level": 8,
+    "description": "انتقال الصراع من مدينة الأقنعة إلى شبكة التهريب بين المدن، حيث تتقاطع تجارة الشظايا مع توازنات الجيوش والحدود."
+  },
+  "parts": [
+    {
+      "id": "FAN_P04_A_START",
+      "title": "دعوة إلى الساحل المكسور",
+      "text": "بعد انحسار أزمة مدينة الأقنعة نسبيًا، تصل تقارير متزامنة من ثلاث مناطق حدودية عن شحنات غامضة تمر عبر طرق الملح القديمة. الشحنات لا تُعلن رسميًا، لكن كل قافلة تمر بعدها اضطرابات سحرية قصيرة تشبه أعراض الصدع. نادين ترسل إليك رسالة عاجلة: 'إذا أردت قطع الشريان الحقيقي للفوضى، ابدأ بميناء الحديد.' آرين يؤكد أن الطريق خطر، لأن شبكة التهريب هناك لا تعمل بالسيف فقط... بل بالولاء المشتَرى.",
+      "choices": [
+        {
+          "id": "FAN_P04_A_START_C01",
+          "text": "السفر فورًا إلى ميناء الحديد",
+          "next_part_id": "FAN_P04_A_IRON_HARBOR",
+          "effects": {
+            "xp": 28,
+            "reputation": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "decisive": 2,
+            "brave": 1
+          }
+        },
+        {
+          "id": "FAN_P04_A_START_C02",
+          "text": "جمع معلومات من مدينة الأقنعة قبل التحرك",
+          "next_part_id": "FAN_P04_A_MASK_INTEL",
+          "effects": {
+            "xp": 27,
+            "mystery": 2,
+            "trust_aren": 1
+          },
+          "trait_weights": {
+            "strategic": 2,
+            "careful": 1
+          }
+        },
+        {
+          "id": "FAN_P04_A_START_C03",
+          "text": "الضغط على المجلس لإطلاق مهمة مشتركة",
+          "next_part_id": "FAN_P04_A_JOINT_MISSION",
+          "effects": {
+            "xp": 26,
+            "world_stability": 1,
+            "reputation": 2
+          },
+          "trait_weights": {
+            "leader": 2,
+            "diplomatic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_A_IRON_HARBOR",
+      "title": "رائحة المعدن والملح",
+      "text": "ميناء الحديد مدينة رمادية تعيش على الضباب والدخان. الرافعات الضخمة تعمل ليل نهار، لكن سجلات الدخول تبدو أنظف من الواقع بشكل مريب. في الأرصفة الخلفية ترى صناديق مختومة بعلامة 'حبوب دوائية'، بينما الوزن الفعلي يشير إلى شيء أثقل بكثير. لِيان تهمس: 'هذه ليست مؤنًا... هذه مكونات طقوس.'",
+      "choices": [
+        {
+          "id": "FAN_P04_A_IRON_HARBOR_C01",
+          "text": "تفتيش الصناديق سرًا ليلًا",
+          "next_part_id": "FAN_P04_A_DOCK_BREAKIN",
+          "effects": {
+            "xp": 29,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 2,
+            "curious": 1
+          }
+        },
+        {
+          "id": "FAN_P04_A_IRON_HARBOR_C02",
+          "text": "استدعاء شرطة الميناء لتفتيش رسمي",
+          "next_part_id": "FAN_P04_A_PORT_AUTHORITY",
+          "effects": {
+            "xp": 26,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "honorable": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_A_MASK_INTEL",
+      "title": "دفاتر القناع الأزرق",
+      "text": "في أرشيف صغير تابع لمجلس الأقنعة، تسلمك نادين دفترين: الأول حركة شحنات الملح، والثاني سجلات أقنعة مستعارة لأسماء غير حقيقية. تتقاطع الدفاتر عند اسم واحد يتكرر بنمط مدروس: 'السمسار الرمادي'. الاسم ليس شخصًا واحدًا، بل منصب ينتقل بين عدة وكلاء.",
+      "choices": [
+        {
+          "id": "FAN_P04_A_MASK_INTEL_C01",
+          "text": "تتبع الوكيل الحالي للسمسار الرمادي",
+          "next_part_id": "FAN_P04_A_GRAY_BROKER",
+          "effects": {
+            "xp": 30,
+            "mystery": 3,
+            "trust_aren": 1
+          },
+          "trait_weights": {
+            "strategic": 2,
+            "curious": 1
+          }
+        },
+        {
+          "id": "FAN_P04_A_MASK_INTEL_C02",
+          "text": "اختراق شبكة الأقنعة المزيفة بدل تتبع الوكيل",
+          "next_part_id": "FAN_P04_A_FORGED_MASKS",
+          "effects": {
+            "xp": 28,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_A_JOINT_MISSION",
+      "title": "مهمة على الورق",
+      "text": "توافق الجهات الثلاث ظاهريًا على المهمة المشتركة: مجلس العاصمة، مدينة الأقنعة، وحرس الحدود الساحلي. لكن كل طرف يرسل ممثلًا يريد إدارة العملية بطريقته. الاجتماعات طويلة، واللغة مهذبة جدًا لدرجة تكشف انعدام الثقة. آرين يقترح أن تحسم نموذج القيادة قبل أن يبدأ التسرب.",
+      "choices": [
+        {
+          "id": "FAN_P04_A_JOINT_MISSION_C01",
+          "text": "قيادة مركزية تحت أمرك",
+          "next_part_id": "FAN_P04_A_COMMAND_MODEL",
+          "effects": {
+            "xp": 27,
+            "reputation": 1,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "leader": 2,
+            "decisive": 1
+          }
+        },
+        {
+          "id": "FAN_P04_A_JOINT_MISSION_C02",
+          "text": "قيادة موزعة مع مجلس تنسيق",
+          "next_part_id": "FAN_P04_A_COMMAND_MODEL",
+          "effects": {
+            "xp": 28,
+            "world_stability": 1,
+            "reputation": 2
+          },
+          "trait_weights": {
+            "diplomatic": 2,
+            "pragmatic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_A_DOCK_BREAKIN",
+      "title": "العنبر 17",
+      "text": "تتسلل إلى العنبر رقم 17 عبر قناة صرف قديمة. الداخل بارد بشكل غير طبيعي، والصناديق موضوعة على شكل دائرة. حين تفتح أول صندوق، تجد شظايا خام ملتفة بملح أسود يمنع انبعاثها السحري. هذا يفسر كيف مرت الشحنات دون كشف. لكنك أيضًا تجد سجل تسليم لجهة اسمها 'محكمة الرماد الجديدة'.",
+      "choices": [
+        {
+          "id": "FAN_P04_A_DOCK_BREAKIN_C01",
+          "text": "سرقة السجل والانسحاب بصمت",
+          "next_part_id": "FAN_P04_A_CONVOY_TRAIL",
+          "effects": {
+            "xp": 30,
+            "mystery": 2,
+            "shards": 1
+          },
+          "trait_weights": {
+            "cunning": 2
+          }
+        },
+        {
+          "id": "FAN_P04_A_DOCK_BREAKIN_C02",
+          "text": "تفجير الملح الأسود لتعطيل الشحنة",
+          "next_part_id": "FAN_P04_A_PORT_ALERT",
+          "effects": {
+            "xp": 29,
+            "world_stability": 0,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "brave": 2,
+            "chaotic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_A_PORT_AUTHORITY",
+      "title": "تفتيش تحت الأضواء",
+      "text": "يبدأ التفتيش الرسمي بحضور قبطان الميناء وقضاة محليين. فجأة يتعطل سجل الدخول المركزي، وتُفقد بيانات سفينتين كانتا في الميناء منذ ساعة. واضح أن جهة داخل الإدارة تتلاعب بالوقت الرقمي للسجلات. أحد الموظفين الشباب يمرر لك ورقة صغيرة: 'الضوء لا يكشف إن كانت المرآة مكسورة.'",
+      "choices": [
+        {
+          "id": "FAN_P04_A_PORT_AUTHORITY_C01",
+          "text": "حماية الموظف الشاهد وسحبه للتحقيق",
+          "next_part_id": "FAN_P04_A_WITNESS_ROOM",
+          "effects": {
+            "xp": 27,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "honorable": 2,
+            "careful": 1
+          }
+        },
+        {
+          "id": "FAN_P04_A_PORT_AUTHORITY_C02",
+          "text": "تجاهل الشاهد وملاحقة السفينتين فورًا",
+          "next_part_id": "FAN_P04_A_CONVOY_TRAIL",
+          "effects": {
+            "xp": 28,
+            "mystery": 2,
+            "reputation": -1
+          },
+          "trait_weights": {
+            "decisive": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_A_GRAY_BROKER",
+      "title": "السمسار الرمادي",
+      "text": "بعد تتبع طويل عبر حانات الميناء، تحدد الوكيل الحالي: امرأة تُدعى 'رِما' تدير شبكة نقل تبدو تجارية قانونية. تعترف ضمنيًا أنها لا تهرب الشظايا للربح فقط؛ تقول إن هناك جهة تشتريها 'لإغلاق الصدع قبل أن يلتهم الجميع'. المشكلة أن طرقهم تقتل مدنًا صغيرة على الطريق.",
+      "choices": [
+        {
+          "id": "FAN_P04_A_GRAY_BROKER_C01",
+          "text": "عرض صفقة حماية مقابل التعاون الكامل",
+          "next_part_id": "FAN_P04_A_BROKER_DEAL",
+          "effects": {
+            "xp": 30,
+            "reputation": 1,
+            "mystery": 1
+          },
+          "trait_weights": {
+            "diplomatic": 2,
+            "strategic": 1
+          }
+        },
+        {
+          "id": "FAN_P04_A_GRAY_BROKER_C02",
+          "text": "اعتقال رِما فورًا",
+          "next_part_id": "FAN_P04_A_PORT_ALERT",
+          "effects": {
+            "xp": 27,
+            "reputation": 1,
+            "world_stability": -1
+          },
+          "trait_weights": {
+            "just": 2,
+            "decisive": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_A_FORGED_MASKS",
+      "title": "مصنع الوجوه",
+      "text": "في ضاحية مهجورة تكتشف ورشة لصناعة الأقنعة المزيفة. القوالب تحمل رموز سبع مدن، ما يعني أن الشبكة لا تتهرب من هوية واحدة بل تُعيد كتابة الهويات سياسيًا. لِيان تجد خريطة شحن تشير إلى 'ممر الملح الثالث' كخط رئيسي خلال الأسبوع القادم.",
+      "choices": [
+        {
+          "id": "FAN_P04_A_FORGED_MASKS_C01",
+          "text": "القبض على صانع الأقنعة حيًا",
+          "next_part_id": "FAN_P04_A_WITNESS_ROOM",
+          "effects": {
+            "xp": 29,
+            "mystery": 2,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "careful": 2,
+            "just": 1
+          }
+        },
+        {
+          "id": "FAN_P04_A_FORGED_MASKS_C02",
+          "text": "حرق الورشة فورًا لمنع هروب البيانات",
+          "next_part_id": "FAN_P04_A_PORT_ALERT",
+          "effects": {
+            "xp": 28,
+            "corruption": 1,
+            "world_stability": -1
+          },
+          "trait_weights": {
+            "ruthless": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_A_COMMAND_MODEL",
+      "title": "نموذج القيادة",
+      "text": "يبدأ التنفيذ ويظهر أثر قرارك مباشرة. مع القيادة المركزية تتحسن السرعة لكن التسريبات تزيد من الداخل. ومع القيادة الموزعة تنخفض التسريبات لكن القرار الميداني يصبح أبطأ. في الحالتين يصلك خبر واحد لا يتغير: قافلة ضخمة ستعبر ممر الملح الثالث خلال ليلتين.",
+      "choices": [
+        {
+          "id": "FAN_P04_A_COMMAND_MODEL_C01",
+          "text": "إعداد كمين كبير في ممر الملح",
+          "next_part_id": "FAN_P04_A_SALT_PASS",
+          "effects": {
+            "xp": 28,
+            "world_stability": 1,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "leader": 2
+          }
+        },
+        {
+          "id": "FAN_P04_A_COMMAND_MODEL_C02",
+          "text": "زرع عميل داخل القافلة بدلاً من الكمين",
+          "next_part_id": "FAN_P04_A_CONVOY_TRAIL",
+          "effects": {
+            "xp": 30,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 2,
+            "strategic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_A_WITNESS_ROOM",
+      "title": "غرفة الشاهد",
+      "text": "في غرفة معزولة، يقدم الشاهد رواية خطيرة: السجلات تُمسح بتقنية انعكاس زمني مصدرها حجر خاص يصل من الصدع مباشرة. كما يؤكد أن شخصًا يحمل لقب 'المُقنن' ينسق بين الميناء، شبكات الأقنعة، وقوافل الحدود. الاسم لا يظهر في أي سجل رسمي، لكنه يتكرر شفهيًا كلما اختفت شحنة.",
+      "choices": [
+        {
+          "id": "FAN_P04_A_WITNESS_ROOM_C01",
+          "text": "إخراج الشاهد إلى حماية عليا",
+          "next_part_id": "FAN_P04_A_SALT_PASS",
+          "effects": {
+            "xp": 27,
+            "reputation": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "honorable": 2
+          }
+        },
+        {
+          "id": "FAN_P04_A_WITNESS_ROOM_C02",
+          "text": "استخدام الشاهد كطُعم لاجتذاب المُقنن",
+          "next_part_id": "FAN_P04_A_PORT_ALERT",
+          "effects": {
+            "xp": 31,
+            "mystery": 3,
+            "corruption": 2
+          },
+          "trait_weights": {
+            "ruthless": 1,
+            "strategic": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_A_BROKER_DEAL",
+      "title": "صفقة على حافة السكين",
+      "text": "تقبل رِما التعاون مقابل حماية عائلتها وطاقمها من محاكمات فورية. تسلمك خريطة دقيقة لمسار القافلة القادمة وتكشف أن نصف الحمولة شظايا، والنصف الآخر أقنعة هوية مزيفة لمسؤولين من ثلاث مدن. القضية تتجاوز التهريب، إنها إعادة تشكيل السلطة بالقوة الناعمة والخشنة معًا.",
+      "choices": [
+        {
+          "id": "FAN_P04_A_BROKER_DEAL_C01",
+          "text": "الالتزام بالصفقة واستخدام المعلومات فقط",
+          "next_part_id": "FAN_P04_A_SALT_PASS",
+          "effects": {
+            "xp": 29,
+            "mystery": 2,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "diplomatic": 1,
+            "strategic": 2
+          }
+        },
+        {
+          "id": "FAN_P04_A_BROKER_DEAL_C02",
+          "text": "كسر الصفقة واعتقال رِما بعد تسليم البيانات",
+          "next_part_id": "FAN_P04_A_PORT_ALERT",
+          "effects": {
+            "xp": 28,
+            "reputation": -1,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "ruthless": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_A_PORT_ALERT",
+      "title": "إنذار أحمر",
+      "text": "تنتشر أخبار تحركاتك بسرعة، ويبدأ الميناء بإغلاق نفسه ذاتيًا: أرصفة معطلة، طواقم مختفية، ووثائق محترقة في الأرشيف الفرعي. واضح أن الشبكة تملك زر طوارئ يطمس الأدلة عند أول ضغط جدي. تصل رسالة مجهولة: 'إذا أردت الحقيقة كاملة، قابلني في ممر الملح الثالث قبل اكتمال القمر.'",
+      "choices": [
+        {
+          "id": "FAN_P04_A_PORT_ALERT_C01",
+          "text": "قبول الرسالة والذهاب للممر",
+          "next_part_id": "FAN_P04_A_SALT_PASS",
+          "effects": {
+            "xp": 30,
+            "mystery": 2,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "brave": 1,
+            "curious": 1
+          }
+        },
+        {
+          "id": "FAN_P04_A_PORT_ALERT_C02",
+          "text": "تجاهل الرسالة وتوسيع الاعتقالات في الميناء",
+          "next_part_id": "FAN_P04_A_END_DANGEROUS",
+          "effects": {
+            "xp": 27,
+            "world_stability": -1,
+            "reputation": -1
+          },
+          "trait_weights": {
+            "decisive": 1,
+            "ruthless": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_A_CONVOY_TRAIL",
+      "title": "ظل القافلة",
+      "text": "تتبع القافلة من بعيد عبر تلال الملح البيضاء. العربات مغلقة بطبقة معدنية تمنع القراءة السحرية، وترافقها مجموعة حراس يرتدون أقنعة موحدة بلا أي شارة مدينة. في إحدى المحطات الليلية ترى شخصًا يخرج من العربة الوسطى ويضع حجر انعكاس في الأرض ثم يختفي. إنها نفس التقنية التي محَت سجلات الميناء.",
+      "choices": [
+        {
+          "id": "FAN_P04_A_CONVOY_TRAIL_C01",
+          "text": "تدمير حجر الانعكاس قبل تحرك القافلة",
+          "next_part_id": "FAN_P04_A_SALT_PASS",
+          "effects": {
+            "xp": 31,
+            "mystery": 2,
+            "world_stability": 1
+          },
+          "trait_weights": {
+            "wise": 1,
+            "decisive": 1
+          }
+        },
+        {
+          "id": "FAN_P04_A_CONVOY_TRAIL_C02",
+          "text": "الإبقاء على الحجر لتتبع الإشارة حتى المصدر",
+          "next_part_id": "FAN_P04_A_SALT_PASS",
+          "effects": {
+            "xp": 32,
+            "mystery": 3,
+            "corruption": 1
+          },
+          "trait_weights": {
+            "cunning": 2,
+            "curious": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_A_SALT_PASS",
+      "title": "ممر الملح الثالث",
+      "text": "الممر ضيق ومحاط بجروف بيضاء حادة. عند منتصف الليل تصل القافلة ويبدأ الاشتباك: ليس قتالًا مفتوحًا فقط، بل حرب إشارات ونسخ هوية. يظهر شخص ملثم برداء رمادي ويعرّف نفسه: 'أنا المُقنن. أنتم تطاردون السوق، لكن السوق هو ما يمنع الصدع من ابتلاع القارة دفعة واحدة.' يعرض عليك خيارًا صادمًا: إما تفكيك الشبكة الآن مع خطر انفلات الصدع مؤقتًا، أو إبقاؤها تحت رقابتك وتحويلها إلى أداة دولة.",
+      "choices": [
+        {
+          "id": "FAN_P04_A_SALT_PASS_C01",
+          "text": "تفكيك الشبكة بالكامل الآن",
+          "next_part_id": "FAN_P04_A_END_STABLE",
+          "effects": {
+            "xp": 33,
+            "world_stability": 2,
+            "reputation": 2,
+            "corruption": -1
+          },
+          "trait_weights": {
+            "just": 2,
+            "honorable": 1
+          }
+        },
+        {
+          "id": "FAN_P04_A_SALT_PASS_C02",
+          "text": "تحويل الشبكة إلى نظام رقابة رسمي",
+          "next_part_id": "FAN_P04_A_END_BALANCED",
+          "effects": {
+            "xp": 32,
+            "mystery": 2,
+            "reputation": 1
+          },
+          "trait_weights": {
+            "pragmatic": 2,
+            "leader": 1
+          }
+        },
+        {
+          "id": "FAN_P04_A_SALT_PASS_C03",
+          "text": "التحالف السري مع المُقنن مؤقتًا",
+          "next_part_id": "FAN_P04_A_END_DANGEROUS",
+          "effects": {
+            "xp": 34,
+            "corruption": 3,
+            "shards": 2
+          },
+          "trait_weights": {
+            "cunning": 2,
+            "greedy": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FAN_P04_A_END_STABLE",
+      "title": "خاتمة أ: كسر السلسلة",
+      "text": "تنجح في إسقاط ممر التهريب الرئيسي واعتقال عقد الشبكة الأساسية. الارتباك يضرب السوق السوداء، لكنه يفتح أيضًا نافذة لإعادة تنظيم خطوط الإمداد الشرعية بسرعة. المدن تشعر بالصدمة أولًا ثم بالارتياح تدريجيًا. ما كسبته هنا ليس نصرًا عسكريًا فقط، بل ثقة عامة بأن القانون ما زال قادرًا على حماية الواقع.",
+      "choices": [],
+      "ending": "stable"
+    },
+    {
+      "id": "FAN_P04_A_END_BALANCED",
+      "title": "خاتمة ب: ميزان الخطر",
+      "text": "تختار الحل العملي: لا تفجير كامل ولا تساهل كامل. الشبكة لا تُدمَّر بل تُعاد برمجتها تحت رقابة متعددة، ما يمنع الكارثة الفورية ويحفظ مصادر معلومات لا تقدر بثمن. لكنك تعرف أن أي خلل صغير في هذا الميزان قد يعيد كل شيء إلى الفوضى. الجولة القادمة ستكون اختبارًا لصلابة هذا الترتيب.",
+      "choices": [],
+      "ending": "balanced"
+    },
+    {
+      "id": "FAN_P04_A_END_DANGEROUS",
+      "title": "خاتمة ج: ظل المُقنن",
+      "text": "تخرج من الممر ومعك نفوذ لا يملكه أحد، لكن بثمن واضح: صرت جزءًا من دائرة القرارات التي تُتخذ بعيدًا عن الضوء. الشبكة تعمل لصالحك ظاهريًا، إلا أنها تربط اسمك بمناطق رمادية يصعب الدفاع عنها علنًا. قوتك تكبر، لكن المسافة بينك وبين الصدع تقصر بطريقة مقلقة.",
+      "choices": [],
+      "ending": "dangerous"
+    }
+  ],
+  "handoff": {
+    "next_file": "fantasy_p04_b.json",
+    "entry_points": [
+      "FAN_P04_A_END_STABLE",
+      "FAN_P04_A_END_BALANCED",
+      "FAN_P04_A_END_DANGEROUS"
+    ],
+    "notes": "يبدأ الجزء (ب) بتداعيات قرار الممر: اضطرابات إمداد، تحالفات جديدة، وظهور خصم مرتبط مباشرة بقلب الصدع."
+  }
+}
